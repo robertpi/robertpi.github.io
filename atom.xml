@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Robert's software blog]]></title>
+  <link href="http://robertpi.github.io/atom.xml" rel="self"/>
+  <link href="http://robertpi.github.io/"/>
+  <updated>2013-12-14T14:31:05+01:00</updated>
+  <id>http://robertpi.github.io/</id>
+  <author>
+    <name><![CDATA[Robert Pickering]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Trying Out Linux for a While]]></title>
+    <link href="http://robertpi.github.io/blog/2013/12/14/trying-out-linux-for-a-while/"/>
+    <updated>2013-12-14T05:01:34+01:00</updated>
+    <id>http://robertpi.github.io/blog/2013/12/14/trying-out-linux-for-a-while</id>
+    <content type="html"><![CDATA[<p>So, I had a good time at <a href="http://BuildStuff.lt/">BuildStuff.lt</a>, but my laptop died in quite an odd way. Fuckety bye.</p>
+]]></content>
+  </entry>
+  
+</feed>
