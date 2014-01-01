@@ -1,24 +1,100 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[strangelights']]></title>
-  <link href="http://robertpi.github.io/atom.xml" rel="self"/>
-  <link href="http://robertpi.github.io/"/>
-  <updated>2014-01-01T19:54:59+01:00</updated>
-  <id>http://robertpi.github.io/</id>
-  <author>
-    <name><![CDATA[Robert Pickering]]></name>
-    
-  </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Bitcoin: A Detailed Yet Easy To Understand Explanation - strangelights'</title>
+  <meta name="author" content="Robert Pickering">
 
   
-  <entry>
-    <title type="html"><![CDATA[Bitcoin: A Detailed Yet Easy To Understand Explanation]]></title>
-    <link href="http://robertpi.github.io/blog/2014/01/01/bitcoins-a-detailed-yet-easy-to-understand-explaination/"/>
-    <updated>2014-01-01T18:16:43+01:00</updated>
-    <id>http://robertpi.github.io/blog/2014/01/01/bitcoins-a-detailed-yet-easy-to-understand-explaination</id>
-    <content type="html"><![CDATA[<p>I&rsquo;ve had an unhealthy fascination with Bitcoin and crypto currencies for a while now. I&rsquo;m writing this article because there seems to be a gap in the market for an explanation of how Bitcoin works and thinking on the consequences of that. When the popular media covers Bitcoins it inevitably skips over important details, when technical bloggers cover Bitcoin they tend to get too bogged down in the details of the cryptography. This is an attempt to provide something in between, an explanation that anyone with reasonable grasp on computing will understand.</p>
+  <meta name="description" content="I&rsquo;ve had an unhealthy fascination with Bitcoin and crypto currencies for a while now. I&rsquo;m writing this article because there seems to be &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://robertpi.github.io/blog/2014/01/01/bitcoins-a-detailed-yet-easy-to-understand-explaination/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="strangelights'" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Merienda:700" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body>
+  <div id="navigation">
+    <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:robertpi.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  </div>
+  <header role="banner"><hgroup>
+  <h1><a href="/">strangelights'</a></h1>
+  
+    <h2>Ten out of ten for style, but minus several million for good thinking</h2>
+  
+</hgroup>
+
+</header>
+  <div id="body"  >
+    <div id="main">
+      <div id="content">
+        <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Bitcoin: A Detailed Yet Easy to Understand Explanation</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-01T18:16:43+01:00" pubdate data-updated="true">Jan 1<span>st</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I&rsquo;ve had an unhealthy fascination with Bitcoin and crypto currencies for a while now. I&rsquo;m writing this article because there seems to be a gap in the market for an explanation of how Bitcoin works and thinking on the consequences of that. When the popular media covers Bitcoins it inevitably skips over important details, when technical bloggers cover Bitcoin they tend to get too bogged down in the details of the cryptography. This is an attempt to provide something in between, an explanation that anyone with reasonable grasp on computing will understand.</p>
 
 <h2>Crypto Currencies</h2>
 
@@ -98,50 +174,151 @@
 <h2>Conclusion</h2>
 
 <p>Crypto currencies are a fascinating set of technologies. I do not think they are either good or bad, they are just a tool for sending money over the internet that can be used legitimately or could be abused illegal activities. The problem with Bitcoin specifically is that the game seems to have been very heavily tilted in the favour of early adopters. The problem with crypto currencies generally is they are only as secure as the private keys that control spending the coins at an address. I would be will to will to use a crypto currency to send small amounts of money round the internet, but I would be too scared to use a crypto currency to store large amounts of money or make large transactions as I don&rsquo;t think I have the necessary skills to keep the private key safe and secure enough. The fact that all transactions are record in a giant ledger may or may not be a problem depending on your point of view and how much you care about privacy. Whether or not you decided you like to use crypto currency, I hope this article has now left you with a more informed point of view about it.</p>
-]]></content>
-  </entry>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
   
-  <entry>
-    <title type="html"><![CDATA[trying out linux for a while]]></title>
-    <link href="http://robertpi.github.io/blog/2013/12/14/trying-out-linux-for-a-while/"/>
-    <updated>2013-12-14T05:01:34+01:00</updated>
-    <id>http://robertpi.github.io/blog/2013/12/14/trying-out-linux-for-a-while</id>
-    <content type="html"><![CDATA[<p>So, I had a good time at <a href="http://BuildStuff.lt/">BuildStuff.lt</a>, but my laptop died in quite an odd way. I&rsquo;ll write more about the laptop death in another post.
-I&rsquo;ll also write more about <a href="http://BuildStuff.lt/">BuildStuff.lt</a> in another post. This post is about the laptops resurrection.</p>
 
-<p>I tried to repair the laptop using a windows using a bootable USB rescue disk kindly provided by <a href="https://twitter.com/thinkb4coding">Jemery</a> and <a href="https://twitter.com/ronanklyne">Ronan</a>, but despite taking a long time this just made it worse.</p>
+<span class="byline author vcard">Posted by <span class="fn">Robert Pickering</span></span>
 
-<p>So when I got home I decided to zap everything and install Linux. I&rsquo;ve been a Windows for a long, long time now. I&rsquo;ve made various attempts to use Linux instead but I&rsquo;ve also either hosted Linux in a VM or duel booted and this means I always drift back to Windows in the end, more for the software than the OS. So this time instead of missing the windows software, I&rsquo;m going to attempt to do things the &ldquo;Linux way&rdquo;, meaning instead of using specialist software for each task (ie Visual Studio for coding, Word for writing, Live Writer for blogging etc.), I&rsquo;m going to try and learn one text editor well and use it for doing all those things in plain text plus markup/markdown.</p>
-
-<p>This new blog is the first visible sign of this. It&rsquo;s octopress based and hosted on github, if everything works out I&rsquo;ll eventually migrate my domain and old blog posts here. If it doesn&rsquo;t it&rsquo;ll be quietly dropped.</p>
-
-<p>The first 72 hours has had it&rsquo;s ups and downs. Here&rsquo;s a summary:</p>
-
-<h1>The good</h1>
-
-<p>The Linux terminal is great, light years heard of either cmd or powershell in Windows. If I do go back to Windows, I think I&rsquo;ll just use Cygwin as my terminal and do more stuff through that.</p>
-
-<p>Having repository based app installation is great, especially as if a command is missing the shell will often tell you what package it&rsquo;s in.</p>
-
-<h1>The bad</h1>
-
-<p>The version of LibreOffice wouldn&rsquo;t open (I didn&rsquo;t want to use it for writing but I need to be able to read a word doc). Doing <code>apt-get install libreoffice</code> fixed this, but still if it comes pre-installed would be nice if it worked out the box, right?</p>
-
-<p>The latest version of Skype wouldn&rsquo;t install, so I&rsquo;m stuck with one from apt-get which has no web cam support.</p>
-
-<p>The cloud disky type thing I&rsquo;m using, copy.com, has a Linux client, but it comes with no installer. You install it where you like. Which had me scratching my head where should I install this?</p>
-
-<p>Octopress depends on version 1.9.3 of Ruby that isn&rsquo;t on apt-get. The solution seems to be building from source. Getting the right source and building was pretty easy. The problem is running <code>./configure</code> cleverly doesn&rsquo;t compile the bits that rely on libraries that aren&rsquo;t there. This is great if you don&rsquo;t need that bit, but if you do it sends you down a cycle of find the library, install it then recompile. This is what was missing for me:</p>
-
-<ul>
-<li>You need to change the default yaml parser to install a gem that octopress relies on, following the instructions from <a href="http://collectiveidea.com/blog/archives/2011/10/31/install-ruby-193-with-libyaml-on-centos/">this post</a></li>
-<li>Ensure zlib is installed, the apt-get package name is zlibc on zlib</li>
-<li>Ensure OpenSsl is installed, the apt-get packages that need to be installed can be <a href="https://help.ubuntu.com/community/OpenSSL">found here</a></li>
-</ul>
+      
 
 
-<p>On the one hand, this is all noobe stuff, on the other hand it makes me feel I&rsquo;m climbing a hill that didn&rsquo;t ought to be there.</p>
-]]></content>
-  </entry>
+
+
+
+
+
+
   
-</feed>
+
+
+<time datetime="2014-01-01T18:16:43+01:00" pubdate data-updated="true">Jan 1<span>st</span>, 2014</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://robertpi.github.io/blog/2014/01/01/bitcoins-a-detailed-yet-easy-to-understand-explaination/" data-via="robertpi" data-counturl="http://robertpi.github.io/blog/2014/01/01/bitcoins-a-detailed-yet-easy-to-understand-explaination/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/12/14/trying-out-linux-for-a-while/" title="Previous Post: trying out linux for a while">&laquo; trying out linux for a while</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/01/01/bitcoins-a-detailed-yet-easy-to-understand-explaination/">Bitcoin: A Detailed Yet Easy To Understand Explanation</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/12/14/trying-out-linux-for-a-while/">trying out linux for a while</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h2>Strangelights'</h2>
+  <p>A blog by Robert Pickering, a fun loving programer.</p> 
+  <p><a href="mailto:robert@strangelights.com">Contact me</a>.</p> 
+  <p>My old blog <a href="http://strangelights.com/blog">strangelights</a>.</p>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("robertpi", , );
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <p>Follow <a href="http://twitter.com/robertpi">@robertpi</a></p>
+  
+</section>
+
+
+  
+</aside>
+
+
+      </div>
+    </div>
+    <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Robert Pickering -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a>. Design by <a href="http://octopressthemes.com">Octopress Themes</a></span>
+</p>
+
+</footer>
+    
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+  </div>
+</body>
+</html>

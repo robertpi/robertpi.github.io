@@ -2,7 +2,13 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://robertpi.github.io/blog/2013/12/14/trying-out-linux-for-a-while/</loc>
-        <lastmod>2013-12-15T10:02:53+01:00</lastmod>
+        <lastmod>2013-12-29T18:22:25+01:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://robertpi.github.io/blog/2014/01/01/bitcoins-a-detailed-yet-easy-to-understand-explaination/
+        </loc>
+        <lastmod>2014-01-01T19:37:02+01:00</lastmod>
     </url>
     <url>
         <loc>http://robertpi.github.io/robots.txt</loc>
@@ -10,10 +16,10 @@
     </url>
     <url>
         <loc>http://robertpi.github.io/blog/archives/</loc>
-        <lastmod>2013-12-15T10:02:53+01:00</lastmod>
+        <lastmod>2014-01-01T19:37:02+01:00</lastmod>
     </url>
     <url>
         <loc>http://robertpi.github.io/</loc>
-        <lastmod>2013-12-15T10:02:53+01:00</lastmod>
+        <lastmod>2014-01-01T19:37:02+01:00</lastmod>
     </url>
 </urlset>
