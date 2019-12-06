@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		
+
+		<title>ROT13 in F#</title>
+
+		
+		<link rel="stylesheet" href="http://strangelights.com/css/colors-dark.min.217a2547e8e6c808986d22ef70b50263c2d6a4bbc80ed42e97e280a41103f9b5.css">
+
+		
+	</head>
+	<body>
+		<header id="header">
+			<h1><a href="http://strangelights.com/">Strangelights</a></h1>
+			<p></p>
+		</header>
+
+		<div id="page">
+			<div id="sidebar">
+				<nav>
+	
+</nav>
+
+			</div>
+
+			<div id="content">
+				
+	<article class="post">
+		<h1><a href="http://strangelights.com/achrive/2006/12/27/rot13-in-fsharp.aspx/">ROT13 in F#</a> </h1>
+
+		<div class="post-content"><p><FONT face=Arial>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-GB">Over on his blog, Andrei Formiga has a series of post on implementing ROT13 in F# and Haskell.&lt;?xml:namespace prefix = o ns = &ldquo;urn:schemas-microsoft-com:office:office&rdquo; /&gt;<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-GB"><A href="http://codemiscellany.blogspot.com/2006/12/rot13-in-f.html"><FONT color=#800080><a href="http://codemiscellany.blogspot.com/2006/12/rot13-in-f.html">http://codemiscellany.blogspot.com/2006/12/rot13-in-f.html</a></FONT></A><o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-GB"><A href="http://codemiscellany.blogspot.com/2006/12/rot13-in-haskell.html"><FONT color=#800080><a href="http://codemiscellany.blogspot.com/2006/12/rot13-in-haskell.html">http://codemiscellany.blogspot.com/2006/12/rot13-in-haskell.html</a></FONT></A><o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-GB"><A href="http://codemiscellany.blogspot.com/2006/12/rot13-in-f-revisited.html"><FONT color=#800080><a href="http://codemiscellany.blogspot.com/2006/12/rot13-in-f-revisited.html">http://codemiscellany.blogspot.com/2006/12/rot13-in-f-revisited.html</a></FONT></A><o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-GB"><A href="http://codemiscellany.blogspot.com/2006/12/still-more-rot13.html"><FONT color=#800080><a href="http://codemiscellany.blogspot.com/2006/12/still-more-rot13.html">http://codemiscellany.blogspot.com/2006/12/still-more-rot13.html</a></FONT></A><o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-GB">I like is implementation using library functions that don&#8217;t yet exist in F#, such as drop and zip. Here is the implementation itself, stripped of the extra library functions he had to implement, for the original see the above links. <o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p><FONT face="Times New Roman">&nbsp;</FONT><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 9pt; FONT-FAMILY: 'Courier New'; mso-ansi-language: EN-GB">#light<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 9pt; FONT-FAMILY: 'Courier New'; mso-ansi-language: EN-GB">let rot13 s = <BR><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN>let letters = [&lsquo;a&rsquo; .. &lsquo;z&rsquo;]<BR><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN>let transp = zip letters ((drop 13 letters) @ (take 13 letters))<BR><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN>let rotchar c = List.assoc c transp<BR><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN>strmap rotchar s<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p><FONT face="Times New Roman">&nbsp;</FONT><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-GB">The clever bit of this implementation is on the 4<SUP>th</SUP> line where he uses the functions drop and take to create a rotated list and the function zip to a map between that and the original letter list. While this is an interesting way of implementing this I think there is a way to do this without the need to define extra library functions. So here is my implementation, the same number of lines but more characters!<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p><FONT face="Times New Roman">&nbsp;</FONT><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 9pt; FONT-FAMILY: 'Courier New'; mso-ansi-language: EN-GB">#light<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 9pt; FONT-FAMILY: 'Courier New'; mso-ansi-language: EN-GB">let rot13 (s : string) =<SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 9pt; FONT-FAMILY: 'Courier New'; mso-ansi-language: EN-GB"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN>let letters = [&lsquo;a&rsquo; .. &lsquo;z&rsquo;]<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 9pt; FONT-FAMILY: 'Courier New'; mso-ansi-language: EN-GB"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN>let transp = letters |&gt; List.mapi (fun i l -&gt; l, List.nth letters ((i + 13) % 26))<SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 9pt; FONT-FAMILY: 'Courier New'; mso-ansi-language: EN-GB"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN>let rotchar c = List.assoc c transp<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 9pt; FONT-FAMILY: 'Courier New'; mso-ansi-language: EN-GB"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN>new string(s.ToCharArray() |&gt; Array.map rotchar)<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p><FONT face="Times New Roman">&nbsp;</FONT><a href="/o:p">/o:p</a></SPAN></P></FONT></p>
+</div>
+
+		<p class="meta">Posted on <span class="postdate">27. December 2006</span></p>
+	</article>
+
+			</div>
+
+			<footer id="footer">
+				<p class="copyright">
+					
+						Powered by <a href="https://gohugo.io/">Hugo</a> and the
+						<a href="https://github.com/bake/solar-theme-hugo">Solar</a>-theme.
+					
+				</p>
+			</footer>
+		</div>
+
+		
+	</body>
+</html>

@@ -1,0 +1,1795 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Achrives on Strangelights</title>
+    <link>http://strangelights.com/achrive/</link>
+    <description>Recent content in Achrives on Strangelights</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 06 Dec 2019 05:59:48 +0000</lastBuildDate>
+    
+	<atom:link href="http://strangelights.com/achrive/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skills Matter: Remembering the Good Times</title>
+      <link>http://strangelights.com/achrive/2019/12/6/skills-matter-remembering-the-good-times/</link>
+      <pubDate>Fri, 06 Dec 2019 05:59:48 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2019/12/6/skills-matter-remembering-the-good-times/</guid>
+      <description>Like so many others I felt sad when I heard the news Skill Matter had gone into administration. Many words have been exchange on twitter about what tragedy it was, so rather than add to that, I thought I’d share some of happy memories of them.
+I can’t remember the exact date I first started working with Skills Matter, but it seems likely it was around 10 years ago. I remember the occasion very well.</description>
+    </item>
+    
+    <item>
+      <title>Bitcoin: A Detailed Yet Easy to Understand Explanation</title>
+      <link>http://strangelights.com/achrive/2014/1/1/bitcoins-a-detailed-yet-easy-to-understand-explaination/</link>
+      <pubDate>Wed, 01 Jan 2014 05:59:48 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2014/1/1/bitcoins-a-detailed-yet-easy-to-understand-explaination/</guid>
+      <description>I&amp;rsquo;ve had an unhealthy fascination with Bitcoin and crypto currencies for a while now. I&amp;rsquo;m writing this article because there seems to be a gap in the market for an explanation of how Bitcoin works and thinking on the consequences of that. When the popular media covers Bitcoins it inevitably skips over important details, when technical bloggers cover Bitcoin they tend to get too bogged down in the details of the cryptography.</description>
+    </item>
+    
+    <item>
+      <title>Trying Out Linux for a While</title>
+      <link>http://strangelights.com/achrive/2013/12/trying-out-linux-for-a-while/</link>
+      <pubDate>Sat, 14 Dec 2013 05:59:48 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2013/12/trying-out-linux-for-a-while/</guid>
+      <description>So, I had a good time at BuildStuff.lt, but my laptop died in quite an odd way. I&amp;rsquo;ll write more about the laptop death in another post. I&amp;rsquo;ll also write more about BuildStuff.lt in another post. This post is about the laptops resurrection.
+I tried to repair the laptop using a windows using a bootable USB rescue disk kindly provided by Jemery and Ronan, but despite taking a long time this just made it worse.</description>
+    </item>
+    
+    <item>
+      <title>The Software Developer Identity Crisis</title>
+      <link>http://strangelights.com/achrive/2013/9/4/the-software-developer-identity-crisis.aspx/</link>
+      <pubDate>Wed, 04 Sep 2013 05:59:48 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2013/9/4/the-software-developer-identity-crisis.aspx/</guid>
+      <description>This is post tries to explain some of what I was talking about in my talk at weactuallybuildstuff.com, it’s series of two posts, I’ve tried write it as one post but it got too long and icky, so I’ve split it into two.
+I believe at the heart of Software Development culture there is an identity crisis. I say this because I believe software development to be an engineering discipline, based on science, but many of fellow developers do not believe this.</description>
+    </item>
+    
+    <item>
+      <title>Using the Android GridView as a DataGrid</title>
+      <link>http://strangelights.com/achrive/2013/5/20/using-the-android-gridview-as-a-datagrid.aspx/</link>
+      <pubDate>Mon, 20 May 2013 07:20:52 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2013/5/20/using-the-android-gridview-as-a-datagrid.aspx/</guid>
+      <description>As part of the app I developed for AngelHack I wanted to display some data in a classic grid style. Android offers a GridView as part of the basic SDK, however if you look at all the samples they only show how to use it as a grid of images, essentially they only demonstrate usages where all columns show the same thing, usually columns of photographs. It’s not too tricky to use the GridView as classic “data grid” but it did require a wee bit of thinking, so I thought I put together a quick example to show how it worked.</description>
+    </item>
+    
+    <item>
+      <title>Developing For Kindle Fire with Mono C#/Xamarin Studio</title>
+      <link>http://strangelights.com/achrive/2013/5/20/developing-for-kindle-fire-with-mono-csharp-xamarin-studio.aspx/</link>
+      <pubDate>Mon, 20 May 2013 00:44:27 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2013/5/20/developing-for-kindle-fire-with-mono-csharp-xamarin-studio.aspx/</guid>
+      <description>As I’ve already mentioned last weekend I took part in AngelHack and took the opportunity to learn how to develop for an Android device (in this case a Kindle Fire) using C# and Xamarin Studio. The experience was a bit mixed, overall I think the folks at Xamarin have done a good job in smoothing the experience when targeting mobile devices, but there’s still a few rough edges. Here’s a run though of what I thought:</description>
+    </item>
+    
+    <item>
+      <title>AngelHack Paris 2013</title>
+      <link>http://strangelights.com/achrive/2013/5/15/angelhack-paris-2013.aspx/</link>
+      <pubDate>Wed, 15 May 2013 12:30:18 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2013/5/15/angelhack-paris-2013.aspx/</guid>
+      <description>AngelHack Paris is the first “hack day” I have every attended, so I didn’t really know what to except. Early on Saturday morning I found myself in a slightly run down area just outside the “peripherique” road that marks the boundary of Pairs. The event was hosted at “cifacom” a colleague for digital design and art, I was quite sure what to make to their campus, about half seemed to swish lectures theaters and the rest seemed to have been basically left as the old warehouse that it was before it is was converted.</description>
+    </item>
+    
+    <item>
+      <title>Alt.Net Coding Breakfast - April 2013 Edition</title>
+      <link>http://strangelights.com/achrive/2013/4/27/alt.net-coding-breakfast-ndash-april-2013-edition.aspx/</link>
+      <pubDate>Sat, 27 Apr 2013 02:08:32 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2013/4/27/alt.net-coding-breakfast-ndash-april-2013-edition.aspx/</guid>
+      <description>Last Wednesday I got the chance to attend a “Coding Breakfast” hosted by Damien Thouvenin of CLT Services. The concept is simple, turn up a little before 8:30, enjoy some coffee and croissant, then we attempt a Coding Kata for about an hour and finally we get together to review the results. I was pleased to see the great and the good of the Paris coding scene there, in the form of Yann Schwartz and Jérémie Chassaing.</description>
+    </item>
+    
+    <item>
+      <title>Reasons to come to Functional Programming eXchange 2013</title>
+      <link>http://strangelights.com/achrive/2013/2/7/reasons-to-come-to-functional-programming-exchange-2013.aspx/</link>
+      <pubDate>Thu, 07 Feb 2013 21:02:27 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2013/2/7/reasons-to-come-to-functional-programming-exchange-2013.aspx/</guid>
+      <description>The 2013 edition of Functional Programming eXchange is just over a month away, so if you’re not already signed up now the time to do so. When we first started Functional Programming eXchange back in 2009 there were very few functional programming conference’s aimed at developers, over years this has changed quite dramatically and now even if we just talk about about functional programming events in the UK hosted at Skills Matter we have Clojure eXchange, Haskell eXchange, Progressive F#, Scala Days and Scala eXchange.</description>
+    </item>
+    
+    <item>
+      <title>Science and Software Development</title>
+      <link>http://strangelights.com/achrive/2012/11/30/science-and-software-development.aspx/</link>
+      <pubDate>Fri, 30 Nov 2012 06:50:41 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2012/11/30/science-and-software-development.aspx/</guid>
+      <description>Today I gave a talk ”Science and Software Development” at the weactuallybuildstuff.com. The talk was largely inspired by Ben Goldacre’s “Bad Science” column and book and try to apply some of the ideas relating to the use and abuse of evidence in the software industry. In the talk I tried to build a case for why the software industry might by to pay more attention to scientific techniques, such as “Randomized Controlled Trails”, by talking about availability bias, Confirmation Bias, the placebo effect and overconfidence.</description>
+    </item>
+    
+    <item>
+      <title>Functional Programming eXchange 2013</title>
+      <link>http://strangelights.com/achrive/2012/11/12/functional-programming-exchange-2013.aspx/</link>
+      <pubDate>Mon, 12 Nov 2012 14:33:37 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2012/11/12/functional-programming-exchange-2013.aspx/</guid>
+      <description>Well we&amp;rsquo;re doing it again!
+ I&amp;rsquo;ve been running a conference &amp;ldquo;Functional Programming eXchange&amp;rdquo; in London for a few years now. The conference is run by Skills Matter and will take place on Friday 15th Mar 2013.
+ The idea of the conference is to bring together London&amp;rsquo;s diverse functional programming communities to share ideas and war stories. Most previous talks have focus on concepts from functional programming or feedback from projects that have used functional programming.</description>
+    </item>
+    
+    <item>
+      <title>Sorting Out What .NET 4.5 Bits Come With VS2012</title>
+      <link>http://strangelights.com/achrive/2012/11/10/sorting-out-what-.net-4.5-bits-come-with-vs2012.aspx/</link>
+      <pubDate>Sat, 10 Nov 2012 07:24:48 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2012/11/10/sorting-out-what-.net-4.5-bits-come-with-vs2012.aspx/</guid>
+      <description>Visual Studio 2012 has been out for a while now, I’ve been using it every day at work and I’m generally very happy with it. The biggest win is the performance, which is some much better than VS2010.
+ I’ve finally begun to get curious about the new stuff in VS2012. Visual Studio was delivered with .NET 4.5 a shiny new version of the .NET framework, that will allow developers to create “Metro” style apps (which for reason that are too silly to go into are no longer called Metro style apps, but we will continue to call them Metro style apps in this article as suitable name has yet to be found).</description>
+    </item>
+    
+    <item>
+      <title>The Brave New World of Software Development on the Microsoft Platforms</title>
+      <link>http://strangelights.com/achrive/2012/11/7/the-brave-new-world-of-software-development-on-the-microsoft-platforms.aspx/</link>
+      <pubDate>Wed, 07 Nov 2012 12:18:11 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2012/11/7/the-brave-new-world-of-software-development-on-the-microsoft-platforms.aspx/</guid>
+      <description>Things are changing at Microsoft (or maybe they changed a while ago and it took me all this time to notice). The short story is the company no longer cares whether you use their development tools, they only care that you target their platforms: Windows 8 and Windows Azure.
+The result is this, Microsoft is in the process of opening up Software Development tool chain. They no longer see themselves as the owners of .</description>
+    </item>
+    
+    <item>
+      <title>Reasons to Come to Functional Programming eXchange 2012</title>
+      <link>http://strangelights.com/achrive/2012/2/19/reasons-to-come-to-functional-programming-exchange-2012.aspx/</link>
+      <pubDate>Sun, 19 Feb 2012 10:12:46 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2012/2/19/reasons-to-come-to-functional-programming-exchange-2012.aspx/</guid>
+      <description>For Functional Programming eXchange 2012 and I’ve tried to put together a programming that mixes the best the functional programming community has to give. I wanted both talks that show how functional programming languages can be used more effectively and that show off new up and coming language and new language features. I also wanted talks that gave feedback from project that were implemented using functional languages. I’m pleased to say we have plenty of both.</description>
+    </item>
+    
+    <item>
+      <title>Undertone - Programmable music in F#</title>
+      <link>http://strangelights.com/achrive/2012/1/27/undertone-ndash-programmable-music-in-fsharp.aspx/</link>
+      <pubDate>Fri, 27 Jan 2012 03:35:17 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2012/1/27/undertone-ndash-programmable-music-in-fsharp.aspx/</guid>
+      <description>Recently I sent a bit of time playing with Overtone. I’ve always been interested in music, but have little talent when it comes to playing instruments, so I really like the idea of a DSL for creating music. I was also inspired by one of my Christmas presents The Wave Watchers Companion to explore relationship between waves and sound. A secondary aim of playing with overtone was to learn a bit more about Clojure which is definitely one of the most interesting languages about at the moment.</description>
+    </item>
+    
+    <item>
+      <title>The Combinator Approach to Programming Domain Specific Languages with F#</title>
+      <link>http://strangelights.com/achrive/2011/11/4/the-combinator-approach-to-programming-domain-specific-languages-with-fsharp.aspx/</link>
+      <pubDate>Fri, 04 Nov 2011 07:54:12 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/11/4/the-combinator-approach-to-programming-domain-specific-languages-with-fsharp.aspx/</guid>
+      <description>Just a quick note to say that my talk “The Combinator Approach to Programming Domain Specific Languages with F#” is now available on Skills Matter site. I’ve put the code on github.
+If you enjoyed the talk I’ll be giving it again at CodeKen, the conference formally know as Stackoverflow Dev Days, on 14th/15th November.
+Combinators are a really nice, and under appreciated, way to create DSLs and we go into them in depth on my Beginning F# course at Skills Matter.</description>
+    </item>
+    
+    <item>
+      <title>Some thoughts about Google&amp;rsquo;s new Dart programming language</title>
+      <link>http://strangelights.com/achrive/2011/10/12/some-thoughts-about-googlersquos-new-dart-programming-language.aspx/</link>
+      <pubDate>Wed, 12 Oct 2011 22:51:01 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/10/12/some-thoughts-about-googlersquos-new-dart-programming-language.aspx/</guid>
+      <description>Ever since it was announced that Dart would be announced at GOTO conference I’ve been wonder what dart would be like. I thought I’d take the time put down my initial thoughts here.
+Is there a need for another language?
+Tim Anderson poses the question nicely here, so I thought I’d have a stab at answering it. There are a lot of programming languages in the world, so there would seem to be limited space for a new one.</description>
+    </item>
+    
+    <item>
+      <title>First example of a very simple type provider</title>
+      <link>http://strangelights.com/achrive/2011/9/18/first-example-of-a-very-simple-type-provider.aspx/</link>
+      <pubDate>Sun, 18 Sep 2011 01:29:09 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/9/18/first-example-of-a-very-simple-type-provider.aspx/</guid>
+      <description>I have an idea for a type provider, so now that the type provider bits are finally publicly available I set to work building it. However it turns out just implementing a type provider is pretty tricky (not really that much of a surprise I supose), so I thought it was worth a quick blog post to run through the basics.
+A type provider is a class that implements the interface ITypeProvider (fullname Microsoft.</description>
+    </item>
+    
+    <item>
+      <title>A few thoughts on build and Windows 8</title>
+      <link>http://strangelights.com/achrive/2011/9/13/a-few-thoughts-on-build-and-windows-8.aspx/</link>
+      <pubDate>Tue, 13 Sep 2011 13:09:12 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/9/13/a-few-thoughts-on-build-and-windows-8.aspx/</guid>
+      <description>I actually have the last two episodes of my RavenDB series ready to go, but doesn’t seem much point publishing them this week, so here’s a few thoughts on stuff from build and Windows 8 instead.
+Firstly Windows 8: I thought the build keynotes did a nice job of selling Windows 8, although adjectives like super and amazing were used far too much for my tastes. I would like a Windows 8 tablet because it seems to do a nice job of bring it all together, yes it’s nothing you can’t get already from Apple (iPad, Mac Air, etc.</description>
+    </item>
+    
+    <item>
+      <title>Functional Programming eXchange 2012: Call for abstracts</title>
+      <link>http://strangelights.com/achrive/2011/9/11/functional-programming-exchange-2012-call-for-abstracts.aspx/</link>
+      <pubDate>Sun, 11 Sep 2011 09:18:18 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/9/11/functional-programming-exchange-2012-call-for-abstracts.aspx/</guid>
+      <description>We’ve decided to do it again. After the success of the Functional Programming eXchange 2011 and 2009, we have decided to put on another edition. Functional Programming eXchange 2012 will take place on Friday March 16th March 2012, at the Skills Matter eXchange, in London.
+The program is under construction, I’ve already started to invite speakers whose work in the functional programming community interests and excites me. I’m actively seeking other speakers so if you’d be interested in following in the footsteps of previous speakers such as: Simon Peyton Jones, Miles Sabin, David Pollak, Adam Granicz, Antonio Cisternino, Tomas Petricek, Jonas Boner, and Viktor Klang, then send an email with a talk abstract to talks_functionalpx@skillsmatter.</description>
+    </item>
+    
+    <item>
+      <title>F#, RavenDB and PicoMvc - Creating an Autocomplete - The ETL</title>
+      <link>http://strangelights.com/achrive/2011/9/7/fsharp-ravendb-and-picomvc-ndash-creating-an-autocomplete-ndash-the-etl.aspx/</link>
+      <pubDate>Wed, 07 Sep 2011 21:52:30 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/9/7/fsharp-ravendb-and-picomvc-ndash-creating-an-autocomplete-ndash-the-etl.aspx/</guid>
+      <description>The first of this series covered our general aims how we’d be structuring the project. This post will cover how we get the data into RavenDB.
+First we need to download the data. I got it obtained the data from this site, you need to click the “téléchanger la base” link under “Coordonnées géographiques des villes Françaises” here is the direct link. It’s not the best data source in the world, but it’s the best freely available one that I’ve found.</description>
+    </item>
+    
+    <item>
+      <title>See My Stack Overflow Dev Days Talk</title>
+      <link>http://strangelights.com/achrive/2011/9/7/see-my-stack-overflow-dev-days-talk.aspx/</link>
+      <pubDate>Wed, 07 Sep 2011 21:43:56 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/9/7/see-my-stack-overflow-dev-days-talk.aspx/</guid>
+      <description>So Stack Overflow Dev Days has been cancelled. Obviously it’s a big disappointment to everyone involved, I thought the line up for the London event was great and I was looking forward to attending the conference as much as I was looking forward to speaking at it.
+If it’s any compensation you can see me do this talk at skill matter as one of their in the brain sessions:</description>
+    </item>
+    
+    <item>
+      <title>F#, RavenDB and PicoMvc - Creating an Autocomplete - Scenario and Project Setup</title>
+      <link>http://strangelights.com/achrive/2011/9/5/fsharp-ravendb-and-picomvc-ndash-creating-an-autocomplete-ndash-scenario-and-project-setup.aspx/</link>
+      <pubDate>Mon, 05 Sep 2011 11:28:06 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/9/5/fsharp-ravendb-and-picomvc-ndash-creating-an-autocomplete-ndash-scenario-and-project-setup.aspx/</guid>
+      <description>After a few philosophical blog posts, I decided it was time for something a bit more concrete. I’ve been playing around a bit with F# and some web stuff recently using both RavenDB and PicoMvc so I thought I’d share with you how to create an autocomplete drop down using these technologies.
+Creating an autocomplete in a HTML form is fairly common these days and there’s a nice jQuery plugin that takes care of the UI side of things.</description>
+    </item>
+    
+    <item>
+      <title>Calculating when the 1000th XKCD will appear</title>
+      <link>http://strangelights.com/achrive/2011/9/2/calculating-when-the-1000th-xkcd-will-appear.aspx/</link>
+      <pubDate>Fri, 02 Sep 2011 22:12:33 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/9/2/calculating-when-the-1000th-xkcd-will-appear.aspx/</guid>
+      <description>Like so many geeks I’m a massive XKCD fan. But I’m often troubled by questions like when will the 1000th XKCD appear, or the 1024th or even the 2000th? Even though the first two numbers are getting quite close now, it’s still more fingers and toes than I have so working it out by hand is out. Fortunately we have computers to this kind of heavy lifting for us, and the solution in F# is kinda cute.</description>
+    </item>
+    
+    <item>
+      <title>Upcoming September 2011 course has been moved to 1 November 2011</title>
+      <link>http://strangelights.com/achrive/2011/8/30/upcoming-september-2011-course-has-been-moved-to-1-november-2011.aspx/</link>
+      <pubDate>Tue, 30 Aug 2011 11:15:11 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/8/30/upcoming-september-2011-course-has-been-moved-to-1-november-2011.aspx/</guid>
+      <description>Just a quick note to say that my upcoming “Beginning F#” course has been moved to 1st &amp;amp; 2nd November to tie it in with the “Progressive F#” tutorials. Participants will receive a free ticket to the “Progressive F#” tutorials as well as a free copy of my Beginning F# book. Book this week and save over £100!</description>
+    </item>
+    
+    <item>
+      <title>Towards a Better Taxonomy of Programming Languages</title>
+      <link>http://strangelights.com/achrive/2011/8/26/towards-a-better-taxonomy-of-programming-languages.aspx/</link>
+      <pubDate>Fri, 26 Aug 2011 11:09:34 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/8/26/towards-a-better-taxonomy-of-programming-languages.aspx/</guid>
+      <description>I think the term “Object Oriented” is somewhat over used these days, in fact I’d go so far as to say it’s been applied to such a wide variety of different languages that the term has become somewhat meaningless. Java and C# are object oriented languages and although these languages are fairly similar they are quite different from Javascript which also claims to be an object oriented language. Some might say that Javascript and Python are similar as they are both dynamically typed languages and they are both object oriented yet the way in which they are object oriented differs.</description>
+    </item>
+    
+    <item>
+      <title>F# Compiler IL Optimizations</title>
+      <link>http://strangelights.com/achrive/2011/8/24/fsharp-compiler-il-optimizations.aspx/</link>
+      <pubDate>Wed, 24 Aug 2011 08:44:16 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/8/24/fsharp-compiler-il-optimizations.aspx/</guid>
+      <description>Yesterday’s blog post contains a glaring error. Thanks to Eamon Nerbonne for point this out, his comments are very insightful so rather than reiterating them its best you read them for yourself. The basic problem was that the measurements of the speed of + - * operators was wrong since the compiler had spotted that the results of the operation was not used and therefore had not generated code for the loop.</description>
+    </item>
+    
+    <item>
+      <title>Modulus &amp;amp; Integer Division are &amp;ldquo;Slow&amp;rdquo;</title>
+      <link>http://strangelights.com/achrive/2011/8/24/modulus-amp-integer-division-are-ldquoslowrdquo.aspx/</link>
+      <pubDate>Wed, 24 Aug 2011 00:10:43 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/8/24/modulus-amp-integer-division-are-ldquoslowrdquo.aspx/</guid>
+      <description>I recently read the “Disruptor: High performance alternative to bounded queues for exchanging data between concurrent threads” by the people at LMax. Some deeper thoughts on this are coming later. One interesting little tip-bit I learned is “On most processors there is a very high cost for the remainder calculation”, in other words calculating a modulus is slow. The paper goes on to say “This cost can be greatly reduced by making the ring size a power of 2.</description>
+    </item>
+    
+    <item>
+      <title>Post-it note art</title>
+      <link>http://strangelights.com/achrive/2011/8/22/post-it-note-art.aspx/</link>
+      <pubDate>Mon, 22 Aug 2011 23:46:40 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/8/22/post-it-note-art.aspx/</guid>
+      <description>Post-it note art like the below example seems to be popping up all over la Defense. Is this phenomenon limited to la Defense are they just copying what’s popped up elsewhere?</description>
+    </item>
+    
+    <item>
+      <title>Blog Comments</title>
+      <link>http://strangelights.com/achrive/2011/8/22/blog-comments.aspx/</link>
+      <pubDate>Mon, 22 Aug 2011 23:26:09 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/8/22/blog-comments.aspx/</guid>
+      <description>I’ve just noticed blog comments haven’t been working since my upgrade to the latest version of Subtext (about 10 days ago). This seems to be fixed now. Apologies to anyone who had left a comment, feel free to leave it again. I‘ll try and keep a closer eye on this in the future.</description>
+    </item>
+    
+    <item>
+      <title>$100 Discount When Registering at Stack Overflow Dev days</title>
+      <link>http://strangelights.com/achrive/2011/8/17/100-discount-when-registering-at-stack-overflow-dev-days.aspx/</link>
+      <pubDate>Wed, 17 Aug 2011 22:49:56 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/8/17/100-discount-when-registering-at-stack-overflow-dev-days.aspx/</guid>
+      <description>As I’ve mentioned before I’m very happy that I’ve been invited to speak at Stack Overflow’s Dev days. Since I first mentioned it the schedule has really been filled and is looking very good. I’m really looking forward to seeing the talks by Julian Browne and Andrew Pattinson on “NoSQL in the Enterprise” (as you might have guessed after yesterday’s post), Mark Levy on “Algorithms on Hadoop” and Michael Barker on “Performance &amp;amp; Technology Folklore”.</description>
+    </item>
+    
+    <item>
+      <title>Mental Shortcuts and Relational Databases</title>
+      <link>http://strangelights.com/achrive/2011/8/17/mental-shortcuts-and-relational-databases.aspx/</link>
+      <pubDate>Wed, 17 Aug 2011 04:06:41 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/8/17/mental-shortcuts-and-relational-databases.aspx/</guid>
+      <description>Today’s world is a confusing place. There are literally 1000 of choices available to us, in almost every domain. To take a mundane example there must be about 40 or 50 places to get lunch within easy walking distance of where I work, one could waste a lot of mental energy weighing up the merits or each restaurant and sandwich bar or you could do as I do and eat at the same place most days.</description>
+    </item>
+    
+    <item>
+      <title>I&amp;rsquo;m on FPish!</title>
+      <link>http://strangelights.com/achrive/2011/8/15/irsquom-on-fpish.aspx/</link>
+      <pubDate>Mon, 15 Aug 2011 10:58:52 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/8/15/irsquom-on-fpish.aspx/</guid>
+      <description>Just a quick note to say the guys at IntelliFactory have created a great little site called “FPish” dedicated to Functional Programming training material and course. My profile can be found here.
+The sites is completely written in F# using there WebSharper development tools, it’s a great example of the sort of very dynamic websites you can create with WebSharper.</description>
+    </item>
+    
+    <item>
+      <title>Chinese Chess: An Exercise in Upgrading</title>
+      <link>http://strangelights.com/achrive/2011/8/15/chinese-chess-an-exercise-in-upgrading.aspx/</link>
+      <pubDate>Mon, 15 Aug 2011 02:03:16 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/8/15/chinese-chess-an-exercise-in-upgrading.aspx/</guid>
+      <description>Way back in 2005 Nguyen Van Thien and Dinh Thi Thuy Nga, two computer science students from Vietnam, got in contact asking me to help them share the “Chinese Chess” computer game they’d written in F#. The game plays well and has nice graphics and sounds, quite an achievement given that F# was still in its infancy back in those days. Naturally I want to help them so I gave it a place on my website.</description>
+    </item>
+    
+    <item>
+      <title>Small Revamp to strangelights.com and Free Chapter of Beginning F#</title>
+      <link>http://strangelights.com/achrive/2011/8/14/small-revamp-to-strangelights.com-and-free-chapter-of-beginning-fsharp.aspx/</link>
+      <pubDate>Sun, 14 Aug 2011 08:23:06 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/8/14/small-revamp-to-strangelights.com-and-free-chapter-of-beginning-fsharp.aspx/</guid>
+      <description>I’ve been neglecting strangelights.com a bit lately, mainly due to lack of time. So, today I finally got round to fixing a few things that had been bugging me and clean away some of the old and out of data material, especially in the F# resources section. I’ve also upgraded to the latest version of subtext as a few people have reports some minor bugs with the comments system to me, so hopefully this will fix them.</description>
+    </item>
+    
+    <item>
+      <title>A test post</title>
+      <link>http://strangelights.com/achrive/2011/8/13/a-test-post.aspx/</link>
+      <pubDate>Sat, 13 Aug 2011 17:12:58 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/8/13/a-test-post.aspx/</guid>
+      <description>Yay!
+Feedback: Feedback was imported from my only blog engine, it&amp;rsquo;s no longer possible to post feedback here.
+re: A test post - robert
+A test comment!</description>
+    </item>
+    
+    <item>
+      <title>Speaking at Stack Overflow Dev Days and Progressive F# in autumn 2011</title>
+      <link>http://strangelights.com/achrive/2011/8/1/speaking-at-stack-overflow-dev-days-and-progressive-fsharp-in-autumn-2011.aspx/</link>
+      <pubDate>Mon, 01 Aug 2011 12:07:50 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/8/1/speaking-at-stack-overflow-dev-days-and-progressive-fsharp-in-autumn-2011.aspx/</guid>
+      <description>November is going to be a very busy month for me as I’m very happy to announce I’ll be speaking at Stack Overflow Dev Days at London’s ExCeL conference center on the 14th-15th November and the Progressive F# Tutorials at the Skills Matter eXchange on 3rd-4th November.
+Both events have a great line up of speakers (who wouldn’t be excited to speak on the same program as the legendary Jon Skeet?</description>
+    </item>
+    
+    <item>
+      <title>Announcing Four New F# Projects For Creating Web Apps</title>
+      <link>http://strangelights.com/achrive/2011/6/28/announcing-four-new-fsharp-projects-for-creating-web-apps.aspx/</link>
+      <pubDate>Tue, 28 Jun 2011 12:28:11 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/6/28/announcing-four-new-fsharp-projects-for-creating-web-apps.aspx/</guid>
+      <description>Lately I’ve been taking a look at how you might write web apps with F# using various existing frameworks. Often these frameworks don’t quite work the way you want them to and have small but annoying nuances when using them from F#. These projects are: PicoMvc – a minimalist MVC like framework. The basic aim of PicoMvc is to make it really easy to map an incoming URL to an F# controller function and then choose a view engine to render the result of this function.</description>
+    </item>
+    
+    <item>
+      <title>How would you write a video editing app for the web?</title>
+      <link>http://strangelights.com/achrive/2011/6/3/how-would-you-write-a-video-editing-app-for-the-web-.aspx/</link>
+      <pubDate>Fri, 03 Jun 2011 03:45:19 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/6/3/how-would-you-write-a-video-editing-app-for-the-web-.aspx/</guid>
+      <description>So Silverlight and .NET are dead. The Windows 8 team say so. Sounds familiar, we heard the same thing after PDC 2010? I’m not worried, here’s why. 1) If you haven’t already done so you may wan to stop by and read “The Tragic Death of Practically Everything” for a look at the many things that have been declared dead but really weren’t.
+2) Even Google admit you can’t do everything with Html5 and javascript, to quote Google from this nice piece from The Register:</description>
+    </item>
+    
+    <item>
+      <title>Scrum Days, Paris, 2011</title>
+      <link>http://strangelights.com/achrive/2011/4/17/scrum-days-paris-2011.aspx/</link>
+      <pubDate>Sun, 17 Apr 2011 07:16:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/4/17/scrum-days-paris-2011.aspx/</guid>
+      <description>I guess I came to Scrum and the agile software movement a little late in the day, I got interested in Scrum after attending the 2008 JAOO conference (now the GOTO conference) in Aarhus and then hearing Ken Schwaber talking about Scrum and the “definition of done” on an episode of Hanselminutes (http://www.hanselminutes.com/default.aspx?showID=137). I was particularly interested in visiting this year’s Scrum Days because Ken Schwaber was giving one of the keynotes.</description>
+    </item>
+    
+    <item>
+      <title>Come and see me and other F# guru&amp;rsquo;s in Seattle!</title>
+      <link>http://strangelights.com/achrive/2011/2/24/come-and-see-me-and-other-fsharp-gurursquos-in-seattle.aspx/</link>
+      <pubDate>Thu, 24 Feb 2011 03:09:43 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/2/24/come-and-see-me-and-other-fsharp-gurursquos-in-seattle.aspx/</guid>
+      <description>I’m off to Seattle for the MVP summit very soon. I’ve arranged to meet with fellow F# fan’s Cameron Frederick and Richard Minerich at the Tap House Bar in Belleveue at 3:30pm on Sunday. Happy hour start at 3:30pm, so it should be lots of fun. The address of the bar is 550 106th Avenue NE, Bellevue, which is near the hotels for the Summit. So come and join the F#UN!</description>
+    </item>
+    
+    <item>
+      <title>Windows Phone 7 Accelerometer and F#</title>
+      <link>http://strangelights.com/achrive/2011/2/9/windows-phone-7-accelerometer-and-fsharp.aspx/</link>
+      <pubDate>Wed, 09 Feb 2011 06:54:01 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2011/2/9/windows-phone-7-accelerometer-and-fsharp.aspx/</guid>
+      <description>Recently I’ve doing a little work with Windows Phone 7. One aspect that interests me a lot is the integration of the Accelerometer. An accelerometer is a instrument that allows you to measure the forces acting on the telephone, including the force of gravity. This information will allow you to know what the orientation of the phone is and if the is moving or not. However there are a few challenges in interpreting is information.</description>
+    </item>
+    
+    <item>
+      <title>Functional Programming eXchange 2011: Programming the Web and Programming at High Speed</title>
+      <link>http://strangelights.com/achrive/2010/12/12/functional-programming-exchange-2011-programming-the-web-and-programming-at-high-speed.aspx/</link>
+      <pubDate>Sun, 12 Dec 2010 08:29:28 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2010/12/12/functional-programming-exchange-2011-programming-the-web-and-programming-at-high-speed.aspx/</guid>
+      <description>So, the good folks at Skills Matter and I have been working hard to bring you the next edition of “Functional Programming eXchange” the program is just about in place now. The current program can be found here and we expect to be adding more names and some more details over the next weeks or so. Book now, or before December 31st and you can still get to see it all for the bargain price of £75.</description>
+    </item>
+    
+    <item>
+      <title>Solving Sudoku Puzzles using F# and Microsoft Solver Foundation</title>
+      <link>http://strangelights.com/achrive/2010/12/12/solving-sudoku-puzzles-using-fsharp-and-microsoft-solver-foundation.aspx/</link>
+      <pubDate>Sun, 12 Dec 2010 03:53:54 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2010/12/12/solving-sudoku-puzzles-using-fsharp-and-microsoft-solver-foundation.aspx/</guid>
+      <description>I’ve been doing a bit of work with Solver Foundation lately and as I got to know the package it suddenly occurred to me Solver Foundation could be easily used to solve Sudoku puzzles. While I knew that solving Sudoku in F# wasn’t particularly an original idea, Jon Harrop has a custom Sudoku solver in F# that dates back to 2007, but I thought using Solver Foundation might be an interesting approach.</description>
+    </item>
+    
+    <item>
+      <title>The MVVM Pattern Using F#</title>
+      <link>http://strangelights.com/achrive/2010/11/21/the-mvvm-pattern-using-fsharp.aspx/</link>
+      <pubDate>Sun, 21 Nov 2010 08:48:44 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2010/11/21/the-mvvm-pattern-using-fsharp.aspx/</guid>
+      <description>The MVVM (Model View View Model) design pattern is a popular way to create WFP (or Silverlight or Windows Phone 7) applications.Despite the obscure name, the design pattern is surprisingly simple. Basically, the programmer creates a view model which is bound the the view (i.e. the xaml) via WFP binding model. Thanks the WPF’s two way bindings, the INotifyPropertyChanged interface and the ObservableCollection&amp;lt;T&amp;gt; there’s very little need for any other direct interactions between the view and the bound model.</description>
+    </item>
+    
+    <item>
+      <title>The Future of F#: Type Providers</title>
+      <link>http://strangelights.com/achrive/2010/11/15/the-future-of-fsharp-type-providers.aspx/</link>
+      <pubDate>Mon, 15 Nov 2010 02:55:37 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2010/11/15/the-future-of-fsharp-type-providers.aspx/</guid>
+      <description>I watched with interested Don’s talk at PDC. This blog post is to help me put in perspective some of my initial thoughts on what type providers are, I’ve tried to write it so you don’t need to see the video of the session first, but obviously it will help if you have. Some of this is just my speculation – I have no insider information so I can speculate, but don’t take everything I say too seriously.</description>
+    </item>
+    
+    <item>
+      <title>TwitMemento a twitter client in F#</title>
+      <link>http://strangelights.com/achrive/2010/10/16/twitmemento-a-twitter-client-in-fsharp.aspx/</link>
+      <pubDate>Sat, 16 Oct 2010 14:25:23 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2010/10/16/twitmemento-a-twitter-client-in-fsharp.aspx/</guid>
+      <description>I find conversations in twitter hard to follow. For a start they’re backwards, the first thing you see is the last item in the conversation. Add to that the fact there very sporadic, it’s difficult to see which tweets users are reacting to, and it doesn’t make for a great conversation experience. I put together TwitMemento with the aim of fixing that. Firstly, it changes the order you see tweets in, instead of new ones being inserted at the top, they&#39;re inserted at the bottom, like a normal chat client or message board.</description>
+    </item>
+    
+    <item>
+      <title>Functional Programming eXchange 2011-First announcement and call for speakers</title>
+      <link>http://strangelights.com/achrive/2010/10/13/functional-programming-exchange-2011ndashfirst-announcement-and-call-for-speakers.aspx/</link>
+      <pubDate>Wed, 13 Oct 2010 01:12:48 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2010/10/13/functional-programming-exchange-2011ndashfirst-announcement-and-call-for-speakers.aspx/</guid>
+      <description>Last week Skills Matter quietly announced that they will be hosting a new edition of the Functional Programming eXchange on 18th March 2011 at there head quarters in Holburn, London: http://skillsmatter.com/event/open-source-dot-net/functionalpx-2011
+This new edition will have a similar theme to last years a event. It will be in depth talks on functional programming, some on the general theory of functional programming, some language specific talks (from a range of languages such as F#, Scala, Clojure, Haskell, OCaml) as well as case studies from people already using FP in industry.</description>
+    </item>
+    
+    <item>
+      <title>A small but provocative thought on OOP</title>
+      <link>http://strangelights.com/achrive/2010/9/16/a-small-but-provocative-thought-on-oop.aspx/</link>
+      <pubDate>Thu, 16 Sep 2010 09:02:14 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2010/9/16/a-small-but-provocative-thought-on-oop.aspx/</guid>
+      <description>The role of a type system is to prove some property of you program is correct. The role of module system is dived your program into manageable/understandable chunks. An OO class confuses these too roles.</description>
+    </item>
+    
+    <item>
+      <title>What is object oriented programming really all about?</title>
+      <link>http://strangelights.com/achrive/2010/9/16/what-is-object-oriented-programming-really-all-about-.aspx/</link>
+      <pubDate>Thu, 16 Sep 2010 08:44:54 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2010/9/16/what-is-object-oriented-programming-really-all-about-.aspx/</guid>
+      <description>People often ask me what functional programming is all about and why is it useful. In an attempt to answer this question in a way that is relevant to object oriented programmers it struck me it might be useful to look at what people find useful in modern object oriented programming. Once we know what programmers like about OOP, specifically what problems it helps them solve that structured programming didn’t, we can look again at FP and look at how it approaches these problems.</description>
+    </item>
+    
+    <item>
+      <title>Slides from Combinators, DSLs, HTML, and F#</title>
+      <link>http://strangelights.com/achrive/2010/8/15/slides-from-combinators-dsls-html-and-fsharp.aspx/</link>
+      <pubDate>Sun, 15 Aug 2010 06:36:37 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2010/8/15/slides-from-combinators-dsls-html-and-fsharp.aspx/</guid>
+      <description>A few people have accessed recently if they could have my slides from the “Combinators, DSLs, HTML and F#” talk I gave at functional programming exchange 2009. So I decided to add them to slide share.
+Combinators, DSLs, HTML and F# View more presentations from Robert Pickering.</description>
+    </item>
+    
+    <item>
+      <title>F# Wiki</title>
+      <link>http://strangelights.com/achrive/2010/8/15/fsharp-wiki.aspx/</link>
+      <pubDate>Sun, 15 Aug 2010 06:16:29 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2010/8/15/fsharp-wiki.aspx/</guid>
+      <description>I’ve finally got round to sorting out the code base to strangelights.com which was getting a big out of hand. Not much should have changed, but I’ve killed off lots of old files that weren’t being used and upgrade to the latest version of subtext. Now things are a little more under control, it should make it easier to update some of the out dated content, so hopefully you’ll see these changes over the next few weeks and months.</description>
+    </item>
+    
+    <item>
+      <title>OpenWrap – A Package Management System for .NET</title>
+      <link>http://strangelights.com/achrive/2010/5/16/openwrap-a-package-management-system-for-.net.aspx/</link>
+      <pubDate>Sun, 16 May 2010 16:41:05 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2010/5/16/openwrap-a-package-management-system-for-.net.aspx/</guid>
+      <description>At Progressive.NET one of the sessions I attended was Sebastien Lambla’stalk on OpenWrap. OpenWrap is a package management system for .NET projects. I’m excited about this project for a very simple reason: it’s something the .NET Open Source community desperately needs. 
+What is package management?
+Package manager is basically a piece of software that allows you to install the software or components you need on to your system. In one sense in the windows world this is handled by MSI, but that’s only half the picture of a package management system; ideally a package management system would provide a centralised server that handlers allowing to query what the latest version of a package is and download that or any other version of a package.</description>
+    </item>
+    
+    <item>
+      <title>My Talks in London: The F# User Group &amp; At Progressive.NET</title>
+      <link>http://strangelights.com/achrive/2010/5/14/my-talks-in-london-the-fsharp-user-group-at-progressive.net.aspx/</link>
+      <pubDate>Fri, 14 May 2010 18:29:44 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2010/5/14/my-talks-in-london-the-fsharp-user-group-at-progressive.net.aspx/</guid>
+      <description>I’ve been in London for the past few days. I arrived Tuesday afternoon and gave at talk at “The F#unctional Londoners Meetup Group”on the Tuesday evening. The talk was entitled “Using Language Oriented Programming to Execute Computations on the GPU” and thanks to the efficiency of the good folks at Skills Matter the talk is already available on line. The event was very well attended, with around 50 people turning up.</description>
+    </item>
+    
+    <item>
+      <title>Strings and F# Immutable Lists</title>
+      <link>http://strangelights.com/achrive/2010/4/18/strings-and-fsharp-immutable-lists.aspx/</link>
+      <pubDate>Sun, 18 Apr 2010 10:10:01 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2010/4/18/strings-and-fsharp-immutable-lists.aspx/</guid>
+      <description>In .NET strings are immutable. I think most .NET programmers agree that this is a good thing, as it generally makes code that works with strings safer and more predictable. However, operations that involve large amounts of string manipulation perform poorly because each time a string concatenation occurs then both strings must be copied. His often leads people to believe that all immutable objects will perform poorly. The aim of the article is to show that this is not the case, or at least it’s not as black and white as you may think.</description>
+    </item>
+    
+    <item>
+      <title>#Develop, F# and Google Summer of Code</title>
+      <link>http://strangelights.com/achrive/2010/3/24/sharpdevelop-fsharp-and-google-summer-of-code.aspx/</link>
+      <pubDate>Wed, 24 Mar 2010 20:43:09 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2010/3/24/sharpdevelop-fsharp-and-google-summer-of-code.aspx/</guid>
+      <description>A few days ago Chris Wille, the man behind #Developcontacted me to say that #Develop had been accepted on the Google summer of codescheme. Essentially Google summer of code means that Google will pay CS students to spend their summer writing code for open source projects. Chris told me one area they are interested in extending is the F# integration into #Develop; particularly they’d like to get the auto-completion working.</description>
+    </item>
+    
+    <item>
+      <title>Beginning F# Workshop and Progressive.Net</title>
+      <link>http://strangelights.com/achrive/2010/3/20/beginning-fsharp-workshop-and-progressive.net.aspx/</link>
+      <pubDate>Sat, 20 Mar 2010 15:04:04 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2010/3/20/beginning-fsharp-workshop-and-progressive.net.aspx/</guid>
+      <description>I’ll in London on the 10th/11th May giving a two day course entitle “Beginning F# Workshop”in conjunction with the lovely folks at Skills Matter. I think I give a fairly good description of the course on the workshop webpage, so I wanted to use this blog post to talk about why you would want to attend. I believe, as I stated in my book, that functional programming will be the next big wave in programming, and that F# will be one of the languages at the forefront of this functional programming renaissance.</description>
+    </item>
+    
+    <item>
+      <title>My Talk with Don and Adam at TechDays 2010</title>
+      <link>http://strangelights.com/achrive/2010/2/13/my-talk-with-don-and-adam-at-techdays-2010.aspx/</link>
+      <pubDate>Sat, 13 Feb 2010 17:13:21 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2010/2/13/my-talk-with-don-and-adam-at-techdays-2010.aspx/</guid>
+      <description>It was TechDays this week and I was lucky enough to be invited to speak with Don Syme and Adam Granicz. Don gave a short introduction to mailboxes/agent programming in F# and Adam gave an introduction to IntelliFactory’s WebSharper project.
+
+My section of the talk was on using F# with Microsoft Accelerator. Accelerator is an interesting product, it allows you to take advance of the GPU of your PC. Even the most basic PCs have a specialized graphics chip and for most of the tasks you perform on your PC it just sits there doing nothing.</description>
+    </item>
+    
+    <item>
+      <title>FunctionalNHibernate: RCed and now with added build server</title>
+      <link>http://strangelights.com/achrive/2010/2/13/functionalnhibernate-rced-and-now-with-added-build-server.aspx/</link>
+      <pubDate>Sat, 13 Feb 2010 15:48:16 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2010/2/13/functionalnhibernate-rced-and-now-with-added-build-server.aspx/</guid>
+      <description>I’m very happy to announce that FunctionalNHibernate has now been updated to work with the recently released Visual Studio 2010 release candidate. Also, it has now been setup to run on the codebetter build server. You can create a log on and download the latest binaries from here (you need an account but it’s very simple to create one).
+
+A huge thanks to Steffen Forkmann, who did the work to get this set up.</description>
+    </item>
+    
+    <item>
+      <title>Functional Programming eXchange: The Videos</title>
+      <link>http://strangelights.com/achrive/2010/2/13/functional-programming-exchange-the-videos.aspx/</link>
+      <pubDate>Sat, 13 Feb 2010 15:30:23 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2010/2/13/functional-programming-exchange-the-videos.aspx/</guid>
+      <description>I’ve recently noticed that talks from Functional Programming eXchange, that I organized and spoke at, are now online. This is a great resource for people looking for some more advanced material on Functional Programming. So here are the videos:
+
+SADEK DROBI: Computation Abstraction
+http://skillsmatter.com/podcast/cloud-grid/computation-abstraction
+
+MATTHEW SACKMAN: Supercharged Rabbit: Resource Management at High Speed in Erlang
+http://skillsmatter.com/podcast/cloud-grid/supercharged-rabbit-resource-management-at-high-speed-in-erlang
+
+ANTON SCHWAIGHOFER: F# and Units-of-measure for Technical Computing
+http://skillsmatter.com/podcast/cloud-grid/f-and-units-of-measure-for-technical-computing
+GANESH SITTAMPALAM: Functional Programming for Quantitative Modeling at Credit Suisse</description>
+    </item>
+    
+    <item>
+      <title>Update about FunctionalNHibernate</title>
+      <link>http://strangelights.com/achrive/2009/12/26/update-about-functionalnhibernate.aspx/</link>
+      <pubDate>Sat, 26 Dec 2009 14:21:16 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2009/12/26/update-about-functionalnhibernate.aspx/</guid>
+      <description>I’ve been working quite a lot on the FunctionalNHibernate project recently. I’ve implemented the following features:
+- Save records with native F# lists.
+- Create one-to-many and many-to-many relations
+- Generate identities automatically
+
+We can now do just about everything you the FluentNHibernate first exampleproject does, although admittedly this is just a very small subset of what one can do with FluentNHibernateand NHibernate itself. 
+
+In the future I’ll be looking at how to broadening what you can do with FunctionalNHibernate ClassMap descriptions and improve data access by integrating Linq like features.</description>
+    </item>
+    
+    <item>
+      <title>Introducing FunctionalNHibernate</title>
+      <link>http://strangelights.com/achrive/2009/12/20/introducing-functionalnhibernate.aspx/</link>
+      <pubDate>Sun, 20 Dec 2009 12:26:44 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2009/12/20/introducing-functionalnhibernate.aspx/</guid>
+      <description>It’s already fairly well documented that F# doesn’t play too well with NHibernate and Fluent NHibernate, although you can make it play a littler nice with a bit of effort. However there are a few fundamental problems with this approach. The first is F# class’ are not really designed to be data containers because that’s what its record type is for. The second is that F# class’ do not put too much emphasis on virtual methods as in functional programming we tend to using pass functions as values as a way to achieve polymorphism rather than virtual methods.</description>
+    </item>
+    
+    <item>
+      <title>Beginning F# is here!</title>
+      <link>http://strangelights.com/achrive/2009/12/19/beginning-fsharp-is-here.aspx/</link>
+      <pubDate>Sat, 19 Dec 2009 19:21:17 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2009/12/19/beginning-fsharp-is-here.aspx/</guid>
+      <description>This morning there was an unexpected knock at the door and a courier arrived with a large package. I was quite surprised as hadn’t ordered anything. It turned out that it was my box of author copies of “Beginning F#”. So I’m happy to announce that “Beginning F#” is finally here and if you’ve pre-ordered it will be with you shortly.
+
+“Beginning F#” is the updated version of “Foundation of F#”, it shares very much the same structure but I has been completely updated for the VS 2010 release of F#.</description>
+    </item>
+    
+    <item>
+      <title>Functional Programming eXchange 2009</title>
+      <link>http://strangelights.com/achrive/2009/12/13/functional-programming-exchange-2009.aspx/</link>
+      <pubDate>Sun, 13 Dec 2009 13:45:18 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2009/12/13/functional-programming-exchange-2009.aspx/</guid>
+      <description>The functional programming exchange in London last Monday (7th Dec) when off really smoothly. We had just over 50 people, mostly from the south east of England, but a few had travelled from places like Scotland, Brussels and Holland to see us. I’d like to say big thanks to all the speakers for providing interesting and thought provoking talks. So, thanks to Sadek, Matthew, Anton, Ganesh, and Duncan. Also, a big thanks to Skills Matter for providing the location, logistics, pizza and beer.</description>
+    </item>
+    
+    <item>
+      <title>Speaking Engagements in Paris in October/November 2009</title>
+      <link>http://strangelights.com/achrive/2009/10/25/speaking-engagements-in-paris-in-october-november-2009.aspx/</link>
+      <pubDate>Sun, 25 Oct 2009 11:10:47 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2009/10/25/speaking-engagements-in-paris-in-october-november-2009.aspx/</guid>
+      <description>UPDATE:The talk tonight (29 Oct) at Zenika has been postoned till November due to unforeseen circumstances. I&#39;ll let you know the exact date as soon as it is confirmed. My apologies for this.
+ I’ll be doing a talk about functional programming in F# at Zenika, this Thursday, 29th October at 19h, as part of their community program. The talk will cover what functional programming is and how a language like F# is adapted to functional programming.</description>
+    </item>
+    
+    <item>
+      <title>Functional Programming eXchange - 7th December 2009</title>
+      <link>http://strangelights.com/achrive/2009/10/25/functional-programming-exchange-7th-december-2009.aspx/</link>
+      <pubDate>Sun, 25 Oct 2009 10:56:39 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2009/10/25/functional-programming-exchange-7th-december-2009.aspx/</guid>
+      <description>I’m very happy to announce the “Functional Programming eXchange” which will take place in London at Skills Mater head quarters on the 7th December. I’ve been involved in organizing a program which will cover F#, Erlang, Scala and Haskell. The program has been designed to interested both people actively involved in functional programming in industry and working programmers with an interest in functional programming would like to learn more about how they can use these two techniques in their day job.</description>
+    </item>
+    
+    <item>
+      <title>The twits - Yet another Twitter app</title>
+      <link>http://strangelights.com/achrive/2009/7/4/the-twits-yet-another-twitter-app.aspx/</link>
+      <pubDate>Sat, 04 Jul 2009 14:26:35 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2009/7/4/the-twits-yet-another-twitter-app.aspx/</guid>
+      <description>Taking its name from twitter, with a large nod towards Roald Dahl&#39;s cautionary tale, the twits is a twitter app that lets you visualize you network of friends on twitter. It’s available to try here. Before we go any further you should know that this software is in alpha status, i.e. not for the fait hearted. Here’s an image of the results below. 
+
+As you can see it does a reasonable job of separating other developers I follow from people at the guardian I follow (the coloured lines &amp;amp; text are added afterwards).</description>
+    </item>
+    
+    <item>
+      <title>Videos to Watch</title>
+      <link>http://strangelights.com/achrive/2009/6/19/videos-to-watch.aspx/</link>
+      <pubDate>Fri, 19 Jun 2009 12:42:41 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2009/6/19/videos-to-watch.aspx/</guid>
+      <description>So this blog has been quite lately, well it never was the most active in the world. Anyway the good news is there are lots of other good F# resources on the web at the moment. Particually Lang.NET was a great source of F# videos, I was there myself, but I’ve spoke with a few people who were, and indeed there they told me there was lots of interest in F#.</description>
+    </item>
+    
+    <item>
+      <title>Past Speaking engagements</title>
+      <link>http://strangelights.com/achrive/2009/6/19/past-speaking-engagements.aspx/</link>
+      <pubDate>Fri, 19 Jun 2009 12:04:23 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2009/6/19/past-speaking-engagements.aspx/</guid>
+      <description>Back in February this year I spoke at TechDays Paris 2009, I’ve always enjoyed TechDays Paris so a big thanks to Eric Mittelette and his team for inviting me to speak. Also, many thanks Julien Laugel who help me review the presentation slides and also shared some his experiences using F# with the audience. A screen cast of this presentation is now available. The slides for this presentation are available on the slideshare.</description>
+    </item>
+    
+    <item>
+      <title>F# in Beta1 of Visual Studio 2010</title>
+      <link>http://strangelights.com/achrive/2009/5/26/fsharp-in-beta1-of-visual-studio-2010.aspx/</link>
+      <pubDate>Tue, 26 May 2009 21:43:27 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2009/5/26/fsharp-in-beta1-of-visual-studio-2010.aspx/</guid>
+      <description>F# is now available as part of the beta1 of Visual Studio 2010. I felt a strange sense of pride when I could select F# as the default language in Visual Studio:
+Find a summary of where to get it here: http://research.microsoft.com/en-us/um/cambridge/projects/fsharp/release.aspx</description>
+    </item>
+    
+    <item>
+      <title>“Beginning F#” is “Foundations of F# 2nd Edition”</title>
+      <link>http://strangelights.com/achrive/2009/4/4/beginning-fsharp-is-foundations-of-fsharp-2nd-edition.aspx/</link>
+      <pubDate>Sat, 04 Apr 2009 18:07:32 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2009/4/4/beginning-fsharp-is-foundations-of-fsharp-2nd-edition.aspx/</guid>
+      <description>A few people have noticed that a new book “Beginning F#” by me is available for pre-order on Amazon. I wanted to make it clear that this is the new title for the second edition of “Foundations of F#”. The publisher wanted the title change to make it clear that this was a complementary rather title to “Expert F#” rather than competing with it. It also reflects that during the rewrite that I’m focusing a lot on making the book more accessible to people with no functional programming experience.</description>
+    </item>
+    
+    <item>
+      <title>Interesting performance Consequences of Seq.map</title>
+      <link>http://strangelights.com/achrive/2009/3/28/interesting-performance-consequences-of-seq.map.aspx/</link>
+      <pubDate>Sat, 28 Mar 2009 19:06:27 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2009/3/28/interesting-performance-consequences-of-seq.map.aspx/</guid>
+      <description>It’s fairly well know that Sequences or “seq”, the short hand for IEnumerable, are lazy. This has some interesting performance consequence I had not considered until recently. When we execute a line like:
+letlotsOfInts = Seq.map (fun x -&amp;gt; x + 1) (seq { 1 .. 1000000 })
+The command executes almost instantaneously, despite the fact we’re creating a list of a million integers (Real: 00:00:00.001, CPU: 00:00:00.000 on my PC).</description>
+    </item>
+    
+    <item>
+      <title>Progress on the “DataTools” Project</title>
+      <link>http://strangelights.com/achrive/2009/3/28/progress-on-the-datatools-project.aspx/</link>
+      <pubDate>Sat, 28 Mar 2009 18:32:44 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2009/3/28/progress-on-the-datatools-project.aspx/</guid>
+      <description>I note on in a previous blog post that I’ve started creating an open source project for manipulating data. For the moment it’s mainly based around the idea of “Collective Intelligence”, but I hope to draw on influences from other sources as it evolves. I’ve reorganised the source so it’s a bit clearer and added some other concepts, notably a tool for accessing books from “Project Guttenberg” and the work I did on generic algorithms.</description>
+    </item>
+    
+    <item>
+      <title>Collective Intelligence and the Guardian Data-Store</title>
+      <link>http://strangelights.com/achrive/2009/3/19/collective-intelligence-and-the-guardian-data-store.aspx/</link>
+      <pubDate>Thu, 19 Mar 2009 19:33:54 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2009/3/19/collective-intelligence-and-the-guardian-data-store.aspx/</guid>
+      <description>I’ve been interested in collective intelligence and machine learning for a while now. These too related fields centre round using statistical tools on large sets of data to make measurements and predictions. So when the UK’s Guardian newspaper announced their “Data-store”, a collection of data set open to the public I felt it was time to apply some of what I’ve learned to the data they were offer.
+I choose to apply hierarchal clustering to the data on world health.</description>
+    </item>
+    
+    <item>
+      <title>Feature Speaking Engagement – F# Tutorial at the Progressive .NET Tutorials, May 11-13th, London </title>
+      <link>http://strangelights.com/achrive/2009/3/19/feature-speaking-engagement-fsharp-tutorial-at-the-progressive-.net-tutorials-may-11-13th-london-.aspx/</link>
+      <pubDate>Thu, 19 Mar 2009 15:50:34 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2009/3/19/feature-speaking-engagement-fsharp-tutorial-at-the-progressive-.net-tutorials-may-11-13th-london-.aspx/</guid>
+      <description>I will be giving a half day F# tutorial at the “Progressive .NET Tutorials” organised by Skills Matter. This will be an excellent 3 daylong event with 2 tracks featuring half day and full day Tutorials by Gojko Adzic, David Laribee, Hammet, Ian Cooper, Mike Hadlow, Scott Belware and Sebastien Lambla. 
+My will be giving a half day tutorial on Wednesday May 13th (the last day of the event). I will be presenting &amp;lsquo;F# Tutorial &amp;lsquo;, which will aim to give delegates the building blocks for using F# productively and to start having fun with it.</description>
+    </item>
+    
+    <item>
+      <title>ALTi</title>
+      <link>http://strangelights.com/achrive/2009/3/19/alti.aspx/</link>
+      <pubDate>Thu, 19 Mar 2009 11:11:10 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2009/3/19/alti.aspx/</guid>
+      <description>(Sorry I’ve been a bit quiet recently; this is the first of several posts I’ll be making this morning)
+I decided a little while ago that I’d like to change direction in my career and go back to consulting, after interviewing around a bit I decided to join ALTi. It was my first day on Monday, and so far I’m enjoying my first week, although obviously I’m just getting settled in.</description>
+    </item>
+    
+    <item>
+      <title>Foundations of F# - Second Edition</title>
+      <link>http://strangelights.com/achrive/2009/1/17/foundations-of-fsharp-second-edition.aspx/</link>
+      <pubDate>Sat, 17 Jan 2009 18:11:42 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2009/1/17/foundations-of-fsharp-second-edition.aspx/</guid>
+      <description>I’m very pleased to announce I’ve started working on a second edition of Foundations of F#. The aim is to document the language in the form it will be in when it is released in with Visual Studio 2010. This will be a challenge since it’s not yet known exactly what features will be in the final release.
+So, why a second edition? It’s true that the original book is only about 2 years old, but that’s quite a long time in the IT industry these days and much has change in the F# landscape since the original was wrote and indeed much in the .</description>
+    </item>
+    
+    <item>
+      <title>How to Recognise Code Constructs (from quite a long way away)</title>
+      <link>http://strangelights.com/achrive/2008/12/21/how-to-recognise-code-constructs-from-quite-a-long-way-away.aspx/</link>
+      <pubDate>Sun, 21 Dec 2008 14:16:17 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2008/12/21/how-to-recognise-code-constructs-from-quite-a-long-way-away.aspx/</guid>
+      <description>No. 1 the Foreach Loop
+Last weekend I attended JB Evian’s code camp in the l’Ardeche département in the south of France, just to the north of the Provence region that forms the south east part of the French Mediterranean coast. (I was very interested in visiting this area since my wife and I became begin fans of Nigel Farrell’s “A Place in the France” and “A Place in the France – Indian Summer”when we first move to France, Nigel’s problems seem to dwarf any we had and helped put things in perspective).</description>
+    </item>
+    
+    <item>
+      <title>Artist Models on Strike</title>
+      <link>http://strangelights.com/achrive/2008/12/15/artist-models-on-strike.aspx/</link>
+      <pubDate>Mon, 15 Dec 2008 13:30:38 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2008/12/15/artist-models-on-strike.aspx/</guid>
+      <description>The models at Paris’ prestigious art school “Beaux Arts” intend to strike today over the mayor of Paris&amp;rsquo; decision to ban the tips that students pay to them. Traditionally at the end of the session, if the students liked the model because they sat still or because they inspired their imagination, they pay a small tip called “cornet”. The mayor of Paris has decided to bad this practice because it is paid directly to the model in cash and so not taxed and therefore “argent au noir”.</description>
+    </item>
+    
+    <item>
+      <title>Alt.net Paris – November Meeting – What we learned about Mono</title>
+      <link>http://strangelights.com/achrive/2008/11/26/alt.net-paris-november-meeting-what-we-learned-about-mono.aspx/</link>
+      <pubDate>Wed, 26 Nov 2008 13:03:54 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2008/11/26/alt.net-paris-november-meeting-what-we-learned-about-mono.aspx/</guid>
+      <description>Last night our alt.net Paris meeting was lucky enough to be visited by JB Evain a veteran of the Mono team. The evening was hosted by Valtech who were kind enough to provide us with a room and a generous supply of pizza. Here’s a little summary of what we learned:
+The mono team is composed of about 35 core members on the Novell payroll, as well as volunteers from the community.</description>
+    </item>
+    
+    <item>
+      <title>Solvers, Optimization, and more on DSLs</title>
+      <link>http://strangelights.com/achrive/2008/9/21/solvers-optimization-and-more-on-dsls.aspx/</link>
+      <pubDate>Sun, 21 Sep 2008 14:13:20 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2008/9/21/solvers-optimization-and-more-on-dsls.aspx/</guid>
+      <description>To coincide with the release the CTP release of F# Microsoft also released and early version “Solver Foundation”. Don Box described himself as being elated by its release. You can tell it’s an early version as it’s currently the only way to get it is part of “F# Optimization Modelling Language” sample on the MSDN code gallery.
+So what does optimization mean in this context? Simply put an optimization problem is the problem of finding the best solution from all feasible solutions.</description>
+    </item>
+    
+    <item>
+      <title>F# on dotnetrocks! - My Thoughts on the Show</title>
+      <link>http://strangelights.com/achrive/2008/9/16/fsharp-on-dotnetrocks-my-thoughts-on-the-show.aspx/</link>
+      <pubDate>Tue, 16 Sep 2008 20:54:52 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2008/9/16/fsharp-on-dotnetrocks-my-thoughts-on-the-show.aspx/</guid>
+      <description>F# is on dotnetrocks again, this time it’s Amanda Laucher and Ted Neward’s turn to talk F# with Carl and Richard. I have to say of all the F# podcast there have been so far this is my favourite. Why? Amanda and Ted do a really great job of articulating what I’ve been thinking about F#, and functional programming in general, for some time now. I think this is because Amanda and Ted have a similar background to me – they both come from the world of line of business applications.</description>
+    </item>
+    
+    <item>
+      <title>Genetic Programming – A Language Oriented Programming Example</title>
+      <link>http://strangelights.com/achrive/2008/9/2/genetic-programming-a-language-oriented-programming-example.aspx/</link>
+      <pubDate>Tue, 02 Sep 2008 20:45:27 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2008/9/2/genetic-programming-a-language-oriented-programming-example.aspx/</guid>
+      <description>As mentioned in my previous post, I’ve been reading “Collective Intelligence” by Toby Segaram and I’m really enjoying in it. It’s different to a lot of programming books, in that rather than focusing a specific language or API it focus on a particular set of problems and shows techniques that can be used to crack them.
+For example I’ve known for a long time that it’s easy to create an abstract syntax tree (AST) in F#:</description>
+    </item>
+    
+    <item>
+      <title>F# T-Shirt Update</title>
+      <link>http://strangelights.com/achrive/2008/9/1/fsharp-t-shirt-update.aspx/</link>
+      <pubDate>Mon, 01 Sep 2008 22:31:35 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2008/9/1/fsharp-t-shirt-update.aspx/</guid>
+      <description>Well the F# T-shirt I ordered arrived last Thursday, meaning it took about a week or so after ordering:
+
+If you want to see me in it then you’ll have to wait for pictures of alt.net London (yes I know you probably can control yourself for that long).</description>
+    </item>
+    
+    <item>
+      <title>What I’ve Been Doing</title>
+      <link>http://strangelights.com/achrive/2008/9/1/what-ive-been-doing.aspx/</link>
+      <pubDate>Mon, 01 Sep 2008 22:29:01 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2008/9/1/what-ive-been-doing.aspx/</guid>
+      <description>Now that the F# CTP is out, you may be wondering what I think of it. Well I’m planning to tell you in a later post, first let me explain what I’ve been up to: If you’re a follower of this blog you’ve probably noticed that there hasn’t been a lot of activity lately (apart from the short announcement about JAOO.dk). This is largely due to the fact I’ve moved house and have been doing a lot of gardening and DIY lately.</description>
+    </item>
+    
+    <item>
+      <title>F# T-Shirts</title>
+      <link>http://strangelights.com/achrive/2008/8/19/fsharp-t-shirts.aspx/</link>
+      <pubDate>Tue, 19 Aug 2008 20:36:41 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2008/8/19/fsharp-t-shirts.aspx/</guid>
+      <description>As mentioned previously I’ll be attending a couple of conferences soon and mainly inspired by Amanda Launcher’s F#TW t-shirt I decided to print up an F# t-shirt of my own. I had more ideas for designs that I could actually fit in my t-shirt draw, so I decided to make up a few designs and see if anyone else would like to buy them, you can see all the designs here.</description>
+    </item>
+    
+    <item>
+      <title>JAOO.dk and ALT.NET UK Summer Conference</title>
+      <link>http://strangelights.com/achrive/2008/8/19/jaoo.dk-and-alt.net-uk-summer-conference.aspx/</link>
+      <pubDate>Tue, 19 Aug 2008 20:20:35 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2008/8/19/jaoo.dk-and-alt.net-uk-summer-conference.aspx/</guid>
+      <description>I’m very pleased to announce that I’ve been invited to speak at the JAOO conference in Aarhus, Denmark, 28th September till 3rd October. I’ll speak on 1st October and I’ll actually be at the conference 29th September till 1st October attending sessions. The title of my presentation is “Learning F# and the Functional Point of View” and you can see the full abstract here. I’m very pleased to have been invited to speak at conference were the other speakers include Martin Fowler, Anders Hejlsberg, and Erik Meijer, and I’m really looking forward to it.</description>
+    </item>
+    
+    <item>
+      <title>Immutability and Concurrency – Part II – A Review of F#’s Immutable Data Structures</title>
+      <link>http://strangelights.com/achrive/2008/6/17/immutability-and-concurrency-part-ii-a-review-of-fsharps-immutable-data-structures.aspx/</link>
+      <pubDate>Tue, 17 Jun 2008 08:07:13 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2008/6/17/immutability-and-concurrency-part-ii-a-review-of-fsharps-immutable-data-structures.aspx/</guid>
+      <description>The first half of this series the accent is on immutable programming, because in the first part of the series we had an introduction to immutable data, and in this second part we’re going to look in depth at immutable programming possibilities, with the idea of show that this is actually not too different to what your used. Once we’ve conquered the immutability we’ll start to dig into the concurrency.</description>
+    </item>
+    
+    <item>
+      <title>Turning 30</title>
+      <link>http://strangelights.com/achrive/2008/5/22/turning-30.aspx/</link>
+      <pubDate>Thu, 22 May 2008 06:03:19 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2008/5/22/turning-30.aspx/</guid>
+      <description>I will be 30 on Friday, I’m to celebrate this I going to say on the small meditation island of Ile de Port Cros. In an effort to break my chronic email addiction I’m not taking a laptop, so don’t expect the second part of Immutability and Concurrency till next week!
+Feedback: Feedback was imported from my only blog engine, it&amp;rsquo;s no longer possible to post feedback here.
+re: Turning 30 - jonathan parker</description>
+    </item>
+    
+    <item>
+      <title>Prochaine réunion d’alt.net de Paris - mercredi 4 juin, 20h00 - Le Café des Initiés</title>
+      <link>http://strangelights.com/achrive/2008/5/20/prochaine-r%C3%A9union-dalt.net-de-paris-mercredi-4-juin-20h00-le-caf%C3%A9-des-initi%C3%A9s.aspx/</link>
+      <pubDate>Tue, 20 May 2008 21:31:48 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2008/5/20/prochaine-r%C3%A9union-dalt.net-de-paris-mercredi-4-juin-20h00-le-caf%C3%A9-des-initi%C3%A9s.aspx/</guid>
+      <description>La prochain réunion d’alt.net de Paris aura lieu mercredi 4 juin, 20h00 à le « Le Café des Initiés », 3, Place des Deux Ecus, 75001 Paris. Moi, Julien et Symon sera là, et vous ?
+----
+The next meeting of alt.net Paris will take place on Wednesday 4th June at the “Café des Inities”, 3, Place des Deux Ecus, 75001 Paris. Symon, Julien and I will be there, will you?</description>
+    </item>
+    
+    <item>
+      <title>Immutability and Concurrency – Part I – Getting to Know Immutable Data Structures</title>
+      <link>http://strangelights.com/achrive/2008/5/18/immutability-and-concurrency-part-i-getting-to-know-immutable-data-structures.aspx/</link>
+      <pubDate>Sun, 18 May 2008 08:43:33 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2008/5/18/immutability-and-concurrency-part-i-getting-to-know-immutable-data-structures.aspx/</guid>
+      <description>When asking the question how does functional programming help me with concurrent programming? The standard response tends to be functional programming use immutable data structures, read-only data structures can be shared between threads without issues, end of problem. Except it isn’t. Immutable data structures have a different set of problems associated with them when working on concurrent problems. This post will examine what these problems are, and then show that this is just a special case of a more general set of problems when working with immutable data structures.</description>
+    </item>
+    
+    <item>
+      <title>Instrumentation of Your F# Applications with Custom Performance Counters</title>
+      <link>http://strangelights.com/achrive/2008/5/8/instrumentation-of-your-fsharp-applications-with-custom-performance-counters.aspx/</link>
+      <pubDate>Thu, 08 May 2008 07:52:06 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2008/5/8/instrumentation-of-your-fsharp-applications-with-custom-performance-counters.aspx/</guid>
+      <description>Although the performance counters built into the CLR give you a pretty good handle on what’s going, there’s nothing quite like having your own counters to help you monitor your applications performance. There’s nothing quite like being able to see your own counters alongside the build in ones in perfmon. There are several things that make this a little tricky, first you must install your counter to make it visible to perfmon, then you need to create instances of the counters for the application to use, finally you need to remove your counters when there done with to ensure old instances don’t clog up the perfmon dialogs.</description>
+    </item>
+    
+    <item>
+      <title>Reportage : le première alt.net de Paris réunion</title>
+      <link>http://strangelights.com/achrive/2008/5/5/reportage-le-premi%C3%A8re-alt.net-de-paris-r%C3%A9union.aspx/</link>
+      <pubDate>Mon, 05 May 2008 22:31:28 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2008/5/5/reportage-le-premi%C3%A8re-alt.net-de-paris-r%C3%A9union.aspx/</guid>
+      <description>La première réunion a très bien passé, nous étions cinq, pas mal pour une réunion organisé en moins qu’une semaine. On s’est vu dans le « frog et rosbif », peut-être pas le meilleur choisi de lieu, normalement j’aime bien cette pub, mais ce soir là ils ont eu un match de foot à la télé et c’était trop bruyant. Donc, on a bu un verre d’hors de la pub et on est allé au « les têtes brûlées » juste à côté qui était plus calme et plus agréable.</description>
+    </item>
+    
+    <item>
+      <title>Ants everywhere! An ant colony simulation in F#</title>
+      <link>http://strangelights.com/achrive/2008/5/4/ants-everywhere-an-ant-colony-simulation-in-fsharp.aspx/</link>
+      <pubDate>Sun, 04 May 2008 17:25:23 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2008/5/4/ants-everywhere-an-ant-colony-simulation-in-fsharp.aspx/</guid>
+      <description>About a week ago Rick Minerich made this blog post about an ant colony simulation in F#. I downloaded the code and played with it, I liked the simulation a lot but wasn’t too keen on the implementation – it used lots of thread and lots of mutable data. So I decided to dig around a tweak a little here and there, but before I knew it I’d rewritten the whole thing using immutable data structures.</description>
+    </item>
+    
+    <item>
+      <title>alt.net de Paris</title>
+      <link>http://strangelights.com/achrive/2008/4/26/alt.net-de-paris.aspx/</link>
+      <pubDate>Sat, 26 Apr 2008 09:06:24 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2008/4/26/alt.net-de-paris.aspx/</guid>
+      <description>Le mouvement alt.net s’agit de un groupe des développeurs qui s’organisent eux-mêmes et qui sont intéressés par l’amélioration du processus de la création de logiciel. Ils sont intéressés par des outils .NET open source comme nunit, nant, et cruisecontrol.net mais surtout dans des techniques comme « agile », « test driven development », et « design patterns ».
+Après le réussit de leur conférence global à Seattle il y a un vague des groupes locale qui s’organise, et donc des adhérents de la liste alt.</description>
+    </item>
+    
+    <item>
+      <title>verboseness repetitivity - google wack!</title>
+      <link>http://strangelights.com/achrive/2008/4/6/verboseness-repetitivity-google-wack.aspx/</link>
+      <pubDate>Sun, 06 Apr 2008 08:01:51 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2008/4/6/verboseness-repetitivity-google-wack.aspx/</guid>
+      <description>I found a google wack! Entering: verboseness repetitivity
+Gives one site: http://lexsrv3.nlm.nih.gov/SPECIALIST/Projects/lexicon/2007/release/LEX/LRNOM
+Suprising wack too since you&#39;d think the two words go together. Interesting lexicon project too.
+I wasn&#39;t looking for one just using google to check a spelling.
+Feedback: Feedback was imported from my only blog engine, it&amp;rsquo;s no longer possible to post feedback here.
+re: verboseness repetitivity - google wack! - Robert O&amp;rsquo;Connor
+haha</description>
+    </item>
+    
+    <item>
+      <title>Euler Project Problem 14 in F# - An exercise in optimization</title>
+      <link>http://strangelights.com/achrive/2008/3/25/euler-project-problem-14-in-fsharp-an-exercise-in-optimization.aspx/</link>
+      <pubDate>Tue, 25 Mar 2008 22:16:28 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2008/3/25/euler-project-problem-14-in-fsharp-an-exercise-in-optimization.aspx/</guid>
+      <description>Euler Project Problem 14 in F# - An exercise in optimization
+The coding “coding-experiments” blog presents two alterative solutions to the “Euler Project Problem 14” (http://projecteuler.net/print.php?id=14): 
+http://coding-experiments.blogspot.com/2008/03/projecteulernet-problem-14-csharp-vs.html
+/o:p
+His F# solution is around 55 times slower in than the C# version, the implication being that while F# is elegant, it’s also slow. My problem with this conjecture is that that the implementation of the F# version is considerably different to the implementation of the C# version.</description>
+    </item>
+    
+    <item>
+      <title>Abstraction of Control Flow</title>
+      <link>http://strangelights.com/achrive/2008/3/4/abstraction-of-control-flow.aspx/</link>
+      <pubDate>Tue, 04 Mar 2008 22:11:01 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2008/3/4/abstraction-of-control-flow.aspx/</guid>
+      <description>One thing functional languages excel at is abstraction of control flow. Although you may not be familiar with the term, you’re probably already familiar with the concept. Programmers coming from an OO background are generally familiar with implementation polymorphism (overriding a method in a base class) and dependency injection (using an interface or base class to call methods an object, dynamically generated or otherwise); these are both forms of abstraction of control flow.</description>
+    </item>
+    
+    <item>
+      <title>F# Add-in Now Part of SharpDevelop 3.0 Beta 1</title>
+      <link>http://strangelights.com/achrive/2008/2/21/fsharp-add-in-now-part-of-sharpdevelop-3.0-beta-1.aspx/</link>
+      <pubDate>Thu, 21 Feb 2008 22:00:59 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2008/2/21/fsharp-add-in-now-part-of-sharpdevelop-3.0-beta-1.aspx/</guid>
+      <description>Lately I’ve been working on integrating F# into the open source IDE SharpDevelop. I’m pleased to announce that this has been released as part of SharpDevelop 3.0 beta 1. See the screen shots below to get an idea of the look and feel:
+/o:p
+/o:p
+All you need to is install F# and install SharpDevelop and it all should just work - a big improvement on the old installation process.</description>
+    </item>
+    
+    <item>
+      <title>TechEd Barcelona 2007 Video: Functional Programming Explained</title>
+      <link>http://strangelights.com/achrive/2008/2/21/teched-barcelona-2007-video-functional-programming-explained.aspx/</link>
+      <pubDate>Thu, 21 Feb 2008 18:04:30 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2008/2/21/teched-barcelona-2007-video-functional-programming-explained.aspx/</guid>
+      <description>Been a while since I posted anything, but I do have a few new ideas forming so keep watching! For now you can see me being interviewed in this Video filmed at TechEd Barcelona 2007 “Functional Programming Explained” (on the second page seems to be no way to do a direct link). I was very nervous before making the video and I think this show’s quite a bit at the beginning but I think I getting into my stride a bit more after a couple of questions.</description>
+    </item>
+    
+    <item>
+      <title>F#  at Microsoft TechDays Paris</title>
+      <link>http://strangelights.com/achrive/2008/2/6/fsharp-at-microsoft-techdays-paris.aspx/</link>
+      <pubDate>Wed, 06 Feb 2008 21:41:58 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2008/2/6/fsharp-at-microsoft-techdays-paris.aspx/</guid>
+      <description>I probably should have posted this a bit earlier but here goes anyway: I will be presenting at Microsoft TechDays Paris, my talk will be co-presented with Don Syme and we&#39;ll be talking about parallelism and F#. Don will also be presenting an introduction to F#. Don&#39;s talk is at 14:30 and our joint talk is at 17:30.
+Sign up for TechDays here:
+http://www.microsoft.com/france/mstechdays/
+It&#39;s free and it&#39;s in central paris at the Palais des Congrès.</description>
+    </item>
+    
+    <item>
+      <title>Concurrency in F# – Part IV – Queuing Working using Semaphores or Message Queues</title>
+      <link>http://strangelights.com/achrive/2007/11/2/concurrency-in-fsharp-part-iv-queuing-working-using-semaphores-or-message-queues.aspx/</link>
+      <pubDate>Fri, 02 Nov 2007 18:57:21 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2007/11/2/concurrency-in-fsharp-part-iv-queuing-working-using-semaphores-or-message-queues.aspx/</guid>
+      <description>In part three of this series we looked at how message queues could be used to receive updates from multiple threads and ensure that a data structure remain consistent. Now I would like to look at how messages queue can be used to spread work between different queues to allow it to the work to be performed in parallel. We will also look at an alternative mechanism of doing this using semaphores.</description>
+    </item>
+    
+    <item>
+      <title>F# on InfoQ</title>
+      <link>http://strangelights.com/achrive/2007/11/1/fsharp-on-infoq.aspx/</link>
+      <pubDate>Thu, 01 Nov 2007 18:51:20 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2007/11/1/fsharp-on-infoq.aspx/</guid>
+      <description>I have written an article for InfoQ explaining the Active Patterns, a new feature of F# that didn&#39;t make it into &#34;Foundations of F#&#34;. Read it here.</description>
+    </item>
+    
+    <item>
+      <title>F# meets facebook</title>
+      <link>http://strangelights.com/achrive/2007/10/31/fsharp-meets-facebook.aspx/</link>
+      <pubDate>Wed, 31 Oct 2007 11:50:16 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2007/10/31/fsharp-meets-facebook.aspx/</guid>
+      <description>There’s a new place in town for you to geek out over F#, as well as the http://cs.hubfs.netnew there’s also a face book group: http://www.facebook.com/group.php?gid=5394519167&amp;amp;ref=nf(Requires a facebook profile but seems everyone has one these days). The group was created by Joel Pobar.</description>
+    </item>
+    
+    <item>
+      <title>Concurrency in F# – Part III – Erlang Style Message Passing</title>
+      <link>http://strangelights.com/achrive/2007/10/24/concurrency-in-fsharp-part-iii-erlang-style-message-passing.aspx/</link>
+      <pubDate>Wed, 24 Oct 2007 22:55:14 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2007/10/24/concurrency-in-fsharp-part-iii-erlang-style-message-passing.aspx/</guid>
+      <description>Why is the introduction of Erlang style message passing into F# interesting? Well you may have never heard of Erlang but if you’ve ever used a cell phone you’ve probably used an Erlang system. Erlang was originally built by Ericsson and released as open source in 1998, it was built to support the highly distributed and fault-tolerant systems required to support mobile phone networks. Many people consider Erlang to be the language that gets concurrency right.</description>
+    </item>
+    
+    <item>
+      <title>Somasegar Announces Productization of F#</title>
+      <link>http://strangelights.com/achrive/2007/10/17/somasegar-announces-productization-of-fsharp.aspx/</link>
+      <pubDate>Wed, 17 Oct 2007 15:43:36 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2007/10/17/somasegar-announces-productization-of-fsharp.aspx/</guid>
+      <description>Somasegar, the head of the Developer Division at Microsoft, has announced the productization of F#. Read more about it here.
+
+Feedback: Feedback was imported from my only blog engine, it&amp;rsquo;s no longer possible to post feedback here.
+re: Somasegar Announces Productization of F# - Granville Barnett
+Great news, just posted something on it myself.
+I guess you are also used to the comment I picked out?</description>
+    </item>
+    
+    <item>
+      <title>Concurrency in F# - Understanding how Asynchronous Workflows Work</title>
+      <link>http://strangelights.com/achrive/2007/10/15/concurrency-in-fsharp-understanding-how-asynchronous-workflows-work.aspx/</link>
+      <pubDate>Mon, 15 Oct 2007 21:46:43 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2007/10/15/concurrency-in-fsharp-understanding-how-asynchronous-workflows-work.aspx/</guid>
+      <description>As Don Syme points out in his piece on asynchronous workflows, they are not about getting the whole of concurrency right but rather about getting asynchronous I/O.I think that to fully appreciate the beauty of asynchronous workflows one must understand the ugliness of what it’s like to do asynchronous I/O without them. I think this may be true for many areas of software development,hell even good old C looks great if you’ve been forced to spend some time assembler, and I guess Joel and his law of “leaky abstractions” is saying something along a similar lines.</description>
+    </item>
+    
+    <item>
+      <title>Chestnuts</title>
+      <link>http://strangelights.com/achrive/2007/9/30/chestnuts.aspx/</link>
+      <pubDate>Sun, 30 Sep 2007 20:00:43 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2007/9/30/chestnuts.aspx/</guid>
+      <description>Took advantage of the nice weather and went for a long cycle today, we came across quite a few chestnut trees and could help taking advantage of this free food. I think we got over 3 KG in the end
+
+Saw plenty of people out mushrooming, would have liked to have gathered some of those too, but I don’t know enough about it so would have probably ended picking the poisonous ones.</description>
+    </item>
+    
+    <item>
+      <title>Concurrency in F# – Part I – The Asynchronous Workflow</title>
+      <link>http://strangelights.com/achrive/2007/9/29/concurrency-in-fsharp-part-i-the-asynchronous-workflow.aspx/</link>
+      <pubDate>Sat, 29 Sep 2007 12:20:23 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2007/9/29/concurrency-in-fsharp-part-i-the-asynchronous-workflow.aspx/</guid>
+      <description>So I was going to start this series with an over of concurrency options on the .NET framework, but after playing F# asynchronous workflows, I decided to blog about them as they just too exciting to keep quiet about. Maybe I’ll spin back at the end of the series and do a summary of other options at the end of the series.
+This post will look at how to use concurrent workflows; it will not look into the mechanics of workflows themselves, which are explained in this nice blog post from Don Syme.</description>
+    </item>
+    
+    <item>
+      <title>F# @ TechEd Barcelona November 2007</title>
+      <link>http://strangelights.com/achrive/2007/9/27/fsharp-teched-barcelona-november-2007.aspx/</link>
+      <pubDate>Thu, 27 Sep 2007 07:00:23 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2007/9/27/fsharp-teched-barcelona-november-2007.aspx/</guid>
+      <description>There will be two F# presentations at TechEd Europe this year, one by Don Syme on concurrent programming in F#. See the full abstract below for more details
+Parallel and Asynchronous Functional Programming on .NET with F#
+Functional programming a hot topic: there is a growing awareness of functional techniques in the developer community, and people are beginning to see that imperative OO programming has deep limitations in a networked and concurrent multi-core world.</description>
+    </item>
+    
+    <item>
+      <title>#Develop integration of F# - Alpha Release</title>
+      <link>http://strangelights.com/achrive/2007/9/2/sharpdevelop-integration-of-fsharp-alpha-release.aspx/</link>
+      <pubDate>Sun, 02 Sep 2007 11:50:17 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2007/9/2/sharpdevelop-integration-of-fsharp-alpha-release.aspx/</guid>
+      <description>[Update 05-09_2007: minor change to both source and binary release to fix F# interactive intergration, if you download a version before this date please redownload]
+Recently I’ve been working on integrating F# into #Develop. It’s a nice, well designed and developed platform, and despite one or two glitches integration has gone pretty quick. My aim is to get the F# made part of the #Develop distribution, but, rightly so, there are a couple of legal and quality hurdles that need to be reached before it can be integrated into their main release.</description>
+    </item>
+    
+    <item>
+      <title>Recalculating Values Only When Dependencies Change – Part II – Testing the Frameworks</title>
+      <link>http://strangelights.com/achrive/2007/9/1/recalculating-values-only-when-dependencies-change-part-ii-testing-the-frameworks.aspx/</link>
+      <pubDate>Sat, 01 Sep 2007 08:23:54 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2007/9/1/recalculating-values-only-when-dependencies-change-part-ii-testing-the-frameworks.aspx/</guid>
+      <description>In part one we build a couple of simple frameworks that allow the programmer to specify that a value should be cached until one of its dependencies changed. I wanted to put these frameworks though their paces in a semi realistic environment. 
+I decided to use the idea of pricing european options, since it’s similar to what we do at LexiFi, rather that work we the LexiFi pricer I took the simplest pricer I could find written in OCaml and adapted it to F# (this was hardly any work at all).</description>
+    </item>
+    
+    <item>
+      <title>F# MSBuild provider</title>
+      <link>http://strangelights.com/achrive/2007/8/27/fsharp-msbuild-provider.aspx/</link>
+      <pubDate>Mon, 27 Aug 2007 13:58:13 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2007/8/27/fsharp-msbuild-provider.aspx/</guid>
+      <description>I recently started working on the F# integration with #Develop. #Develop is a free and open source IDE base that in many respects is very similar to Visual Studio. I actually found getting the basic integration going fairly easy, I have something that allows you to edit text files and build them. But as there’s not yet any colouring or auto-completion there no signification advantage over using that to any other text editor, so I’m not going to release it just yet, but watch this space.</description>
+    </item>
+    
+    <item>
+      <title>Recalculating Values Only When Dependencies Change</title>
+      <link>http://strangelights.com/achrive/2007/8/22/recalculating-values-only-when-dependencies-change.aspx/</link>
+      <pubDate>Wed, 22 Aug 2007 10:14:16 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2007/8/22/recalculating-values-only-when-dependencies-change.aspx/</guid>
+      <description>I had an interesting exchange of emails with a reader recently. They wanted to be able to execute a function and cache the result and revaluate the function only when one of the values in depends on changes. It’s a common enough problem I guess, but one that’s surprisingly tricky to get right. This is because when you evaluate a function it’s difficult to know what it depends on and therefore difficult to know when the results of the evaluation become dirty.</description>
+    </item>
+    
+    <item>
+      <title>Me on Hanselminutes talking about F#</title>
+      <link>http://strangelights.com/achrive/2007/8/10/me-on-hanselminutes-talking-about-fsharp.aspx/</link>
+      <pubDate>Fri, 10 Aug 2007 15:53:25 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2007/8/10/me-on-hanselminutes-talking-about-fsharp.aspx/</guid>
+      <description>As promisted on yesterdays blog post you can listen to me talking about F# on Hansel Minutes:
+http://hanselminutes.com/default.aspx?showID=94
+You may also want to take a look at this accompanying blog post about what we talked about on the show:
+http://strangelights.com/blog/archive/2007/08/09/1590.aspx
+Warning it may contain spoilers :)
+Feedback: Feedback was imported from my only blog engine, it&amp;rsquo;s no longer possible to post feedback here.
+Robert Pickering on F# - Hanselminutes - Granville Barnett</description>
+    </item>
+    
+    <item>
+      <title>Another Quality Radio Item</title>
+      <link>http://strangelights.com/achrive/2007/8/9/another-quality-radio-item.aspx/</link>
+      <pubDate>Thu, 09 Aug 2007 22:58:16 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2007/8/9/another-quality-radio-item.aspx/</guid>
+      <description>When I was doing my A-levels way back in 1997 I often used to stay up late to listen to the Mark Radcliff Show in its grave yard shift phase on Radio 1. One catch phrase that does seem to be completely covered in the catch phrase guide is a “Another Quality Radio Item” although in later versions of the show this was shorten to “Quality Item” and used to refer to any feature on the show, I believe its origins came from when Mark and Lard would invite some guest on the show and they would proceed to have conversion about something very visual, realising the listener had no frame of reference they would stop themselves and say “Another Quality Radio Item” and then often carry on talking whatever they were talking about.</description>
+    </item>
+    
+    <item>
+      <title>IronRuby PreAlpha1 Release – A Little Disappointing</title>
+      <link>http://strangelights.com/achrive/2007/8/5/ironruby-prealpha1-release-a-little-disappointing.aspx/</link>
+      <pubDate>Sun, 05 Aug 2007 12:48:05 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2007/8/5/ironruby-prealpha1-release-a-little-disappointing.aspx/</guid>
+      <description>When I saw that IronRuby had been released I thought I’d put it through its paces seeing how the language preformed with respect to IronPython and of course F#. Perhaps a little unfair for a number of reasons, firstly this is a pre-alpha release so one can’t really expect much, we need to give it time to mature and two, ruby generally performs slow than python in the “Computer Language Bench Mark Game”, (http://shootout.</description>
+    </item>
+    
+    <item>
+      <title>F# versus IronPython</title>
+      <link>http://strangelights.com/achrive/2007/6/17/fsharp-versus-ironpython.aspx/</link>
+      <pubDate>Sun, 17 Jun 2007 18:12:11 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2007/6/17/fsharp-versus-ironpython.aspx/</guid>
+      <description>“Comparisons are odious” as my Mum used to say, but I hope this little comparison doesn’t pong too much. I have a range a little competitions of my own, a language bench mark, based on “The Computer Language Benchmarks Game” (http://shootout.alioth.debian.org), between IronPython and F#, with measurements for C# thrown in as a kind of control group. I would have liked to chuck in the new IronRuby language too, but I had problems finding a current release.</description>
+    </item>
+    
+    <item>
+      <title>F# in MSDN Community Distribution June Release</title>
+      <link>http://strangelights.com/achrive/2007/6/17/fsharp-in-msdn-community-distribution-june-release.aspx/</link>
+      <pubDate>Sun, 17 Jun 2007 16:42:39 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2007/6/17/fsharp-in-msdn-community-distribution-june-release.aspx/</guid>
+      <description>I’ve just notice that the “MSDN Community Distribution June Release” has a video presentation about F#. 
+An overview of all the CD:
+http://mosessaur.blogspot.com/2007/06/msdn-community-distribution-june.html
+Direct download link:
+http://www.microsoft.com/downloads/details.aspx?FamilyId=A65F7733-A626-4F69-86E8-0465FA5E4669&amp;amp;displaylang=en</description>
+    </item>
+    
+    <item>
+      <title>Foundations of F# - Finally Here!</title>
+      <link>http://strangelights.com/achrive/2007/6/5/foundations-of-fsharp-finally-here.aspx/</link>
+      <pubDate>Tue, 05 Jun 2007 20:49:21 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2007/6/5/foundations-of-fsharp-finally-here.aspx/</guid>
+      <description>I recieved my copies of Foundation of F# today. Am I pleased about it? See for yourself:Feedback: Feedback was imported from my only blog engine, it&amp;rsquo;s no longer possible to post feedback here.
+re: Foundations of F# - Finally Here! - Don Syme
+CONGRATULATIONS!!!
+A very well deserved glass :-) re: Foundations of F# - Finally Here! - Fred Pickering
+Looking forward to receiving my signed copy.
+Congratulations!
+Your proud Dad</description>
+    </item>
+    
+    <item>
+      <title>Life, F# and Silverlight</title>
+      <link>http://strangelights.com/achrive/2007/5/28/life-fsharp-and-silverlight.aspx/</link>
+      <pubDate>Mon, 28 May 2007 07:34:26 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2007/5/28/life-fsharp-and-silverlight.aspx/</guid>
+      <description>As I alluded to in my earlier post I’ve wanted to find the time to write a longer post on developing Silverlight application. Using Silverlight is very straightforward and does actually require you to install anything other than F# and the Silverlight runtime. What out when installing the runtime, turn version are available confusingly name “1.0 beta” and “1.1 alpha”. It is the “1.1 alpha” version that you need as this the only one that includes the new version of the CLR, the dynamic language runtime or the “DLR” (not to be confused with the Docklands Light Rail).</description>
+    </item>
+    
+    <item>
+      <title>Game of Life in Silverlight and F#</title>
+      <link>http://strangelights.com/achrive/2007/5/25/game-of-life-in-silverlight-and-fsharp.aspx/</link>
+      <pubDate>Fri, 25 May 2007 17:27:16 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2007/5/25/game-of-life-in-silverlight-and-fsharp.aspx/</guid>
+      <description>I’m too tired to write a proper blog post about this but I managed to port DonSyme’s Game of Life Demo that comes with the F# Distribution to Silverlight. It’s not a full port as there were some UI events that I couldn’t get to work for love nor money – I think these maybe bugs in Silverlight itself. However the game does look pretty cool. Also Silverlight currently has no way to marshal back to the UI thread which makes multithreading a bit difficult.</description>
+    </item>
+    
+    <item>
+      <title>Foundations of F# - Announcement</title>
+      <link>http://strangelights.com/achrive/2007/5/20/foundations-of-fsharp-announcement.aspx/</link>
+      <pubDate>Sun, 20 May 2007 18:52:57 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2007/5/20/foundations-of-fsharp-announcement.aspx/</guid>
+      <description>I know I&#39;ve been very quite here lately. The reason for this is I&#39;ve spend a lot of time working on _the book_. Anyway, all thats nearly over now, so hopefully I can get back to being a bit more chatty. Anyway, here is the announcement that I&#39;ve made just a few moments ago on the hubfs.net that says its almost finished printing:
+http://cs.hubfs.net/blogs/roberts_strange_f_blog/archive/2007/05/20/3153.aspx</description>
+    </item>
+    
+    <item>
+      <title>Ségolène’s Election Blues</title>
+      <link>http://strangelights.com/achrive/2007/2/18/s%C3%A9gol%C3%A8nes-election-blues.aspx/</link>
+      <pubDate>Sun, 18 Feb 2007 19:22:07 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2007/2/18/s%C3%A9gol%C3%A8nes-election-blues.aspx/</guid>
+      <description>So apparently there’s an election for a new president in France at the moment. I don’t know how much appears in the media outside of France, but here you can read about little else. Well that’s not strictly true – but it seems to me no edition of my preferred newspaper, le Parisien (also probably the paper that one that requires the lowest level of French), is complete without at least 2 stories about the left’s presidential hopeful, Ségolène Royal, and one about the right’s Nicolas Sarkozy.</description>
+    </item>
+    
+    <item>
+      <title>New strangelights.com Look</title>
+      <link>http://strangelights.com/achrive/2007/2/18/new-strangelights.com-look.aspx/</link>
+      <pubDate>Sun, 18 Feb 2007 18:14:04 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2007/2/18/new-strangelights.com-look.aspx/</guid>
+      <description>You may have noticed that strangelights.com has a nice you look and feel. This was prompted by a major overhaul of the software I’m running. I upgraded from .text blogging software to subtext. While the difference between the two isn’t huge but I’m really pleased with the upgrade because they seem to have fixed virtually everything I didn’t like about .text. Also .text took nearly the whole day to setup and required me to hack the code base for to get it working with my former ISP, brinkster, whereas subtext only took about an hour to get going, including transferring all the data from .</description>
+    </item>
+    
+    <item>
+      <title>ROT13 in F#</title>
+      <link>http://strangelights.com/achrive/2006/12/27/rot13-in-fsharp.aspx/</link>
+      <pubDate>Wed, 27 Dec 2006 07:05:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2006/12/27/rot13-in-fsharp.aspx/</guid>
+      <description>Over on his blog, Andrei Formiga has a series of post on implementing ROT13 in F# and Haskell.&amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;/o:p http://codemiscellany.blogspot.com/2006/12/rot13-in-f.html/o:p http://codemiscellany.blogspot.com/2006/12/rot13-in-haskell.html/o:p http://codemiscellany.blogspot.com/2006/12/rot13-in-f-revisited.html/o:p http://codemiscellany.blogspot.com/2006/12/still-more-rot13.html/o:p &amp;nbsp;/o:p I like is implementation using library functions that don&amp;#8217;t yet exist in F#, such as drop and zip. Here is the implementation itself, stripped of the extra library functions he had to implement, for the original see the above links. /o:p &amp;nbsp;/o:p #light/o:p let rot13 s = &amp;nbsp;&amp;nbsp;&amp;nbsp; let letters = [&amp;lsquo;a&amp;rsquo; .</description>
+    </item>
+    
+    <item>
+      <title>Foundations of F#</title>
+      <link>http://strangelights.com/achrive/2006/10/8/foundations-of-fsharp.aspx/</link>
+      <pubDate>Sun, 08 Oct 2006 15:19:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2006/10/8/foundations-of-fsharp.aspx/</guid>
+      <description>Wow. Just seen that my book has been officially announced on my publisher&amp;#8217;s, Apress, website. You can see the announcement for yourselves here. It is also available for pre-order on amazon.com.</description>
+    </item>
+    
+    <item>
+      <title>Why I like functional programming: F#, Mandelbrot and more WPF</title>
+      <link>http://strangelights.com/achrive/2006/8/8/why-i-like-functional-programming-fsharp-mandelbrot-and-more-wpf.aspx/</link>
+      <pubDate>Tue, 08 Aug 2006 12:34:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2006/8/8/why-i-like-functional-programming-fsharp-mandelbrot-and-more-wpf.aspx/</guid>
+      <description>I was playing around with implementing drawing a Mandelbrot set in F#. F# makes this very easy because of its Microsoft.FSharp.Math namespace provides a very easy to use complex implementation which means you just need to type out the equation and viola you have the Mandelbrot set. Or so I thought. My implementation end up being about 40 lines about 11 of which were the equation on which the Mandelbrot set was based and the rest of the code was infrastructure to use the equation and display the results.</description>
+    </item>
+    
+    <item>
+      <title>Free articles on F# on ASP Today</title>
+      <link>http://strangelights.com/achrive/2006/7/9/free-articles-on-fsharp-on-asp-today.aspx/</link>
+      <pubDate>Sun, 09 Jul 2006 14:01:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2006/7/9/free-articles-on-fsharp-on-asp-today.aspx/</guid>
+      <description>Although already spotted by optionsScalper here, I thought I&amp;#8217;d mention this myself. Frank Antonsen a programmer from &amp;lt;?xml:namespace prefix = st1 ns = &amp;ldquo;urn:schemas-microsoft-com:office:smarttags&amp;rdquo; /&amp;gt;Copenhagen/st1:City/st1:place (one of my favorite cities)has written two articles which are available freely on ASP Today until 15th July. So hurry you still have time to read them freely.&amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;/o:p &amp;nbsp;/o:p The first article is a general introduction to F# and then the second digs a little deep into F# data types.</description>
+    </item>
+    
+    <item>
+      <title>Bending the Cat: F# meets WPF 3D</title>
+      <link>http://strangelights.com/achrive/2006/6/23/bending-the-cat-fsharp-meets-wpf-3d.aspx/</link>
+      <pubDate>Fri, 23 Jun 2006 09:20:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2006/6/23/bending-the-cat-fsharp-meets-wpf-3d.aspx/</guid>
+      <description>I&amp;#8217;ve been playing with F# and Windows Presentation Foundation (WPF a.k.a Avalon) and the combination is really nice. WPF comes with a new(ish) markup language called Xaml. This is another declarative language that works in a complimentary way to F#. Xaml allows you initialise an object graph into a specific state in a declarative style; moreover various designers will soon be come available to do this, so you won&amp;#8217;t even have to hand code the Xaml file.</description>
+    </item>
+    
+    <item>
+      <title>C# style continuations in F# - yet another Fibonacci implementation </title>
+      <link>http://strangelights.com/achrive/2006/6/15/csharp-style-continuations-in-fsharp-yet-another-fibonacci-implementation-.aspx/</link>
+      <pubDate>Thu, 15 Jun 2006 21:50:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2006/6/15/csharp-style-continuations-in-fsharp-yet-another-fibonacci-implementation-.aspx/</guid>
+      <description>F# does not get support C# style continuations yet; I am reliably informed that it will do at some point.&amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;/o:p &amp;nbsp;/o:p However if you can not wait that long it is already fair easy to get C# style continuations by implementing System.Collections.Generic.IEmunerable your self. What&amp;#8217;s more this can be implemented as a library function then implementing your enumerator becomes just a couple of lines of code.</description>
+    </item>
+    
+    <item>
+      <title>Alois Kraus on F#</title>
+      <link>http://strangelights.com/achrive/2006/5/29/alois-kraus-on-fsharp.aspx/</link>
+      <pubDate>Mon, 29 May 2006 23:59:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2006/5/29/alois-kraus-on-fsharp.aspx/</guid>
+      <description>Alois Kraus just made this nice post about functional programming in F# and C#. I enjoyed the article very much and he even bigs up one of my own posts, which of course tickled me.&amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;/o:p &amp;nbsp;/o:p However, I disagree with quite a lot of what he said in his conclusion paragraph. He writes:/o:p &amp;nbsp;/o:p &amp;#8220;Not all concepts of functional languages should be explored by Mort and Elvis since most of them are fairly complex to understand because functional languages are very picky (just like unix) who can be their friend and who not.</description>
+    </item>
+    
+    <item>
+      <title>A simple parser in F#</title>
+      <link>http://strangelights.com/achrive/2006/5/11/a-simple-parser-in-fsharp.aspx/</link>
+      <pubDate>Thu, 11 May 2006 20:35:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2006/5/11/a-simple-parser-in-fsharp.aspx/</guid>
+      <description>It&amp;#8217;s a lovely evening here in &amp;lt;?xml:namespace prefix = st1 ns = &amp;ldquo;urn:schemas-microsoft-com:office:smarttags&amp;rdquo; /&amp;gt;Brussels/st1:place/st1:City and I am sitting on my balcony, I think summer might have finally arrived, except every time I think that we get two days of clouds and rain. The only problem with this is below are two restaurants with out terraces who have plenty of customers, the only problem with this is the smell drifts up into my apartment makes me hungry.</description>
+    </item>
+    
+    <item>
+      <title>New F# hub</title>
+      <link>http://strangelights.com/achrive/2006/4/27/new-fsharp-hub.aspx/</link>
+      <pubDate>Thu, 27 Apr 2006 13:18:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2006/4/27/new-fsharp-hub.aspx/</guid>
+      <description>It seems there is a new F# hug in town; I will of course be signing up, why don&amp;#8217;t you too?&amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;/o:p http://cs.hubfs.net/o:p &amp;nbsp;/o:p</description>
+    </item>
+    
+    <item>
+      <title>Sun rise over the Seine Valley</title>
+      <link>http://strangelights.com/achrive/2006/1/29/sun-rise-over-the-seine-valley.aspx/</link>
+      <pubDate>Sun, 29 Jan 2006 11:51:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2006/1/29/sun-rise-over-the-seine-valley.aspx/</guid>
+      <description>Last September I as I&amp;#8217;d walk to the RER station to catch the train to La D&amp;#233;fense, I could not help notice how amazing the colours of the sun rise where. So one morning I got up early to take some photos here are the results.&amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;/o:p &amp;nbsp;/o:p /o:p &amp;nbsp;/o:p The sky and the edge of the Chateaux /o:p /o:p The road leading to the terrace/o:p &amp;nbsp;/o:p /o:p /o:p /o:p &amp;nbsp;/o:p The sun rise over La D&amp;#233;fense/o:p &amp;nbsp;/o:p &amp;nbsp;/o:p /o:p The mist covered &amp;lt;?</description>
+    </item>
+    
+    <item>
+      <title>Forwards is the new backwards with the |&gt; operator</title>
+      <link>http://strangelights.com/achrive/2005/12/28/forwards-is-the-new-backwards-with-the-operator.aspx/</link>
+      <pubDate>Wed, 28 Dec 2005 18:47:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/12/28/forwards-is-the-new-backwards-with-the-operator.aspx/</guid>
+      <description>Recently Don Syme made a post to the F# mailing list about some proposed changes to the F# libraries. In it talked about the virtues of using the new |&amp;gt; operator, sighting the following example as something it would be difficult without it:&amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;/o:p &amp;nbsp;/o:p letmethods = System.AppDomain.CurrentDomain.GetAssemblies()/o:p &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; |&amp;gt; List.of_array |&amp;gt; List.map ( fun assm -&amp;gt; assm.GetTypes() ) |&amp;gt; Array.concat/o:p &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; |&amp;gt; List.</description>
+    </item>
+    
+    <item>
+      <title>Rico Mariani’s performance quiz 8 – Part 2 – The Great Parsers Shoot Out</title>
+      <link>http://strangelights.com/achrive/2005/12/11/rico-marianis-performance-quiz-8-part-2-the-great-parsers-shoot-out.aspx/</link>
+      <pubDate>Sun, 11 Dec 2005 09:14:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/12/11/rico-marianis-performance-quiz-8-part-2-the-great-parsers-shoot-out.aspx/</guid>
+      <description>Rico made some more interesting posts in his parser performance quiz, first producing a parser where the predicates are compiled into an in memory representation and also a parser where he produces IL on the fly. He talks about them here and here respectively.&amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;/o:p &amp;nbsp;/o:p So I ported both of these parsers to F#; as they demonstrate some nice uses of patterns commonly used in ML, such as take one data structure that is easy to read and transforming it into another than is easy to evaluate.</description>
+    </item>
+    
+    <item>
+      <title>A little too lazy</title>
+      <link>http://strangelights.com/achrive/2005/11/29/a-little-too-lazy.aspx/</link>
+      <pubDate>Tue, 29 Nov 2005 08:27:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/11/29/a-little-too-lazy.aspx/</guid>
+      <description>Last night I too another look at my parser and unfortunately discovered some quite serious flaws in the algorithm, it was just too lazy and almost always terminated before it should. To fix these I basically ended up starting from scratch, I&amp;#8217;ve reloaded the results. I&amp;#8217;ll be tidying it up and talking about what went wrong as part of a wider comparison of all 3 parsers.&amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;/o:p</description>
+    </item>
+    
+    <item>
+      <title>Rico Mariani’s performance quiz 8 - Parsers</title>
+      <link>http://strangelights.com/achrive/2005/11/26/rico-marianis-performance-quiz-8-parsers.aspx/</link>
+      <pubDate>Sat, 26 Nov 2005 11:05:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/11/26/rico-marianis-performance-quiz-8-parsers.aspx/</guid>
+      <description>The snow is falling over Saint Germain en Laye and it makes everything look really pretty, but I have absolutely no whish to go outside, so I sit in the flat and what it fall and write this blog entry instead.&amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;/o:p &amp;nbsp;/o:p I&amp;#8217;ve been following Rico Mariani&amp;#8217;s performance quizzes for a while now and always found them interesting. The latest quiz on the performance of a parse, reminded me of a famous CS quote that every large software project has badly implement lisp engine in it.</description>
+    </item>
+    
+    <item>
+      <title>Reflecting Over Generic Types – Careful Now!</title>
+      <link>http://strangelights.com/achrive/2005/10/31/reflecting-over-generic-types-careful-now.aspx/</link>
+      <pubDate>Mon, 31 Oct 2005 19:17:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/10/31/reflecting-over-generic-types-careful-now.aspx/</guid>
+      <description>Today was I was on holiday, doing a &amp;#171;&amp;nbsp;faire le ponte&amp;nbsp;&amp;#187; between the weekend and the public holiday toussaint (all saints day). I had chance to get lots of little jobs out of the way, such as tidying the garden and making the Christmas puddings. In between that I installed Visual Studio 2005 RTM on my laptop as apposed to a virtual machine.&amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;/o:p &amp;nbsp;/o:p So I thought I&amp;#8217;d also take some time to write up some notes on things that I have noticed reflecting over generic types in framework version 2.</description>
+    </item>
+    
+    <item>
+      <title>F# docs</title>
+      <link>http://strangelights.com/achrive/2005/10/30/fsharp-docs.aspx/</link>
+      <pubDate>Sun, 30 Oct 2005 15:42:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/10/30/fsharp-docs.aspx/</guid>
+      <description>As noted here and here I have created some documents for F# using NDoc and the xml files that are available on with the F# download. There still in &amp;ldquo;beta&amp;rdquo; phase as I&amp;rsquo;ll be making refinements such as search engine optimisations, as well as a build in search, but you may already find them useful. Enjoy!&amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;/o:p</description>
+    </item>
+    
+    <item>
+      <title>C# 3.0 – The var “keyword” and anonymous classes</title>
+      <link>http://strangelights.com/achrive/2005/10/10/csharp-3.0-the-var-keyword-and-anonymous-classes.aspx/</link>
+      <pubDate>Mon, 10 Oct 2005 17:10:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/10/10/csharp-3.0-the-var-keyword-and-anonymous-classes.aspx/</guid>
+      <description>This is an explanation of why the var &amp;#8220;keyword&amp;#8221; is like it is, and how this effects anonymous classes. I should probably point out I&amp;#8217;m nothing to do with the C# design team, so these are merely my own opinions.&amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;/o:p &amp;nbsp;/o:p The var is all about type inference, it&amp;#8217;s important to remember this is still static typing. The var keyword informs the compiler that it should try and infer the type of variable; if it can not do this a compile error is generated.</description>
+    </item>
+    
+    <item>
+      <title>Web lambdas</title>
+      <link>http://strangelights.com/achrive/2005/10/7/web-lambdas.aspx/</link>
+      <pubDate>Fri, 07 Oct 2005 01:00:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/10/7/web-lambdas.aspx/</guid>
+      <description>Last night we ate at the palace kitchen, why? Because Don Box recommended it to us! And very good it was too, we enjoyed a nice bottle of west coast red wine, which even my French friend Eric thought was good.&amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;/o:p &amp;nbsp;/o:p Anyway when our small party met him he was in the middle of a discussion with another Microsoft guy about xaml. They were talking about the possibility of using xaml to generate in memory only assemblies, of course while this is fun it does raise all sort of security issues, so Don suggest that you could send the xaml to an indigo service and sign with the propitiate ws-* feature.</description>
+    </item>
+    
+    <item>
+      <title>AsssmeblyExplorer : Reloaded</title>
+      <link>http://strangelights.com/achrive/2005/10/1/asssmeblyexplorer-reloaded.aspx/</link>
+      <pubDate>Sat, 01 Oct 2005 12:38:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/10/1/asssmeblyexplorer-reloaded.aspx/</guid>
+      <description>I recently started measuring what gets downloaded and this made me noticed that my AssemblyExplorer tool is still very popular. I found this a little strange as its hopeless out of date. Also, why&amp;nbsp;wouldn&amp;rsquo;t you just use reflector&amp;nbsp;Anyway as it was popular I decided I&amp;#8217;d revamp it, and sat down to do just that this morning. I successful completed the first stage of things, it now it works with the latest version of F# and AbsIl.</description>
+    </item>
+    
+    <item>
+      <title>F# and LINQ</title>
+      <link>http://strangelights.com/achrive/2005/9/24/fsharp-and-linq.aspx/</link>
+      <pubDate>Sat, 24 Sep 2005 08:33:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/9/24/fsharp-and-linq.aspx/</guid>
+      <description>If you take a look under the hood at the new System.Query name space you will see that the core of it is located in the &amp;#8220;Sequence&amp;#8221; class and this class bears an amazing resemblance to the F# List library located in the MLLib.dll. Okay you have to use your imagination a tiny bit, but if you consider that:&amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;/o:p &amp;nbsp;/o:p System.Collections.Generic.IEnumberable&amp;lt;T&amp;gt;() /o:p &amp;nbsp;/o:p Is really not that different from:/o:p &amp;nbsp;/o:p Microsoft.</description>
+    </item>
+    
+    <item>
+      <title>Top VSTS Tips - source control</title>
+      <link>http://strangelights.com/achrive/2005/9/19/top-vsts-tips-source-control.aspx/</link>
+      <pubDate>Mon, 19 Sep 2005 13:24:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/9/19/top-vsts-tips-source-control.aspx/</guid>
+      <description>&amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt; If you want use the source control get to know the new command line tool &amp;lsquo;h&amp;rsquo;. It seems what you can do though the IDE is a bit limited, for example there doesn&amp;rsquo;t seem to be away to map source control folder to a folder on the disk without using &amp;lsquo;h&amp;rsquo;./o:p &amp;nbsp;/o:p The full details of the commands are available here:/o:p http://blogs.msdn.com/buckh/articles/CommandLineSummary.aspx/o:p &amp;nbsp;/o:p And if you did want to map a folder the syntax would be:/o:p h workfold /map /workspace:MyWorkspaceName $/MySSPath C:\MyPath/o:p &amp;nbsp;/o:p There are a couple of slightly annoying things:/o:p &amp;nbsp;- There&amp;#8217;s no way copy and past the path so you have type it out in manually/o:p &amp;nbsp;- Once you&amp;#8217;ve mapped the path you can&amp;#8217;t just &amp;#8220;check out&amp;#8221; and start editing, you have to get latest version first.</description>
+    </item>
+    
+    <item>
+      <title>Aspf Demo</title>
+      <link>http://strangelights.com/achrive/2005/8/28/aspf-demo.aspx/</link>
+      <pubDate>Sun, 28 Aug 2005 14:03:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/8/28/aspf-demo.aspx/</guid>
+      <description>I have update the Aspf Demo so it now utilises F# 1.1 ablity to define classes. It now also inculdes a web serverice. Enjoy! http://www.strangelights.com/fsharp/AspfDemo/</description>
+    </item>
+    
+    <item>
+      <title>Arg Parsing – The Chris Sells Challenge</title>
+      <link>http://strangelights.com/achrive/2005/8/13/arg-parsing-the-chris-sells-challenge.aspx/</link>
+      <pubDate>Sat, 13 Aug 2005 16:12:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/8/13/arg-parsing-the-chris-sells-challenge.aspx/</guid>
+      <description>&amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt; A couple of days ago Chris Sells made this post about the way&amp;nbsp;best to parse command line augments. Given an xml document describing the structure of a command line augment, he wants to know would it be best to use code gen or an interpreter to parse command line arguments. Here is the xml structure he was talking about./o:p &amp;nbsp;/o:p &amp;lt;args description=&amp;ldquo;Two wrongs don&amp;rsquo;t make a right, but three lefts do&amp;rdquo;&amp;gt;&amp;nbsp; &amp;lt;arg name=&amp;ldquo;lefts&amp;rdquo; description=&amp;ldquo;Number of left turns&amp;rdquo; type=&amp;ldquo;int&amp;rdquo; default=4&amp;rdquo; /&amp;gt;&amp;nbsp; &amp;lt;arg name=&amp;ldquo;attitude&amp;rdquo; description=&amp;ldquo;Driver attitude&amp;rdquo; required=&amp;ldquo;true&amp;rdquo; type=&amp;ldquo;string&amp;rdquo; /&amp;gt;&amp;lt;/args&amp;gt;/o:p &amp;nbsp;/o:p F# (and the ML languages in general) offers a third way.</description>
+    </item>
+    
+    <item>
+      <title>Functional Programming in C# 2.0 - Bidirectional Folding</title>
+      <link>http://strangelights.com/achrive/2005/8/13/functional-programming-in-csharp-2.0-bidirectional-folding.aspx/</link>
+      <pubDate>Sat, 13 Aug 2005 07:48:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/8/13/functional-programming-in-csharp-2.0-bidirectional-folding.aspx/</guid>
+      <description>&amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt; Last time we took a look at folding. It may not have escaped the readers notice that some operations are dependent on the order the parameters are processed. For instance in the string concatenation example the order the parameters are processed affects the order they appear in the output string. But in this example to reverse the order of result does not actually require access to the list in both directions, it is only necessary to reverse the order that the parameters are concatenated in:/o:p &amp;nbsp;/o:p // intList = {1, 2, 3, 4, 5, 6}/o:p string result2 = /o:p Fold(/o:p delegate(int value1, string value2) { return value2 + &amp;ldquo;, &amp;rdquo; + value1; }, /o:p &amp;rdquo;&amp;ldquo;, /o:p intList);/o:p // result2 = &amp;#8220;, 1, 2, 3, 4, 5, 6&amp;#8221;/o:p &amp;nbsp;/o:p string result3 = /o:p Fold(/o:p delegate(int value1, string value2) { return value1 + &amp;ldquo;, &amp;rdquo; + value2; }, /o:p &amp;rdquo;&amp;ldquo;, /o:p intList);/o:p // result3 = &amp;#8220;6, 5, 4, 3, 2, 1,&amp;#8221;/o:p &amp;nbsp;/o:p However some operations such as division are trickier and process the list in different directions will give different results; we can just get away with process the parameters differently.</description>
+    </item>
+    
+    <item>
+      <title>Functional Programming in C# 2.0 - Folding</title>
+      <link>http://strangelights.com/achrive/2005/8/12/functional-programming-in-csharp-2.0-folding.aspx/</link>
+      <pubDate>Fri, 12 Aug 2005 19:44:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/8/12/functional-programming-in-csharp-2.0-folding.aspx/</guid>
+      <description>Late there has been quite a lot of talk about functional programming in C#. Efforts by Don Box, have been note and used on this blog several times and now that and now Sriram Krishnan has produced this nice piece on currying in C# 2.0.&amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;/o:p &amp;nbsp;/o:pOne area that seams to have been over looked so far is folding. A folding function is similar to a mapping function and mapping functions are supported by the framework library in version 2.</description>
+    </item>
+    
+    <item>
+      <title>Comments</title>
+      <link>http://strangelights.com/achrive/2005/6/23/comments.aspx/</link>
+      <pubDate>Thu, 23 Jun 2005 17:20:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/6/23/comments.aspx/</guid>
+      <description>I had to disable comments temporally because I am receiving large amounts of spam. They will be back as soon as I have the time to implement an anti-robot solution.&amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;/o:p</description>
+    </item>
+    
+    <item>
+      <title>Dynamic compilation, evaluation, and a console</title>
+      <link>http://strangelights.com/achrive/2005/6/5/dynamic-compilation-evaluation-and-a-console.aspx/</link>
+      <pubDate>Sun, 05 Jun 2005 13:45:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/6/5/dynamic-compilation-evaluation-and-a-console.aspx/</guid>
+      <description>A couple of weeks ago Don Box made a post about dynamic evaluation in C#. Since a console and dynamic evaluation are popular feature request for F# I decided to have ago at implementing this in F#. The results can be found here. &amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;&amp;nbsp;/o:p At the moment it&amp;#8217;s pretty limited, you can just evaluate an express and the result will get thrown away, only values that are not functions will be evaluated properly, there&amp;#8217;s no error handling and the printing of the output types is a little limited.</description>
+    </item>
+    
+    <item>
+      <title>Continuation Style Passing</title>
+      <link>http://strangelights.com/achrive/2005/5/8/continuation-style-passing.aspx/</link>
+      <pubDate>Sun, 08 May 2005 17:34:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/5/8/continuation-style-passing.aspx/</guid>
+      <description>Don Box made another post on Continuations and Closures that made me realised I&amp;#8217;d made a mistake in my last post. I had not used continuation; I merely used a closure that captured some mutable variables. Also F#/Caml does not have continuations in the same way Ruby does.&amp;nbsp;F#&amp;nbsp;does however have continuation style passing, also discussed in Mr. Box aforementioned post. &amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;&amp;nbsp;/o:p Anyway I thought I&amp;#8217;d write a sort piece to show continuation style passing in action in F# , using my old favourite the Fibonacci series.</description>
+    </item>
+    
+    <item>
+      <title>Don Box/Sam Ruby on Continuations</title>
+      <link>http://strangelights.com/achrive/2005/4/23/don-box-sam-ruby-on-continuations.aspx/</link>
+      <pubDate>Sat, 23 Apr 2005 16:04:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/4/23/don-box-sam-ruby-on-continuations.aspx/</guid>
+      <description>The ever charismatic Mr. Box made a lovely post about continuations in C# 2.0: http://pluralsight.com/blogs/dbox/archive/2005/04/17/7467.aspx &amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;&amp;nbsp;/o:p Because I have used a simpler Fibonacci implementation in couple of places, I thought I&amp;#8217;d port it to F#. &amp;nbsp;/o:p Of course continuations are not a new idea; they have been used for a long time in ML style programming. The implementation is most like the continuations by anonymous methods, as anonymous methods work well in ML as they are very similar idea to lambdas.</description>
+    </item>
+    
+    <item>
+      <title>F Sharp Wiki</title>
+      <link>http://strangelights.com/achrive/2005/4/10/f-sharp-wiki.aspx/</link>
+      <pubDate>Sun, 10 Apr 2005 18:56:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/4/10/f-sharp-wiki.aspx/</guid>
+      <description>I haven&amp;#8217;t had a lot of time lately to update my FSharp site, as I&amp;#8217;ve been very busy with at work. I thought it would be a neat idea if other people could update it too, so I have created the FSharpWiki. Have and look and remember YouAreEncouragedToChangeTheWiki.</description>
+    </item>
+    
+    <item>
+      <title>Why Some/None is better than null</title>
+      <link>http://strangelights.com/achrive/2005/3/28/why-some-none-is-better-than-null.aspx/</link>
+      <pubDate>Mon, 28 Mar 2005 07:19:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/3/28/why-some-none-is-better-than-null.aspx/</guid>
+      <description>People interested in the advantages for F# might do well to take a look at F# option type. This allows an F# programmer to specify the presents or absence of some data much the same way a C# programmer might use a null reference.  &amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;&amp;nbsp;/o:p Let us take a quick look at how you might use the option type. It is implemented as a discriminating union so can be investigated with F#&amp;#8217;s pattern matching constructs.</description>
+    </item>
+    
+    <item>
+      <title>Tallow! Beware!</title>
+      <link>http://strangelights.com/achrive/2005/3/7/tallow-beware.aspx/</link>
+      <pubDate>Mon, 07 Mar 2005 13:09:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/3/7/tallow-beware.aspx/</guid>
+      <description>&amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;&amp;nbsp;/o:p I think Tallow is a cool tool it can save you a lot of typing when creating a wix installation. I recently used it to create a couple of installations for a project I&amp;#8217;m not. It was then I noticed it does have one downside: it does not add a Guid attribute to any of the Component tags it generates. &amp;nbsp;/o:p I know this does sounds like a major thing, but it had me scratching my head of a while.</description>
+    </item>
+    
+    <item>
+      <title>The Expressiveness of a Language</title>
+      <link>http://strangelights.com/achrive/2005/2/6/the-expressiveness-of-a-language.aspx/</link>
+      <pubDate>Sun, 06 Feb 2005 18:41:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/2/6/the-expressiveness-of-a-language.aspx/</guid>
+      <description>&amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;&amp;nbsp;/o:p People have been known to ask me, what makes F# better than C#? This is a since what people think is good or bad about a programming languages just comes down to taste. However Alejandro Serrano blog post about how an F# typeof operator can be definedgot me thinking about things you can do in F# that you can in C#. In it he describes how you can define a typeof operator for F#, this is something you can not do it C# the type of function is build in to the compiler and can not be defined as a method.</description>
+    </item>
+    
+    <item>
+      <title>Extensible programming languages</title>
+      <link>http://strangelights.com/achrive/2005/1/19/extensible-programming-languages.aspx/</link>
+      <pubDate>Wed, 19 Jan 2005 18:09:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/1/19/extensible-programming-languages.aspx/</guid>
+      <description>I came across this article via Slashdot, which seems to be an abridge of an article that I&amp;#8217;d already seen via lambda the ultimate. &amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;&amp;nbsp;/o:p The idea of extensible programming languages is interesting one but not a particularly a new one and nor do I think xml is the right tool for solving these problems.  &amp;nbsp;/o:p XML as a programming language &amp;nbsp;/o:p XML is a good way of representing data, especially if the data needs to be passed between systems or serialised for storage.</description>
+    </item>
+    
+    <item>
+      <title>Visual Studio intergration for F#</title>
+      <link>http://strangelights.com/achrive/2005/1/18/visual-studio-intergration-for-fsharp.aspx/</link>
+      <pubDate>Tue, 18 Jan 2005 08:07:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/1/18/visual-studio-intergration-for-fsharp.aspx/</guid>
+      <description>Don Syme recently made this post about adding IntelliSense to the visual studio intergration of F#. Although I do missing the &amp;lt;ctrl&amp;gt;-&amp;lt;space&amp;gt;, there are some nice features to the current version. In fact the back ground error checking is better that C# in both visual studio 2003 and 2005. The F# intergration will warn you if you are using an type that does not exists, C# will not do this.</description>
+    </item>
+    
+    <item>
+      <title>Don Syme has started a blog</title>
+      <link>http://strangelights.com/achrive/2005/1/6/don-syme-has-started-a-blog.aspx/</link>
+      <pubDate>Thu, 06 Jan 2005 08:41:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2005/1/6/don-syme-has-started-a-blog.aspx/</guid>
+      <description>Don Syme, the creater of F#, has started a web log, it&amp;rsquo;s part of the msdn blogs site http://blogs.msdn.com/dsyme. This is going to be one to watch if you any interest in F#.</description>
+    </item>
+    
+    <item>
+      <title>Aspf Demo</title>
+      <link>http://strangelights.com/achrive/2004/10/19/aspf-demo.aspx/</link>
+      <pubDate>Tue, 19 Oct 2004 08:07:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2004/10/19/aspf-demo.aspx/</guid>
+      <description>I&amp;#8217;ve create this demonstration of how to implement active server pages in F#. Hope you like it. &amp;nbsp; The rest of the site should&amp;nbsp; be getting an overhall soon.</description>
+    </item>
+    
+    <item>
+      <title>Laundry Come Bar</title>
+      <link>http://strangelights.com/achrive/2004/10/10/laundry-come-bar.aspx/</link>
+      <pubDate>Sun, 10 Oct 2004 13:11:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2004/10/10/laundry-come-bar.aspx/</guid>
+      <description>&amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;&amp;nbsp;/o:pI&amp;#8217;ve recently moved into a new apartment in &amp;lt;?xml:namespace prefix = st1 ns = &amp;ldquo;urn:schemas-microsoft-com:office:smarttags&amp;rdquo; /&amp;gt;Copenhagen/st1:place/st1:City and it has no washing machine. This is why I was very pleased to find &amp;#8220;The Laundromat Caf&amp;#233;&amp;#8221;, a bar with a small laundry at the back. I thought this was a really neat idea, certainly makes waiting of you&amp;#8217;re clothes to dry a lot more pleasant.</description>
+    </item>
+    
+    <item>
+      <title>Interesting offer</title>
+      <link>http://strangelights.com/achrive/2004/10/10/interesting-offer.aspx/</link>
+      <pubDate>Sun, 10 Oct 2004 12:58:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2004/10/10/interesting-offer.aspx/</guid>
+      <description>&amp;nbsp; The Copenhagen Post is a news paper for English speakers living in &amp;lt;?xml:namespace prefix = st1 ns = &amp;ldquo;urn:schemas-microsoft-com:office:smarttags&amp;rdquo; /&amp;gt;Denmark/st1:place/st1:country-region. I tend to read it cover to cover because it&amp;#8217;s very short and it&amp;#8217;s weekly. It also gives me feeling of some local savvy. I spotted this interesting offer in the small ads sections. &amp;nbsp;  &amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;&amp;nbsp;/o:p Unfortunately I won&amp;#8217;t be any where California/st1:place/st1:State in the near future so won&amp;#8217;t be able to take him up on his offer (I&amp;#8217;m assuming it is a bloke, but I bet I&amp;#8217;m right).</description>
+    </item>
+    
+    <item>
+      <title>Subtle problem</title>
+      <link>http://strangelights.com/achrive/2004/10/8/subtle-problem.aspx/</link>
+      <pubDate>Fri, 08 Oct 2004 08:31:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2004/10/8/subtle-problem.aspx/</guid>
+      <description>The following two lines of code look innocent enough, but they create a problem that took us ages to track down. (Well not these exact lines of code but you get the idea). &amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;&amp;nbsp;/o:p IPAddress address = IPAddress.Parse(&amp;ldquo;&amp;rdquo;);/o:p Console.WriteLine(address.ToString());/o:p &amp;nbsp;/o:p The problem is on Windows XP (SP 1) this works fine, on Windows 2003 this code throws a FormatException. The reason is although you&amp;#8217;re running exactly the same managed code the framework relies on unmanaged code to do most of the work, it p/invokes a method &amp;#8220;inet_addr&amp;#8221; in &amp;#8220;ws2_32.</description>
+    </item>
+    
+    <item>
+      <title>Creating a virtual directory with Wix works a treat</title>
+      <link>http://strangelights.com/achrive/2004/10/8/creating-a-virtual-directory-with-wix-works-a-treat.aspx/</link>
+      <pubDate>Fri, 08 Oct 2004 07:54:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2004/10/8/creating-a-virtual-directory-with-wix-works-a-treat.aspx/</guid>
+      <description>I&amp;#8217;ve just tried out creating a virtual directory with Wix and there&amp;#8217;s really not that much too it, there&amp;#8217;s a couple of places where the syntax isn&amp;#8217;t that intuitive but the compiler nudges you in the right direction. I thought I&amp;#8217;d share my experience anyway as the Wix post seem quite popular and it&amp;#8217;s often nice to have a template to start from if you&amp;#8217;re setting out to do these things.</description>
+    </item>
+    
+    <item>
+      <title>pduck.com</title>
+      <link>http://strangelights.com/achrive/2004/10/3/pduck.com.aspx/</link>
+      <pubDate>Sun, 03 Oct 2004 16:13:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2004/10/3/pduck.com.aspx/</guid>
+      <description>Not strictly a wix site, but lots of interesting about windows installer: http://www.pduck.com</description>
+    </item>
+    
+    <item>
+      <title>Wix Custom Actions</title>
+      <link>http://strangelights.com/achrive/2004/9/27/wix-custom-actions.aspx/</link>
+      <pubDate>Mon, 27 Sep 2004 12:44:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2004/9/27/wix-custom-actions.aspx/</guid>
+      <description>An msi is really a relational database made up of a number of tables. When an installation runs the windows installer parses the msi and then queries tables to see what actions it must perform. Msdn has a complete list of tables that the windows installer uses and it&amp;#8217;s very worth while checking it out because it will give you a good idea of what you&amp;#8217;re install is going to do and why.</description>
+    </item>
+    
+    <item>
+      <title>Creating Users with Wix – It Works</title>
+      <link>http://strangelights.com/achrive/2004/9/26/creating-users-with-wix-it-works.aspx/</link>
+      <pubDate>Sun, 26 Sep 2004 09:27:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2004/9/26/creating-users-with-wix-it-works.aspx/</guid>
+      <description>On the 10th September a new version of wix was released. This included two library files that would add the necessary elements to you&amp;#8217;re wix file to drive the custom actions. This means creating a new user now works correctly. I&amp;#8217;ve even tested adding the user to a group seems to work okay, although I am little cynical to whether this will work on a machine set up in a foreign language as the name of well know groups varies here.</description>
+    </item>
+    
+    <item>
+      <title>Inferred type system</title>
+      <link>http://strangelights.com/achrive/2004/9/14/inferred-type-system.aspx/</link>
+      <pubDate>Tue, 14 Sep 2004 20:52:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2004/9/14/inferred-type-system.aspx/</guid>
+      <description>&amp;nbsp; A couple of days ago I was reading a post about dynamic languages (scripting languages with good PR) on lambda the ultimate. The author wrote &amp;#8220;&amp;#8217;strong&amp;#8217; typing is not the same as &amp;#8216;explicit typing&amp;#8217;&amp;#8221;, which is very true and got me thinking about inferred type system, such as the one F# uses. &amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;&amp;nbsp;/o:p The big advantages is that doesn&amp;#8217;t seem to be talked about much is that because in inferred type you don&amp;#8217;t explicitly say what type an identifier is you get a lot more choice about what you compile it down to.</description>
+    </item>
+    
+    <item>
+      <title>Installing Services, User, Virtual Directories etc. using Wix</title>
+      <link>http://strangelights.com/achrive/2004/9/6/installing-services-user-virtual-directories-etc.-using-wix.aspx/</link>
+      <pubDate>Mon, 06 Sep 2004 19:42:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2004/9/6/installing-services-user-virtual-directories-etc.-using-wix.aspx/</guid>
+      <description>If you have had a look at the documentation you&amp;#8217;ve probably noticed a few elements like &amp;#8220;ServiceInstall&amp;#8221;, &amp;#8220;User&amp;#8221; and &amp;#8220;WebVirtualDir&amp;#8221;. What these elements all have in common is that if you add them to a wix document they will compile and link with out any problem, but they will not do anything at all on installation. If you take a closer at the msi produced using the reason they do nothing becomes clear, for example the User elements generates a table called user in the Msi and if you read the windows installer documentation you will quickly see there is no User table defined.</description>
+    </item>
+    
+    <item>
+      <title>Much ASP.NET 2.0 hackery</title>
+      <link>http://strangelights.com/achrive/2004/9/2/much-asp.net-2.0-hackery.aspx/</link>
+      <pubDate>Thu, 02 Sep 2004 22:31:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2004/9/2/much-asp.net-2.0-hackery.aspx/</guid>
+      <description>I&amp;#8217;ve always been interested in the inner workings of ASP.NET, and with ASP.NET 2.0 coming out along with a new version of F# I decided I&amp;#8217;d have a better stab at creating some kind of support of ASP.NET in F#. &amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;&amp;nbsp;/o:p To create a page the framework compiles the aspx source into a .NET type that derives from System.Web.UI.Page. In the frameworks version 1.</description>
+    </item>
+    
+    <item>
+      <title>Links update</title>
+      <link>http://strangelights.com/achrive/2004/8/19/links-update.aspx/</link>
+      <pubDate>Thu, 19 Aug 2004 14:06:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2004/8/19/links-update.aspx/</guid>
+      <description>There is a new version of F# coming, so I&amp;rsquo;ve started to revamp my site. I started slowly with a revamp of my links page. I think I now list just about everything google can find on the F# programming language.</description>
+    </item>
+    
+    <item>
+      <title>Running .NET installer classes – Reverse engineering what VS.NET does</title>
+      <link>http://strangelights.com/achrive/2004/7/14/running-.net-installer-classes-reverse-engineering-what-vs.net-does.aspx/</link>
+      <pubDate>Wed, 14 Jul 2004 21:01:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2004/7/14/running-.net-installer-classes-reverse-engineering-what-vs.net-does.aspx/</guid>
+      <description>Rob Mensching has been promising to put an updated version of WiX with better written documentation on sourceforget.net for a while now. But at the time of writing the May 27th build is still the latest one. But do you know what? I&amp;#8217;m beginning not to care. I&amp;#8217;m actually getting to the point where I can do anything I want: though the gifts of dark and orca (for examining what&amp;#8217;s going on in an msi) and virtual pc for an easy way to test roll outs.</description>
+    </item>
+    
+    <item>
+      <title>CustomActions and uninstalls</title>
+      <link>http://strangelights.com/achrive/2004/7/7/customactions-and-uninstalls.aspx/</link>
+      <pubDate>Wed, 07 Jul 2004 15:47:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2004/7/7/customactions-and-uninstalls.aspx/</guid>
+      <description>I needed to add a CustomAction that removed the native image from the GAC. To do this I came across more slightly odd behaviour from the windows install platform so I thought I&amp;#8217;d write a blog entry about it. &amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;&amp;nbsp;/o:p At first glance creating an uninstall action looks dead easy. Just create a custom action that does the opposite of what you did on install.</description>
+    </item>
+    
+    <item>
+      <title>Nemerle</title>
+      <link>http://strangelights.com/achrive/2004/7/5/nemerle.aspx/</link>
+      <pubDate>Mon, 05 Jul 2004 13:47:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2004/7/5/nemerle.aspx/</guid>
+      <description>A functional programing language being created with the mono framework. Interesting stuff: http://www.nemerle.org/</description>
+    </item>
+    
+    <item>
+      <title>NGen Custom Actions using WiX – Part II: Type 34 actions</title>
+      <link>http://strangelights.com/achrive/2004/6/30/ngen-custom-actions-using-wix-part-ii-type-34-actions.aspx/</link>
+      <pubDate>Wed, 30 Jun 2004 12:27:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2004/6/30/ngen-custom-actions-using-wix-part-ii-type-34-actions.aspx/</guid>
+      <description>&amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt; As I alluded to in my last wix blog entry if you want to provide any sort of location robust access to well known folders Type 50 CustomActions are not for you. I thought I could get away with this as we&amp;#8217;re just using msi to deploy our bespoke app to the testing environments which we control. However my boss came to me this morning saying they had one machine on behaving in a pre-jited manor could I take a look; sure enough the windows folder on this machine was c:\winnt rather than c:\windows like I had assumed it would be.</description>
+    </item>
+    
+    <item>
+      <title>NGen Custom Actions using WiX</title>
+      <link>http://strangelights.com/achrive/2004/6/29/ngen-custom-actions-using-wix.aspx/</link>
+      <pubDate>Tue, 29 Jun 2004 20:34:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2004/6/29/ngen-custom-actions-using-wix.aspx/</guid>
+      <description>I recently had to create an msi installer that ran ngen on each of the assemblies that I installed. I had a number of difficulties doing this, so I thought I share my findings here an hopefully save others a bit of time. &amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;&amp;nbsp;/o:p I won&amp;#8217;t have been able to do this at all with out orca, an MSI decompiler supplied with the installer section of the platform SDK.</description>
+    </item>
+    
+    <item>
+      <title>Parser Library for F#</title>
+      <link>http://strangelights.com/achrive/2004/6/19/parser-library-for-fsharp.aspx/</link>
+      <pubDate>Sat, 19 Jun 2004 09:56:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2004/6/19/parser-library-for-fsharp.aspx/</guid>
+      <description>Dominic Cooney has create this parser library for F#.</description>
+    </item>
+    
+    <item>
+      <title>Regular expression interpreter in F#</title>
+      <link>http://strangelights.com/achrive/2004/6/11/regular-expression-interpreter-in-fsharp.aspx/</link>
+      <pubDate>Fri, 11 Jun 2004 12:06:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2004/6/11/regular-expression-interpreter-in-fsharp.aspx/</guid>
+      <description>Domonic Cooney has published an interesting blog poston a regular expression interpreter in F# &amp;nbsp; &amp;nbsp;</description>
+    </item>
+    
+    <item>
+      <title>Danish customs 2</title>
+      <link>http://strangelights.com/achrive/2004/6/10/danish-customs-2.aspx/</link>
+      <pubDate>Thu, 10 Jun 2004 12:19:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2004/6/10/danish-customs-2.aspx/</guid>
+      <description>If you get married in &amp;lt;?xml:namespace prefix = st1 ns = &amp;ldquo;urn:schemas-microsoft-com:office:smarttags&amp;rdquo; /&amp;gt;st1:country-regionst1:placeDenmark/st1:place/st1:country-regionthe groom does not know when his stag&amp;nbsp;(bachelor) party will be. His friends arrange to kidnap him some time before the big day and return him some time later, hopefully before the wedding.&amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;/o:p
+Feedback: Feedback was imported from my only blog engine, it&amp;rsquo;s no longer possible to post feedback here.</description>
+    </item>
+    
+    <item>
+      <title>Behaviour of SQL statement RaiseError with DataSets and IDataReaders</title>
+      <link>http://strangelights.com/achrive/2004/6/10/behaviour-of-sql-statement-raiseerror-with-datasets-and-idatareaders.aspx/</link>
+      <pubDate>Thu, 10 Jun 2004 12:15:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2004/6/10/behaviour-of-sql-statement-raiseerror-with-datasets-and-idatareaders.aspx/</guid>
+      <description>A developer at work queried me to why RaiseError generates an exception when working with a DataSet but not when working with an IDataReader. Here is a short code fragement that demonstrates the problem. &amp;lt;?xml:namespace prefix = o ns = &amp;ldquo;urn:schemas-microsoft-com:office:office&amp;rdquo; /&amp;gt;&amp;nbsp;/o:p usingSystem;/o:p usingSystem.Data;/o:p usingSystem.Data.SqlClient;/o:p &amp;nbsp;/o:p classTestRaiseError/o:p {/o:p &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; static void &amp;lt;?xml:namespace prefix = st1 ns = &amp;ldquo;urn:schemas-microsoft-com:office:smarttags&amp;rdquo; /&amp;gt;st1:placeMain/st1:place(string[] args)/o:p &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; {/o:p &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; SqlConnection connection = new SqlConnection(&amp;ldquo;server=myServer;database=northwind;uid=sa;pwd=password&amp;rdquo;);/o:p &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; SqlCommand command = new SqlCommand(&amp;ldquo;select * from Employees RAISERROR (&amp;lsquo;raise an error&amp;rsquo;, 16, 1)&amp;ldquo;, connection);/o:p &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; IDataReader reader = null;/o:p &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; try/o:p &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; {/o:p &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; connection.</description>
+    </item>
+    
+    <item>
+      <title>Danish customs</title>
+      <link>http://strangelights.com/achrive/2004/6/8/danish-customs.aspx/</link>
+      <pubDate>Tue, 08 Jun 2004 13:42:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2004/6/8/danish-customs.aspx/</guid>
+      <description>If you are not married by the you&amp;rsquo;re 25 birthday you are given cinnamon. If you&amp;rsquo;re still unmarried at 30 you get pepper.
+Feedback: Feedback was imported from my only blog engine, it&amp;rsquo;s no longer possible to post feedback here.
+re: Danish customs - Sandy Murray
+What happens at 40?
+re: Danish customs - ryan
+i need more informathion
+re: Danish customs - ryan
+need more info re: Danish customs - muffin</description>
+    </item>
+    
+    <item>
+      <title>F# updates</title>
+      <link>http://strangelights.com/achrive/2004/5/27/fsharp-updates.aspx/</link>
+      <pubDate>Thu, 27 May 2004 08:14:00 +0000</pubDate>
+      
+      <guid>http://strangelights.com/achrive/2004/5/27/fsharp-updates.aspx/</guid>
+      <description>I&amp;rsquo;ll be noting all f# updates in my blog, so you can just subscribe to the &amp;ldquo;F# updates&amp;rdquo; feed and be automatically informed of any new F# updates. On a related note I&amp;rsquo;ve added 5 new tutorals to the f sharp site. A summary of these is available here.</description>
+    </item>
+    
+  </channel>
+</rss>

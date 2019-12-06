@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		
+
+		<title>Behaviour of SQL statement RaiseError with DataSets and IDataReaders</title>
+
+		
+		<link rel="stylesheet" href="http://strangelights.com/css/colors-dark.min.217a2547e8e6c808986d22ef70b50263c2d6a4bbc80ed42e97e280a41103f9b5.css">
+
+		
+	</head>
+	<body>
+		<header id="header">
+			<h1><a href="http://strangelights.com/">Strangelights</a></h1>
+			<p></p>
+		</header>
+
+		<div id="page">
+			<div id="sidebar">
+				<nav>
+	
+</nav>
+
+			</div>
+
+			<div id="content">
+				
+	<article class="post">
+		<h1><a href="http://strangelights.com/achrive/2004/6/10/behaviour-of-sql-statement-raiseerror-with-datasets-and-idatareaders.aspx/">Behaviour of SQL statement RaiseError with DataSets and IDataReaders</a> </h1>
+
+		<div class="post-content"><p><P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Arial size=2>A developer at work queried me to why RaiseError generates an exception when working with a DataSet but not when working with an IDataReader. Here is a short code fragement that demonstrates the problem.</FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt">&lt;?xml:namespace prefix = o ns = &ldquo;urn:schemas-microsoft-com:office:office&rdquo; /&gt;<o:p><FONT face=Arial size=2>&nbsp;</FONT><a href="/o:p">/o:p</a></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><FONT size=2><SPAN style="COLOR: blue; FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt">using</SPAN><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"> System;<o:p><a href="/o:p">/o:p</a></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><FONT size=2><SPAN style="COLOR: blue; FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt">using</SPAN><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"> System.Data;<o:p><a href="/o:p">/o:p</a></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><FONT size=2><SPAN style="COLOR: blue; FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt">using</SPAN><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"> System.Data.SqlClient;<o:p><a href="/o:p">/o:p</a></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><o:p><FONT size=2>&nbsp;</FONT><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><FONT size=2><SPAN style="COLOR: blue; FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt">class</SPAN><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"> TestRaiseError<o:p><a href="/o:p">/o:p</a></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2>{<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><FONT size=2><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="COLOR: blue">static</SPAN> <SPAN style="COLOR: blue">void</SPAN> </SPAN>&lt;?xml:namespace prefix = st1 ns = &ldquo;urn:schemas-microsoft-com:office:smarttags&rdquo; /&gt;<a href="st1:place">st1:place</a><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt">Main</SPAN><a href="/st1:place">/st1:place</a><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt">(<SPAN style="COLOR: blue">string</SPAN>[] args)<o:p><a href="/o:p">/o:p</a></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>{<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>SqlConnection connection = <SPAN style="COLOR: blue">new</SPAN> SqlConnection(&ldquo;server=myServer;database=northwind;uid=sa;pwd=password&rdquo;);<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>SqlCommand command = <SPAN style="COLOR: blue">new</SPAN> SqlCommand(&ldquo;select * from Employees RAISERROR (&lsquo;raise an error&rsquo;, 16, 1)&ldquo;, connection);<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>IDataReader reader = <SPAN style="COLOR: blue">null</SPAN>;<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="COLOR: blue">try<o:p><a href="/o:p">/o:p</a></SPAN></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>{<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2><SPAN style="mso-tab-count: 3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>connection.Open();<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2><SPAN style="mso-tab-count: 3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>reader = command.ExecuteReader();<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2><SPAN style="mso-tab-count: 3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="COLOR: blue">while</SPAN> (reader.Read())<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2><SPAN style="mso-tab-count: 3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>{<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2><SPAN style="mso-tab-count: 4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Console.WriteLine(reader.GetString(1));<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2><SPAN style="mso-tab-count: 3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>}<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>}<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="COLOR: blue">finally<o:p><a href="/o:p">/o:p</a></SPAN></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>{<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2><SPAN style="mso-tab-count: 3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="COLOR: blue">if</SPAN> (reader != <SPAN style="COLOR: blue">null</SPAN>)<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2><SPAN style="mso-tab-count: 3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>{<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2><SPAN style="mso-tab-count: 4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>reader.Close();<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2><SPAN style="mso-tab-count: 3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>}<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2><SPAN style="mso-tab-count: 3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="COLOR: blue">if</SPAN> (connection != <SPAN style="COLOR: blue">null</SPAN>)<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2><SPAN style="mso-tab-count: 3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>{<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2><SPAN style="mso-tab-count: 4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>connection.Close();<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2><SPAN style="mso-tab-count: 3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>}<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>}<SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>}<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"><FONT size=2>}<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><o:p><FONT face=Arial size=2>&nbsp;</FONT><a href="/o:p">/o:p</a></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Arial size=2>If you compile and run the code fragment you&#8217;ll see no exception is thrown yet the sql statement being executed contains a raise error. If the program was rewritten to use a DataSet and a SqlDataAdpater then an exception would be thrown.</FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><o:p><FONT face=Arial size=2>&nbsp;</FONT><a href="/o:p">/o:p</a></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Arial size=2>This behaviour may seem a little strange but it is by design. It is very important to remember that the an IDataReader represents an active connection to the database and records from the database will be retrieved in turn where as a dataset grabs all results from a query and places them in the clients memory. </FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><o:p><FONT face=Arial size=2>&nbsp;</FONT><a href="/o:p">/o:p</a></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Arial size=2>It is possible to return a number of different results sets from a stored procedure, when using an IDataReader these are accessed using .NextResult(). Interestingly the ADO.NET client treats RaiseError as separate results set and it is this that can lead to slightly surprising results. This means that if you have a stored procedure something like:</FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><o:p><FONT face=Arial size=2>&nbsp;</FONT><a href="/o:p">/o:p</a></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Arial size=2>SELECT * FROM myTable</FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><o:p><FONT face=Arial size=2>&nbsp;</FONT><a href="/o:p">/o:p</a></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Arial size=2>RAISERROR (&lsquo;raise an error&rsquo;, 16, 1)</FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><o:p><FONT face=Arial size=2>&nbsp;</FONT><a href="/o:p">/o:p</a></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Arial size=2>Then it is possible to read all the contents of myTable with out ever seeing the exception because you need to call .NextResult() to see the exception that is raised.</FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><o:p><FONT face=Arial size=2>&nbsp;</FONT><a href="/o:p">/o:p</a></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Arial size=2>As the DbDataAdapter that fills the DataSet is written to enumerate over all results sets <SPAN style="mso-spacerun: yes">&nbsp;</SPAN>from the query so the exception from the RaiseError is picked up.</FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><o:p><FONT face=Arial size=2>&nbsp;</FONT><a href="/o:p">/o:p</a></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT size=2><FONT face=Arial>I&#8217;ve create a small winfoms application which demonstrates all the situations described in here. It is available <A href="http://www.strangelights.com/downloan.aspx?url=/blog/downloads/TestRaiseError.zip">here</A>.<o:p><a href="/o:p">/o:p</a></FONT></FONT></P></p>
+</div>
+
+		<p class="meta">Posted on <span class="postdate">10. June 2004</span></p>
+	</article>
+
+			</div>
+
+			<footer id="footer">
+				<p class="copyright">
+					
+						Powered by <a href="https://gohugo.io/">Hugo</a> and the
+						<a href="https://github.com/bake/solar-theme-hugo">Solar</a>-theme.
+					
+				</p>
+			</footer>
+		</div>
+
+		
+	</body>
+</html>

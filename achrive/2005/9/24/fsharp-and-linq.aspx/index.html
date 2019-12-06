@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		
+
+		<title>F# and LINQ</title>
+
+		
+		<link rel="stylesheet" href="http://strangelights.com/css/colors-dark.min.217a2547e8e6c808986d22ef70b50263c2d6a4bbc80ed42e97e280a41103f9b5.css">
+
+		
+	</head>
+	<body>
+		<header id="header">
+			<h1><a href="http://strangelights.com/">Strangelights</a></h1>
+			<p></p>
+		</header>
+
+		<div id="page">
+			<div id="sidebar">
+				<nav>
+	
+</nav>
+
+			</div>
+
+			<div id="content">
+				
+	<article class="post">
+		<h1><a href="http://strangelights.com/achrive/2005/9/24/fsharp-and-linq.aspx/">F# and LINQ</a> </h1>
+
+		<div class="post-content"><p><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><FONT size=2><FONT face=Verdana>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">If you take a look under the hood at the new System.Query name space you will see that the core of it is located in the &#8220;Sequence&#8221; class and this class bears an amazing resemblance to the F# List library located in the MLLib.dll. Okay you have to use your imagination a tiny bit, but if you consider that:&lt;?xml:namespace prefix = o ns = &ldquo;urn:schemas-microsoft-com:office:office&rdquo; /&gt;<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">System.Collections.Generic.IEnumberable&lt;T&gt;() <o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">Is really not that different from:<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">Microsoft.FSharp.List&lt;A&gt;<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">Then you start to see that:<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">val map: (&lsquo;a -&gt; &lsquo;b) -&gt; &lsquo;a list -&gt; &lsquo;b list // F# signature<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">public static List&lt;B&gt; map&lt;A, B&gt;(FastFunc&lt;A, B&gt; f, List&lt;A&gt; x); // C# signature<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">Looks a lot like:<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">public static IEnumerable&lt;S&gt; Select&lt;T, S&gt;(IEnumerable&lt;T&gt; source, Func&lt;T, S&gt; selector);<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">You can also see:<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">val filter: (&lsquo;a -&gt; bool) -&gt; &lsquo;a list -&gt; &lsquo;a list // F# signature<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">public static List&lt;A&gt; filter&lt;A&gt;(FastFunc&lt;A, bool&gt; f, List&lt;A&gt; x); // C# signature<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">Looks a lot like:<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">public static IEnumerable&lt;T&gt; Where&lt;T&gt;(IEnumerable&lt;T&gt; source, Func&lt;T, bool&gt; predicate);<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">I could go on. So why should an F# programmer be interested in this library, if they already have all this functionality available in the MLLib.dll library? There are a couple of reasons; firstly the System.Query adds a few new methods that are missing from the F# list library such as Sum, Min, Max, Average and TypeOf, while each of these functions would be relatively easy to put together in F#, its nice to have them there, tested and ready to go. Perhaps more importantly the is the sear number classes in Framework 2.0 that implement the IEnumberable&lt;T&gt;() interface, nearly every collection implements it. This means just about every collection in the .Net framework is now open to this style of functional programming using System.Query, no need to convert it to a native F# type.<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">To investigate this style of functional programming I decided to implement the cute example of querying the methods on the System.String object that Anders Hejlsberg demonstrates in <A href="http://channel9.msdn.com/showpost.aspx?postid=114680">this video</A>. For those that haven&#8217;t seen the video the objective is to display the of each instance members of String once along with the number of overloads.<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">First we define some F# friendly ways to access the LINQ methods. We have a choice here; we can either go for operators or functions. <o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">Operators are an interesting choice as the operands appear on either side of the operator, allowing us to have one set of data we are working with easily apply many operations to it. Operator overloading looks like:<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">let (||) s f =<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Sequence.Select(s, new Func&lt;<em>,</em>&gt;(f))<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">Functions are perhaps a safer choice as they give us a much better description of what&#8217;s going on. Defining a function to work with LINQ looks like:<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">let select s f =<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Sequence.Select(s, new Func&lt;<em>,</em>&gt;(f))<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">The operator version of the query looks like:<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">let namesByOperator =<SPAN style="mso-spacerun: yes">&nbsp; </SPAN><o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>(methods <o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>|? (fun m -&gt; not m.IsStatic) <SPAN style="mso-spacerun: yes">&nbsp;</SPAN>// where<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>&gt; (fun m -&gt; m.Name) <SPAN style="mso-spacerun: yes">&nbsp;</SPAN>// group by<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>|| (fun m -&gt; m.Key, ! m.Group)) // select and count<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>&lt; (fun (<em>, m) -&gt; m) // order by<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">It is nice and brief, but its not too clear what&#8217;s going on, especially if the comments where omitted. Also the ordering of the brackets looks a bit random because the operators all have different presence the brackets are necessary sometimes to clarify execution order, but not others.<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">The method version looks like:<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">let select f s =<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Sequence.Select(s, new Func&lt;</em>,<em>&gt;(f))<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">let namesByFunction = <o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>(orderBy<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>(select<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><SPAN style="mso-tab-count: 3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>(groupBy <o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><SPAN style="mso-tab-count: 4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>(where methods (fun m -&gt; not m.IsStatic)) <o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><SPAN style="mso-tab-count: 3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>(fun m -&gt; m.Name))<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>(fun m -&gt; m.Key, count m.Group))<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>(fun (</em>, m) -&gt; m))<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">This is not so great either, because of the order the functions take there parameters the lambdas that define the functions behaviour get further from the function they relate to. We can help make things clearer with a bit of code formatting, but this is still not ideal. We could also improve things by defining at intermediate for all these operations, but then we&#8217;d have to think up 3 new names, which is also not ideal.<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">Another option would to be reorder the functions parameters. This is shown below:<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">let namesByFunction2 = <o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>(orderBy2 (fun (<em>, m) -&gt; m)<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>(select2 (fun (m : Grouping&lt;</em>,_&gt;) -&gt; m.Key, count m.Group)<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><SPAN style="mso-tab-count: 3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>(groupBy2 (fun (m : MethodInfo) -&gt; m.Name)<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><SPAN style="mso-tab-count: 4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>(where2 (fun (m : MethodInfo) -&gt; not m.IsStatic) methods) <o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><SPAN style="mso-tab-count: 3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>)<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>)<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>)<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">For me the readability of the code is improved by the lambda definitions being close to the functions they are defined on, however if you look at the sample you notice that now most of the lambdas have been explicitly typed. This because F#&#8217;s type inferences works left to right so it can no longer infer the type of the lambdas from the collections they are to be used with.<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">Now I think we start to see why the VB.NET and C# teams introduced their new query syntax, it looks like it&#8217;s an aid to help the programmer to stop queries becoming a mass of randomly ordered lambdas.<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">Although F# is unlikely to go the root of introducing query syntax, they are planning to look at how LINQ integrates with the language so it will be interesting to see what they come up with.<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">The full source for this demo is available <A href="http://www.strangelights.com/blog/downloads/TestFSLinq.zip">here</A>.<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB">Thanks to <A href="http://blogs.msdn.com/dsyme/">Don Syme</A> and <A href="http://research.microsoft.com/~emeijer/">Erik Meijer</A>, who both helped me with details of this post.</SPAN><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"></FONT></FONT></SPAN><B><S></P></S></B></p>
+</div>
+
+		<p class="meta">Posted on <span class="postdate">24. September 2005</span></p>
+	</article>
+
+			</div>
+
+			<footer id="footer">
+				<p class="copyright">
+					
+						Powered by <a href="https://gohugo.io/">Hugo</a> and the
+						<a href="https://github.com/bake/solar-theme-hugo">Solar</a>-theme.
+					
+				</p>
+			</footer>
+		</div>
+
+		
+	</body>
+</html>

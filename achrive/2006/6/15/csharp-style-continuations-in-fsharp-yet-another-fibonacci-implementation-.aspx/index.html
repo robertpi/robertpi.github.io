@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		
+
+		<title>C# style continuations in F# - yet another Fibonacci implementation </title>
+
+		
+		<link rel="stylesheet" href="http://strangelights.com/css/colors-dark.min.217a2547e8e6c808986d22ef70b50263c2d6a4bbc80ed42e97e280a41103f9b5.css">
+
+		
+	</head>
+	<body>
+		<header id="header">
+			<h1><a href="http://strangelights.com/">Strangelights</a></h1>
+			<p></p>
+		</header>
+
+		<div id="page">
+			<div id="sidebar">
+				<nav>
+	
+</nav>
+
+			</div>
+
+			<div id="content">
+				
+	<article class="post">
+		<h1><a href="http://strangelights.com/achrive/2006/6/15/csharp-style-continuations-in-fsharp-yet-another-fibonacci-implementation-.aspx/">C# style continuations in F# - yet another Fibonacci implementation </a> </h1>
+
+		<div class="post-content"><p><P class=NormalVerdana style="MARGIN: 0in 0in 0pt"><SPAN style="FONT-SIZE: 10pt"><FONT face=Verdana>F# does not get support C# style continuations yet; I am reliably informed that it will do at some point.&lt;?xml:namespace prefix = o ns = &ldquo;urn:schemas-microsoft-com:office:office&rdquo; /&gt;<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=NormalVerdana style="MARGIN: 0in 0in 0pt"><SPAN style="FONT-SIZE: 10pt"><o:p><FONT face=Verdana>&nbsp;</FONT><a href="/o:p">/o:p</a></SPAN></P>
+<P class=NormalVerdana style="MARGIN: 0in 0in 0pt"><SPAN style="FONT-SIZE: 10pt"><FONT face=Verdana>However if you can not wait that long it is already fair easy to get C# style continuations by implementing System.Collections.Generic.IEmunerable your self. What&#8217;s more this can be implemented as a library function then implementing your enumerator becomes just a couple of lines of code.<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=NormalVerdana style="MARGIN: 0in 0in 0pt"><SPAN style="FONT-SIZE: 10pt"><o:p><FONT face=Verdana>&nbsp;</FONT><a href="/o:p">/o:p</a></SPAN></P>
+<P class=NormalVerdana style="MARGIN: 0in 0in 0pt"><SPAN style="FONT-SIZE: 10pt"><FONT face=Verdana>Here is my implementation:<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=NormalVerdana style="MARGIN: 0in 0in 0pt"><SPAN style="FONT-SIZE: 10pt"><o:p><FONT face=Verdana>&nbsp;</FONT><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: 'Courier New'; mso-no-proof: yes">module</SPAN><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"> Strangelights.Continuations<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: 'Courier New'; mso-no-proof: yes">open</SPAN><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"> System<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: 'Courier New'; mso-no-proof: yes">open</SPAN><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"> System.Collections<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: 'Courier New'; mso-no-proof: yes">open</SPAN><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"> System.Collections.Generic<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; COLOR: green; FONT-FAMILY: 'Courier New'; mso-no-proof: yes">// This function makes an IEnumerable interface from<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; COLOR: green; FONT-FAMILY: 'Courier New'; mso-no-proof: yes">// a mutable value &ldquo;n&rdquo; and a function &ldquo;f&rdquo; that takes unit and <o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; COLOR: green; FONT-FAMILY: 'Courier New'; mso-no-proof: yes">// returns a boolean. The idea is that the function mutates<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; COLOR: green; FONT-FAMILY: 'Courier New'; mso-no-proof: yes">// the value return true while there are more values left<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: 'Courier New'; mso-no-proof: yes">let</SPAN><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"> make_enumberable n f = <o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="COLOR: green">// this function creates a class that implments the <o:p><a href="/o:p">/o:p</a></SPAN></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="COLOR: green">// IEnumerator interface<o:p><a href="/o:p">/o:p</a></SPAN></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="COLOR: blue">let</SPAN> make<em>enumerator() = <o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>{ <SPAN style="COLOR: blue">new</SPAN> IEnumerator&lt;</em>&gt; <SPAN style="COLOR: blue">with</SPAN> <SPAN style="COLOR: green">// implment IEnumerator itself<o:p><a href="/o:p">/o:p</a></SPAN></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>get_Current() = ! n<SPAN style="mso-spacerun: yes">&nbsp; </SPAN><SPAN style="COLOR: green">// return value held in n<o:p><a href="/o:p">/o:p</a></SPAN></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="COLOR: blue">interface</SPAN> IEnumerator <SPAN style="COLOR: blue">with</SPAN> <SPAN style="COLOR: green">// implment the non generic IEnumerator<o:p><a href="/o:p">/o:p</a></SPAN></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Reset() = failwith <SPAN style="COLOR: maroon">&ldquo;not implmented&rdquo;<o:p><a href="/o:p">/o:p</a></SPAN></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="COLOR: blue">and</SPAN> MoveNext() = <o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>f() <SPAN style="COLOR: green">// call the funcition we were given<o:p><a href="/o:p">/o:p</a></SPAN></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="COLOR: blue">and</SPAN> get<em>Current() = ! n :&gt; obj <SPAN style="COLOR: green">// expose n with downcast to obj<o:p><a href="/o:p">/o:p</a></SPAN></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="COLOR: blue">interface</SPAN><SPAN style="mso-spacerun: yes">&nbsp; </SPAN>IDisposable <SPAN style="COLOR: blue">with</SPAN> <SPAN style="COLOR: green">// implment IDisposable<o:p><a href="/o:p">/o:p</a></SPAN></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Dispose() = () } <SPAN style="COLOR: blue">in<o:p><a href="/o:p">/o:p</a></SPAN></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="COLOR: green">// now we need to implment IEnumerable to make IEnumerator<o:p><a href="/o:p">/o:p</a></SPAN></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="COLOR: green">// more friendly to our calling clients<o:p><a href="/o:p">/o:p</a></SPAN></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN>{ <SPAN style="COLOR: blue">new</SPAN> IEnumerable&lt;</em>&gt; <SPAN style="COLOR: blue">with</SPAN> <SPAN style="COLOR: green">// implment IEnumerable itself<o:p><a href="/o:p">/o:p</a></SPAN></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>GetEnumerator() = make_enumerator() <o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="COLOR: blue">interface</SPAN> IEnumerable <SPAN style="COLOR: blue">with</SPAN> <SPAN style="COLOR: green">// implment the non generic IEnumerable<o:p><a href="/o:p">/o:p</a></SPAN></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>GetEnumerator() = make_enumerator() :&gt; IEnumerator }<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: 'Courier New'; mso-no-proof: yes">let</SPAN><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"> make_fib_enumberable() = <o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="COLOR: blue">let</SPAN> n<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>= ref 0I <SPAN style="COLOR: blue">in</SPAN><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="COLOR: green">// the Fibonacci number itself<o:p><a href="/o:p">/o:p</a></SPAN></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="COLOR: blue">let</SPAN> nPlus1 = ref 1I <SPAN style="COLOR: blue">in</SPAN><SPAN style="mso-spacerun: yes">&nbsp; </SPAN><SPAN style="COLOR: green">// the next number in the sequence<o:p><a href="/o:p">/o:p</a></SPAN></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; COLOR: green; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="COLOR: green">// function that calculates the next Fibonacci number<o:p><a href="/o:p">/o:p</a></SPAN></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="COLOR: green">// by changing the values n and nPlus1<o:p><a href="/o:p">/o:p</a></SPAN></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="COLOR: blue">let</SPAN> get_next() =<SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="COLOR: blue">let</SPAN> temp = ! nPlus1 <SPAN style="COLOR: blue">in</SPAN> <o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN><SPAN lang=FR style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-ansi-language: FR">nPlus1 := ! n<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>+ ! nPlus1; <o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN lang=FR style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-ansi-language: FR"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>n :=<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>temp; <o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN lang=FR style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-ansi-language: FR"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN><SPAN style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: 'Courier New'; mso-no-proof: yes">true</SPAN><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"> <SPAN style="COLOR: blue">in<o:p><a href="/o:p">/o:p</a></SPAN></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="COLOR: green">// make the enumberator<o:p><a href="/o:p">/o:p</a></SPAN></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN>make_enumberable n get_next<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; COLOR: green; FONT-FAMILY: 'Courier New'; mso-no-proof: yes">// take the fist 40 numbers from our infinite list<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: 'Courier New'; mso-no-proof: yes">let</SPAN><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"> fibs = IEnumerable.take 40 (make_fib_enumberable())<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><o:p>&nbsp;<a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; COLOR: green; FONT-FAMILY: 'Courier New'; mso-no-proof: yes">// display the list<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: 'Courier New'; mso-no-proof: yes">do</SPAN><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"> <o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN>fibs |&gt; List.iter (<SPAN style="COLOR: blue">fun</SPAN> i <SPAN style="COLOR: blue">-&gt;</SPAN> print_string (i.ToString()) ; print_newline());<o:p><a href="/o:p">/o:p</a></SPAN></P>
+<P class=NormalVerdana style="MARGIN: 0in 0in 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN>read_line() |&gt; ignore</SPAN><SPAN style="FONT-SIZE: 10pt"><o:p><a href="/o:p">/o:p</a></SPAN></P></p>
+</div>
+
+		<p class="meta">Posted on <span class="postdate">15. June 2006</span></p>
+	</article>
+
+			</div>
+
+			<footer id="footer">
+				<p class="copyright">
+					
+						Powered by <a href="https://gohugo.io/">Hugo</a> and the
+						<a href="https://github.com/bake/solar-theme-hugo">Solar</a>-theme.
+					
+				</p>
+			</footer>
+		</div>
+
+		
+	</body>
+</html>

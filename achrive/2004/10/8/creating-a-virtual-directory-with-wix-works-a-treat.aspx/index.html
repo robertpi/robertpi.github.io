@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		
+
+		<title>Creating a virtual directory with Wix works a treat</title>
+
+		
+		<link rel="stylesheet" href="http://strangelights.com/css/colors-dark.min.217a2547e8e6c808986d22ef70b50263c2d6a4bbc80ed42e97e280a41103f9b5.css">
+
+		
+	</head>
+	<body>
+		<header id="header">
+			<h1><a href="http://strangelights.com/">Strangelights</a></h1>
+			<p></p>
+		</header>
+
+		<div id="page">
+			<div id="sidebar">
+				<nav>
+	
+</nav>
+
+			</div>
+
+			<div id="content">
+				
+	<article class="post">
+		<h1><a href="http://strangelights.com/achrive/2004/10/8/creating-a-virtual-directory-with-wix-works-a-treat.aspx/">Creating a virtual directory with Wix works a treat</a> </h1>
+
+		<div class="post-content">
+
+<p><FONT face=Arial size=2>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT face=Arial size=2>I&#8217;ve just tried out creating a virtual directory with Wix and there&#8217;s really not that much too it, there&#8217;s a couple of places where the syntax isn&#8217;t that intuitive but the compiler nudges you in the right direction. I thought I&#8217;d share my experience anyway as the Wix post seem quite popular and it&#8217;s often nice to have a template to start from if you&#8217;re setting out to do these things.</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">&lt;?xml:namespace prefix = o ns = &ldquo;urn:schemas-microsoft-com:office:office&rdquo; /&gt;<o:p><FONT face=Arial size=2>&nbsp;</FONT><a href="/o:p">/o:p</a></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT face=Arial size=2>There&#8217;s just three parts to it, first you create the files for you&#8217;re website in the location of you&#8217;re choosing. Something like this:</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><o:p><FONT size=2>&nbsp;</FONT><a href="/o:p">/o:p</a></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2>&lt;Directory Id=&ldquo;ProgramFilesFolder&rdquo; Name=&ldquo;PFiles&rdquo;&gt;<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2>&lt;Directory Id=&ldquo;InstallDir&rdquo; Name=&ldquo;TEST&rdquo; LongName=&ldquo;Test&rdquo; &gt;<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2>&lt;Component Id=&ldquo;default.htmlComponent&rdquo; Guid=&ldquo;af0b56d1-7660-4172-9f16-a4e29d343341&rdquo;&gt;<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2>&lt;File Id=&ldquo;default.htmFile&rdquo; Name=&ldquo;DEFUALT.HTM&rdquo; LongName=&ldquo;default.htm&rdquo; KeyPath=&ldquo;yes&rdquo; DiskId=&ldquo;1&rdquo; src=&ldquo;default.htm&rdquo; /&gt;<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2>&lt;/Component&gt;<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2>&lt;/Directory&gt;<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2>&lt;/Directory&gt;<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><o:p><FONT face=Arial size=2>&nbsp;</FONT><a href="/o:p">/o:p</a></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT face=Arial size=2>Then create the entries for the virtual directory itself, you don&#8217;t really need the &#8220;WebApplication&#8221; node but most of the time when you create a virtual directory you create it in its own application.</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><o:p><FONT face=Arial size=2>&nbsp;</FONT><a href="/o:p">/o:p</a></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2>&lt;Component Id=&ldquo;TestWebVirtualDirComponent&rdquo; Guid=&ldquo;054604ca-1790-4c0c-b076-531ff9a5b374&rdquo;&gt;<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2>&lt;WebVirtualDir Id=&ldquo;TestWebVirtualDir&rdquo; Alias=&ldquo;Test&rdquo; Directory=&ldquo;InstallDir&rdquo; WebSite=&ldquo;DefaultWebSite&rdquo;&gt;<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2>&lt;WebApplication Id=&ldquo;TestWebApplication&rdquo; Name=&ldquo;Test&rdquo; /&gt;<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2>&lt;/WebVirtualDir&gt;<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2>&lt;/Component&gt;<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><o:p><FONT face=Arial size=2>&nbsp;</FONT><a href="/o:p">/o:p</a></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT face=Arial size=2>Finally you need an entry to reference the web site itself; because you don&#8217;t want this to be created it is placed under the product node. Not much to say about this, except you need the &#8220;WebAddress&#8221; node even though it doesn&#8217;t really provide any extra info.</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><o:p><FONT face=Arial size=2>&nbsp;</FONT><a href="/o:p">/o:p</a></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2>&lt;WebSite Id=&ldquo;DefaultWebSite&rdquo; Description=&ldquo;Default Web Site&rdquo;&gt;<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2>&lt;WebAddress Id=&ldquo;AllUnassigned&rdquo; Port=&ldquo;80&rdquo; /&gt;<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2>&lt;/WebSite&gt;<o:p><a href="/o:p">/o:p</a></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><o:p><FONT face=Arial size=2>&nbsp;</FONT><a href="/o:p">/o:p</a></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT face=Arial size=2>As discussed in a <A href="http://strangelights.com/blog/archive/2004/09/27/176.aspx">pervious blog</A> post you will need to include the wix server custom actions for this to work correctly.</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><o:p><FONT face=Arial size=2>&nbsp;</FONT><a href="/o:p">/o:p</a></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT face=Arial size=2>The only real problem I found was that it only seems to work with IIS 6.0, installing on an IIS 5.5 machine gives the rather cryptic error &#8220;Product: Test Virtual Dir &ndash; Error 1316. A network error occurred while attempting to read from the file: C:\wixinstalls\virtualdir\output\testuser.msi&#8221;. I&#8217;ll be reporting this to the bug tracking tool, so I guess we&#8217;ll soon find out weather this is a bug or a feature.</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><o:p><FONT face=Arial size=2>&nbsp;</FONT><a href="/o:p">/o:p</a></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT face=Arial size=2>Download the complete source <A href="http://strangelights.com/download.aspx?url=/blog/downloads/virtualdir.zip">here</A>.</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"></FONT></P></FONT></p>
+
+<h3 id="feedback">Feedback:</h3>
+
+<p><em>Feedback was imported from my only blog engine, it&rsquo;s no longer possible to post feedback here.</em></p>
+
+<p><strong>re: Creating a virtual directory with Wix works a treat - <a href="http://weblogs.factored-software.com/chris">Chris Bilson</a></strong></p>
+
+<p>This is excellent information. Information about using the CustomActions is hard to come by. I am in the process of trying to do this for an installer for a product I work on, and several times have considered giving up writing what I want in C++. Thanks!</p>
+
+<p><strong>re: Creating a virtual directory with Wix works a treat - <a href="http://www.cnblogs.com/huqingyu">龙龙</a></strong></p>
+
+<p>I had meet Your error “Product: Test Virtual Dir &ndash; Error 1316. A network error occurred while attempting to read from the file: C:\wixinstalls\virtualdir\output\testuser.msi”. It&rsquo;s the product ID problem. I did down all samples from your blog, there product ID is same! after you install any one, when you install another will recieve this error.
+<br>I test this IIS install script, It works fine in WindowsXP or Win2003, But not work in Win2000</p>
+
+<p><strong>re: Creating a virtual directory with Wix works a treat - <a href="http://www.cnblogs.com/huqingyu">龙龙</a></strong></p>
+
+<p>It just a very small bug.
+<br>if you change the sequence of Directory And alias in &quot;WebVirtualDir&quot; node, it can work fine in win2000 too.
+<br>good luck</p>
+
+<p><strong>re: Creating a virtual directory with Wix works a treat - <a href="http://www.strangelights.com">Robert Pickering</a></strong></p>
+
+<p>Thanks for the info. I hope to have to revisit my samples and give them different guid soon!</p>
+
+<p><strong>re: Creating a virtual directory with Wix works a treat - <a href="http://smelzer@paymentech.com">Steven Melzer</a></strong></p>
+
+<p>Thank you.  I was beating my head trying to get the correct syntax for this.</p>
+
+<p><strong>re: Creating a virtual directory with Wix works a treat - Horea</strong></p>
+
+<p>Maybe you should include a link to the original tutorial where you copied this from
+<br>
+<br><a target="_new" href="http://www.tramontana.co.hu/wix/lesson6.html"><a href="http://www.tramontana.co.hu/wix/lesson6.html">http://www.tramontana.co.hu/wix/lesson6.html</a></a></p>
+
+<p><strong>re: Creating a virtual directory with Wix works a treat - Horea</strong></p>
+
+<p>Or maybe he copied it from you, nevertheless the samples look very much alike.
+<br>
+<br>:)</p>
+
+<p><strong>re: Creating a virtual directory with Wix works a treat - toml</strong></p>
+
+<p>Unfortunately, when you uninstall the package, it removes the website also, even if it existed before your install.</p>
+
+<p><strong>re: Creating a virtual directory with Wix works a treat - <a href="http://strangelights.com">Robert Pickering</a></strong></p>
+
+<p>Toml,
+<br>
+<br>It shouldn&rsquo;t remove the website because it not marked with a GUID so should be a permitant feature. I definly didn&rsquo;t see this behavior when I ran the sample. Maybe you should try and pin down the exact circumstances it does this and report it as a WIX bug.
+<br>
+<br>Horea,
+<br>
+<br>My name appears on the credit list:
+<br><a target="_new" href="http://www.tramontana.co.hu/wix"><a href="http://www.tramontana.co.hu/wix">http://www.tramontana.co.hu/wix</a></a>
+<br>
+<br>Cheers,
+<br>Rob</p>
+
+<p><strong>re: Creating a virtual directory with Wix works a treat - <a href="http://franciscoder.blogspot.com/">Francisco</a></strong></p>
+
+<p>You said that WebAddress does not provide extra info. Did you try to install your application in a IIS with more than 1 website.<br />Try to install you application in a second Website, this website has as Identification and Ip or an Host Header&hellip;<br /><br />This Web Address is the identifier that make you choose the website that you want to install you application.<br /><br />Look at this:<br /><br />  &lt;WebSite xmlns=&ldquo;<a href="http://schemas.microsoft.com/wix/IIsExtension&quot;">http://schemas.microsoft.com/wix/IIsExtension&quot;</a>  Id=&ldquo;SelectedWebSite&rdquo; Description=&rdquo;[WEBSITENAME]&rdquo;&gt;    <br />    &lt;WebAddress Id=&ldquo;WebsiteIdentity&rdquo; Port=&rdquo;[WEBSITEPORT]&rdquo; Header=&rdquo;[WEBSITEHEADER]&rdquo; IP=&rdquo;[WEBSITEIP]&rdquo; /&gt;<br />  &lt;/WebSite&gt;</p>
+
+<p><strong>re: Creating a virtual directory with Wix works a treat - Rom&#225;n</strong></p>
+
+<p>Rob<br /><br />Although this post is quite old, I am trying to create a virtual directory using that same example, but still there are two things I&rsquo;m not happy with (I&rsquo;m using WiX 3):<br />1- If I don&rsquo;t specify a <b>CreateFolderElement</b> under the component that creates the virtual directory, Votive gives me an ICE18 compilation error.If I do, the installer also creates a web directory under the DefaultWebSite, alongside the virtual directory, with the same path.<br />2- I&rsquo;m trying to create a parent directory P restricted to SSL access and a child directory C without SSL access to which I want to redirect the users after a HTTP 403.4. The setting on P works fine, but I have to go to IIS to change the setting for C manually.<br /><br />Any idea of how to solve this issues?<br /><br />Thanks in advance<br />Román</p>
+</div>
+
+		<p class="meta">Posted on <span class="postdate">08. October 2004</span></p>
+	</article>
+
+			</div>
+
+			<footer id="footer">
+				<p class="copyright">
+					
+						Powered by <a href="https://gohugo.io/">Hugo</a> and the
+						<a href="https://github.com/bake/solar-theme-hugo">Solar</a>-theme.
+					
+				</p>
+			</footer>
+		</div>
+
+		
+	</body>
+</html>
