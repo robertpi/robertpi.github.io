@@ -26,12 +26,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
     <link rel="stylesheet" type="text/css" href="/style/style.css"/>
-    <meta property="og:url" content="http://www.strangelights.com/index.html"/>
+    <meta property="og:url" content="http://www.strangelights.com/posts/archive/page17.html"/>
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="Another tech blog."/>
     <meta property="og:description" content="Another tech blog."/>
     <meta property="twitter:card" content="summary"/>
-    <meta property="twitter:url" content="http://www.strangelights.com/index.html"/>
+    <meta property="twitter:url" content="http://www.strangelights.com/posts/archive/page17.html"/>
     <meta property="twitter:title" content="Another tech blog."/>
     <meta property="twitter:description" content="Another tech blog."/>
     <meta property="og:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
@@ -116,8 +116,8 @@
                 </p>
                 <p class="title article-title">
                   <span class="transparent-backgroud">
-                    <a href="/posts/achrive/2019/12/6/skills-matter-remembering-the-good-times.html">
-                      Skills Matter: Remembering the Good Times
+                    <a href="/posts/achrive/2004/9/6/installing-services,-user,-virtual-directories-etc.-using-wix.aspx.html">
+                      Installing Services, User, Virtual Directories etc. using Wix
                     </a>
                   </span>
                 </p>
@@ -125,16 +125,17 @@
                   <a href="#">
                     
                   </a>
-                  Published: 2019-12-06
+                  Published: 2004-09-06
                 </p>
               </div>
               <div class="content article-body">
-                <p>Like so many others I felt sad when I heard the news Skill Matter had gone into administration. Many words have been exchange on twitter about what tragedy it was, so rather than add to that, I thought I’d share some of happy memories of them.</p>
-<p>I can’t remember the exact date I first started working with Skills Matter, but it seems likely it was around 10 years ago. I remember the occasion very well.</p>
+                <P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Arial size=2>If you have had a look at the documentation you&#8217;ve probably noticed a few elements like &#8220;ServiceInstall&#8221;, &#8220;User&#8221; and &#8220;WebVirtualDir&#8221;. What these elements all have in common is that if you add them to a wix document they will compile and link with out any problem, but they will not do anything at all on installation. If you take a closer at the msi produced using the reason they do nothing becomes clear, for example the User elements generates a table called user in the Msi and if you read the <A href="http://msdn.microsoft.com/library/en-us/msi/setup/database_tables.asp">windows installer documentation </A>you will quickly see there is no User table defined.</FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p><FONT face=Arial size=2>&nbsp;</FONT></o:p></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Arial size=2>But why go to all the bother of putting these elements into the wix schema if they don&#8217;t do anything? They are there because they are designed to work with the wix custom action dlls, that is &#8220;scasched.dll&#8221; and &#8220;scaexec.dll&#8221;. The idea behind these is that common task such as creating users, installing services and virtual directories have been given there own set of wix commands even though they are not natively supported natively by the windows installer. I think this is a really good idea, but there is a down side, which I&#8217;ll cover towards then end of this post.</FONT></P>
 
               </div>
               <div class="content article-body">
-                <a href="/posts/achrive/2019/12/6/skills-matter-remembering-the-good-times.html">
+                <a href="/posts/achrive/2004/9/6/installing-services,-user,-virtual-directories-etc.-using-wix.aspx.html">
                   Continue reading ...
                 </a>
               </div>
@@ -180,8 +181,8 @@
                 </p>
                 <p class="title article-title">
                   <span class="transparent-backgroud">
-                    <a href="/posts/achrive/2014/1/1/bitcoins-a-detailed-yet-easy-to-understand-explaination.html">
-                      Bitcoin: A Detailed Yet Easy to Understand Explanation
+                    <a href="/posts/achrive/2004/9/2/much-asp.net-2.0-hackery.aspx.html">
+                      Much ASP.NET 2.0 hackery
                     </a>
                   </span>
                 </p>
@@ -189,15 +190,17 @@
                   <a href="#">
                     
                   </a>
-                  Published: 2014-01-01
+                  Published: 2004-09-02
                 </p>
               </div>
               <div class="content article-body">
-                <p>I&rsquo;ve had an unhealthy fascination with Bitcoin and crypto currencies for a while now. I&rsquo;m writing this article because there seems to be a gap in the market for an explanation of how Bitcoin works and thinking on the consequences of that. When the popular media covers Bitcoins it inevitably skips over important details, when technical bloggers cover Bitcoin they tend to get too bogged down in the details of the cryptography. This is an attempt to provide something in between, an explanation that anyone with reasonable grasp on computing will understand.</p>
+                <P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT face=Arial size=2>I&#8217;ve always been interested in the inner workings of ASP.NET, and with ASP.NET 2.0 coming out along with a new version of F# I decided I&#8217;d have a better stab at creating some kind of support of ASP.NET in F#.</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p><FONT face=Arial size=2>&nbsp;</FONT></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT face=Arial size=2>To create a page the framework compiles the aspx source into a .NET type that derives from System.Web.UI.Page. In the frameworks version 1.0 and 1.1 the API that did the compilation of ASP.NET pages was very closed. Most of the classes in them were declared as internal. Sure the model was extensible you control which classes were the compilation with web.config or the machine.config but you couldn&#8217;t reference any of the types involved in compilation in the so you couldn&#8217;t get any help parsing the asp.net page. Very annoy, becasue parsing is a difficult task and Microsoft have done all the hard work of turning an aspx page into a code dom, yet there not prepared to let the world use these methods. Of course the code is not part of the rotor code base.</FONT></P>
 
               </div>
               <div class="content article-body">
-                <a href="/posts/achrive/2014/1/1/bitcoins-a-detailed-yet-easy-to-understand-explaination.html">
+                <a href="/posts/achrive/2004/9/2/much-asp.net-2.0-hackery.aspx.html">
                   Continue reading ...
                 </a>
               </div>
@@ -243,8 +246,8 @@
                 </p>
                 <p class="title article-title">
                   <span class="transparent-backgroud">
-                    <a href="/posts/achrive/2013/12/trying-out-linux-for-a-while.html">
-                      Trying Out Linux for a While
+                    <a href="/posts/achrive/2004/8/19/links-update.aspx.html">
+                      Links update
                     </a>
                   </span>
                 </p>
@@ -252,16 +255,15 @@
                   <a href="#">
                     
                   </a>
-                  Published: 2013-12-14
+                  Published: 2004-08-19
                 </p>
               </div>
               <div class="content article-body">
-                <div class="entry-content"><p>So, I had a good time at <a href="http://BuildStuff.lt/">BuildStuff.lt</a>, but my laptop died in quite an odd way. I&rsquo;ll write more about the laptop death in another post.
-I&rsquo;ll also write more about <a href="http://BuildStuff.lt/">BuildStuff.lt</a> in another post. This post is about the laptops resurrection.</p>
+                <p>There is a new version of F# coming, so I've started to revamp my site. I started slowly with a revamp of my <A href="http://www.strangelights.com/fsharp/links.aspx">links page</A>. I think I now list just about everything google can find on the F# programming language.</p>
 
               </div>
               <div class="content article-body">
-                <a href="/posts/achrive/2013/12/trying-out-linux-for-a-while.html">
+                <a href="/posts/achrive/2004/8/19/links-update.aspx.html">
                   Continue reading ...
                 </a>
               </div>
@@ -307,8 +309,8 @@ I&rsquo;ll also write more about <a href="http://BuildStuff.lt/">BuildStuff.lt</
                 </p>
                 <p class="title article-title">
                   <span class="transparent-backgroud">
-                    <a href="/posts/achrive/2013/9/4/the-software-developer-identity-crisis.aspx.html">
-                      The Software Developer Identity Crisis
+                    <a href="/posts/achrive/2004/7/14/running-.net-installer-classes-–-reverse-engineering-what-vs.net-does.aspx.html">
+                      Running .NET installer classes – Reverse engineering what VS.NET does
                     </a>
                   </span>
                 </p>
@@ -316,15 +318,17 @@ I&rsquo;ll also write more about <a href="http://BuildStuff.lt/">BuildStuff.lt</
                   <a href="#">
                     
                   </a>
-                  Published: 2013-09-04
+                  Published: 2004-07-14
                 </p>
               </div>
               <div class="content article-body">
-                <p>This is post tries to explain some of what I was talking about in my talk at <a href="http://weactuallybuildstuff.com/">weactuallybuildstuff.com</a>, it’s series of two posts, I’ve tried write it as one post but it got too long and icky, so I’ve split it into two.</p> 
+                <FONT face=Arial size=2>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"> </P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">Rob Mensching has been promising to put an updated version of WiX with better written documentation on sourceforget.net for a while now. But at the time of writing the May 27th build is still the latest one. But do you know what? I&#8217;m beginning not to care. I&#8217;m actually getting to the point where I can do anything I want: though the gifts of dark and orca (for examining what&#8217;s going on in an msi) and virtual pc for an easy way to test roll outs.</P>
 
               </div>
               <div class="content article-body">
-                <a href="/posts/achrive/2013/9/4/the-software-developer-identity-crisis.aspx.html">
+                <a href="/posts/achrive/2004/7/14/running-.net-installer-classes-–-reverse-engineering-what-vs.net-does.aspx.html">
                   Continue reading ...
                 </a>
               </div>
@@ -370,8 +374,8 @@ I&rsquo;ll also write more about <a href="http://BuildStuff.lt/">BuildStuff.lt</
                 </p>
                 <p class="title article-title">
                   <span class="transparent-backgroud">
-                    <a href="/posts/achrive/2013/5/20/developing-for-kindle-fire-with-mono-csharp xamarin-studio.aspx.html">
-                      Developing For Kindle Fire with Mono C#/Xamarin Studio
+                    <a href="/posts/achrive/2004/7/7/customactions-and-uninstalls.aspx.html">
+                      CustomActions and uninstalls
                     </a>
                   </span>
                 </p>
@@ -379,15 +383,17 @@ I&rsquo;ll also write more about <a href="http://BuildStuff.lt/">BuildStuff.lt</
                   <a href="#">
                     
                   </a>
-                  Published: 2013-05-20
+                  Published: 2004-07-07
                 </p>
               </div>
               <div class="content article-body">
-                <p>As I’ve <a href="http://strangelights.com/blog/archive/2013/05/15/angelhack-paris-2013.aspx">already mentioned</a> last weekend I took part in <a href="http://www.hackathon.io/angelhack18">AngelHack</a> and took the opportunity to learn how to develop for an Android device (in this case a Kindle Fire) using C# and Xamarin Studio. The experience was a bit mixed, overall I think the folks at Xamarin have done a good job in smoothing the experience when targeting mobile devices, but there’s still a few rough edges. Here’s a run though of what I thought:</p> 
+                <p><FONT size=2><FONT face=Arial></p>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Arial size=2>I needed to add a CustomAction that removed the native image from the GAC. To do this I came across more slightly odd behaviour from the windows install platform so I thought I&#8217;d write a blog entry about it.</FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p><FONT face=Arial size=2>&nbsp;</FONT></o:p></P>
 
               </div>
               <div class="content article-body">
-                <a href="/posts/achrive/2013/5/20/developing-for-kindle-fire-with-mono-csharp xamarin-studio.aspx.html">
+                <a href="/posts/achrive/2004/7/7/customactions-and-uninstalls.aspx.html">
                   Continue reading ...
                 </a>
               </div>
@@ -433,8 +439,8 @@ I&rsquo;ll also write more about <a href="http://BuildStuff.lt/">BuildStuff.lt</
                 </p>
                 <p class="title article-title">
                   <span class="transparent-backgroud">
-                    <a href="/posts/achrive/2013/5/20/using-the-android-gridview-as-a-datagrid.aspx.html">
-                      Using the Android GridView as a DataGrid
+                    <a href="/posts/achrive/2004/7/5/nemerle.aspx.html">
+                      Nemerle
                     </a>
                   </span>
                 </p>
@@ -442,15 +448,16 @@ I&rsquo;ll also write more about <a href="http://BuildStuff.lt/">BuildStuff.lt</
                   <a href="#">
                     
                   </a>
-                  Published: 2013-05-20
+                  Published: 2004-07-05
                 </p>
               </div>
               <div class="content article-body">
-                <p>As part of the app I developed for <a href="http://www.hackathon.io/angelhack18">AngelHack</a> I wanted to display some data in a classic grid style. Android offers a GridView as part of the basic SDK, however if you look at all the samples they only show how to use it as a grid of images, essentially they only demonstrate usages where all columns show the same thing, usually columns of photographs. It’s not too tricky to use the GridView as classic “data grid” but it did require a wee bit of thinking, so I thought I put together a quick example to show how it worked.</p> 
+                <P>A functional programing language being created with the mono framework. Interesting stuff:</P>
+<P><A href="http://www.nemerle.org/">http://www.nemerle.org/</A></P>
 
               </div>
               <div class="content article-body">
-                <a href="/posts/achrive/2013/5/20/using-the-android-gridview-as-a-datagrid.aspx.html">
+                <a href="/posts/achrive/2004/7/5/nemerle.aspx.html">
                   Continue reading ...
                 </a>
               </div>
@@ -496,8 +503,8 @@ I&rsquo;ll also write more about <a href="http://BuildStuff.lt/">BuildStuff.lt</
                 </p>
                 <p class="title article-title">
                   <span class="transparent-backgroud">
-                    <a href="/posts/achrive/2013/5/15/angelhack-paris-2013.aspx.html">
-                      AngelHack Paris 2013
+                    <a href="/posts/achrive/2004/6/30/ngen-custom-actions-using-wix-–-part-ii -type-34-actions.aspx.html">
+                      NGen Custom Actions using WiX – Part II: Type 34 actions
                     </a>
                   </span>
                 </p>
@@ -505,15 +512,17 @@ I&rsquo;ll also write more about <a href="http://BuildStuff.lt/">BuildStuff.lt</
                   <a href="#">
                     
                   </a>
-                  Published: 2013-05-15
+                  Published: 2004-06-30
                 </p>
               </div>
               <div class="content article-body">
-                <p>AngelHack Paris is the first “hack day” I have every attended, so I didn’t really know what to except. Early on Saturday morning I found myself in a slightly run down area just outside the “peripherique” road that marks the boundary of Pairs. The event was hosted at “cifacom” a colleague for digital design and art, I was quite sure what to make to their campus, about half seemed to swish lectures theaters and the rest seemed to have been basically left as the old warehouse that it was before it is was converted.</p> 
+                <p><FONT size=2><FONT face=Arial>&lt;?xml:namespace prefix = o ns = &quot;urn:schemas-microsoft-com:office:office&quot; /&gt;&lt;o:p&gt;</p>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Arial size=2>As I alluded to in my <A href="http://www.strangelights.com/blog/archive/2004/06/29/152.aspx">last wix blog entry </A>if you want to provide any sort of location robust access to well known folders Type 50 CustomActions are not for you. I thought I could get away with this as we&#8217;re just using msi to deploy our bespoke app to the testing environments which we control. However my boss came to me this morning saying they had one machine on behaving in a pre-jited manor could I take a look; sure enough the windows folder on this machine was c:\winnt rather than c:\windows like I had assumed it would be. Lesson learn, I set off to alter my install scripts to produce Type 34 custom actions. Again much bashing of head against monitor (although slightly less than last time), so I thought I&#8217;d again share the results.</FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><o:p><FONT face=Arial size=2>&nbsp;</FONT></o:p></P>
 
               </div>
               <div class="content article-body">
-                <a href="/posts/achrive/2013/5/15/angelhack-paris-2013.aspx.html">
+                <a href="/posts/achrive/2004/6/30/ngen-custom-actions-using-wix-–-part-ii -type-34-actions.aspx.html">
                   Continue reading ...
                 </a>
               </div>
@@ -559,8 +568,8 @@ I&rsquo;ll also write more about <a href="http://BuildStuff.lt/">BuildStuff.lt</
                 </p>
                 <p class="title article-title">
                   <span class="transparent-backgroud">
-                    <a href="/posts/achrive/2013/4/27/alt.net-coding-breakfast-&ndash;-april-2013-edition.aspx.html">
-                      Alt.Net Coding Breakfast - April 2013 Edition
+                    <a href="/posts/achrive/2004/6/29/ngen-custom-actions-using-wix.aspx.html">
+                      NGen Custom Actions using WiX
                     </a>
                   </span>
                 </p>
@@ -568,15 +577,17 @@ I&rsquo;ll also write more about <a href="http://BuildStuff.lt/">BuildStuff.lt</
                   <a href="#">
                     
                   </a>
-                  Published: 2013-04-27
+                  Published: 2004-06-29
                 </p>
               </div>
               <div class="content article-body">
-                <p>Last Wednesday I got the chance to attend a <a href="http://www.meetup.com/altnetfr/events/108937702/">“Coding Breakfast”</a> hosted by <a href="http://www.blogdepatron.fr/">Damien Thouvenin</a> of CLT Services. The concept is simple, turn up a little before 8:30, enjoy some coffee and croissant, then we attempt a <a href="http://en.wikipedia.org/wiki/Kata_(programming)">Coding Kata</a> for about an hour and finally we get together to review the results. I was pleased to see the great and the good of the Paris coding scene there, in the form of <a href="https://twitter.com/abolibibelot">Yann Schwartz</a> and <a href="http://thinkbeforecoding.com/">Jérémie Chassaing</a>.</p> 
+                <P class=MsoNormal style="MARGIN: 0in 0in 0pt"></P><FONT face=Arial size=2>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Arial size=2>I recently had to create an msi installer that ran ngen on each of the assemblies that I installed. I had a number of difficulties doing this, so I thought I share my findings here an hopefully save others a bit of time.</FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p><FONT face=Arial size=2>&nbsp;</FONT></o:p></P>
 
               </div>
               <div class="content article-body">
-                <a href="/posts/achrive/2013/4/27/alt.net-coding-breakfast-&ndash;-april-2013-edition.aspx.html">
+                <a href="/posts/achrive/2004/6/29/ngen-custom-actions-using-wix.aspx.html">
                   Continue reading ...
                 </a>
               </div>
@@ -622,8 +633,8 @@ I&rsquo;ll also write more about <a href="http://BuildStuff.lt/">BuildStuff.lt</
                 </p>
                 <p class="title article-title">
                   <span class="transparent-backgroud">
-                    <a href="/posts/achrive/2013/2/7/reasons-to-come-to-functional-programming-exchange-2013.aspx.html">
-                      Reasons to come to Functional Programming eXchange 2013
+                    <a href="/posts/achrive/2004/6/19/parser-library-for-fsharp.aspx.html">
+                      Parser Library for F#
                     </a>
                   </span>
                 </p>
@@ -631,15 +642,15 @@ I&rsquo;ll also write more about <a href="http://BuildStuff.lt/">BuildStuff.lt</
                   <a href="#">
                     
                   </a>
-                  Published: 2013-02-07
+                  Published: 2004-06-19
                 </p>
               </div>
               <div class="content article-body">
-                <p>The <a href="http://skillsmatter.com/event/scala/functional-programming-exchange">2013 edition of Functional Programming eXchange</a> is just over a month away, so if you’re not already signed up now the time to do so. When we first started Functional Programming eXchange back in 2009 there were very few functional programming conference’s aimed at developers, over years this has changed quite dramatically and now even if we just talk about about functional programming events in the UK hosted at <a href="http://skillsmatter.com/">Skills Matter</a> we have <a href="http://skillsmatter.com/event/scala/clojure-exchange-2012">Clojure eXchange</a>, <a href="http://skillsmatter.com/event/scala/haskell-exchange-2012/te-5004">Haskell eXchange</a>, <a href="http://skillsmatter.com/event-details/home/progfsharp-2012">Progressive F#</a>, <a href="http://skillsmatter.com/event/scala/scala-days-2012">Scala Days</a> and <a href="http://skillsmatter.com/event/scala/scala-exchange-2012">Scala eXchange</a>. What makes Functional Programming eXchange different from these other conferences is that rather than focus on a specific functional programming language we have the freedom to bring together the talks from a broad range of functional languages, to bring there respective communities together to swap ideas and it gives us a chance to include some talks from languages that do not yet have there own conferences.</p> 
+                <p>Dominic Cooney has create this <A href="http://dcooney.com/archive/2004/06/16/593.aspx">parser library</A> for F#.</p>
 
               </div>
               <div class="content article-body">
-                <a href="/posts/achrive/2013/2/7/reasons-to-come-to-functional-programming-exchange-2013.aspx.html">
+                <a href="/posts/achrive/2004/6/19/parser-library-for-fsharp.aspx.html">
                   Continue reading ...
                 </a>
               </div>
@@ -685,8 +696,8 @@ I&rsquo;ll also write more about <a href="http://BuildStuff.lt/">BuildStuff.lt</
                 </p>
                 <p class="title article-title">
                   <span class="transparent-backgroud">
-                    <a href="/posts/achrive/2012/11/30/science-and-software-development.aspx.html">
-                      Science and Software Development
+                    <a href="/posts/achrive/2004/6/11/regular-expression-interpreter-in-fsharp.aspx.html">
+                      Regular expression interpreter in F#
                     </a>
                   </span>
                 </p>
@@ -694,15 +705,17 @@ I&rsquo;ll also write more about <a href="http://BuildStuff.lt/">BuildStuff.lt</
                   <a href="#">
                     
                   </a>
-                  Published: 2012-11-30
+                  Published: 2004-06-11
                 </p>
               </div>
               <div class="content article-body">
-                <p>Today I gave a talk ”Science and Software Development” at the <a href="http://weactuallybuildstuff.com/">weactuallybuildstuff.com</a>. The talk was largely inspired by Ben Goldacre’s “Bad Science” <a href="http://www.guardian.co.uk/science/series/badscience">column</a> and <a href="http://www.amazon.co.uk/Bad-Science-Ben-Goldacre/dp/000728487X">book</a> and try to apply some of the ideas relating to the use and abuse of evidence in the software industry. In the talk I tried to build a case for why the software industry might by to pay more attention to scientific techniques, such as “Randomized Controlled Trails”, by talking about availability bias, Confirmation Bias, the placebo effect and overconfidence. The slides are available on SlideShare:</p> 
+                <P><FONT face=Arial>Domonic Cooney has published an interesting </FONT><A href="http://dcooney.com/archive/2004/06/03/589.aspx"><FONT face=Arial>blog post</FONT></A><FONT face=Arial> on a regular expression interpreter in F#</FONT></P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
 
               </div>
               <div class="content article-body">
-                <a href="/posts/achrive/2012/11/30/science-and-software-development.aspx.html">
+                <a href="/posts/achrive/2004/6/11/regular-expression-interpreter-in-fsharp.aspx.html">
                   Continue reading ...
                 </a>
               </div>
@@ -713,11 +726,11 @@ I&rsquo;ll also write more about <a href="http://BuildStuff.lt/">BuildStuff.lt</
     </div>
     <div class="container">
       <div class="container has-text-centered">
-        <a href="#">
+        <a href="/posts/archive/page16.html">
           Previous
         </a>
-        1 of 19
-        <a href="/posts/archive/page1.html">
+        18 of 19
+        <a href="/posts/archive/page18.html">
           Next
         </a>
       </div>

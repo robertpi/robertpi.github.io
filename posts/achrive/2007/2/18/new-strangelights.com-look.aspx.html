@@ -1,0 +1,173 @@
+<html>
+  <head>
+
+        <script type="text/javascript">
+          var wsUri = "ws://localhost:8080/websocket";
+      function init()
+      {
+        websocket = new WebSocket(wsUri);
+        websocket.onclose = function(evt) { onClose(evt) };
+      }
+      function onClose(evt)
+      {
+        console.log('closing');
+        websocket.close();
+        document.location.reload();
+      }
+      window.addEventListener("load", init, false);
+      </script>
+            <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      Strangelights
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <meta property="og:url" content="http://www.strangelights.com//posts/achrive/2007/2/18/new-strangelights.com-look.aspx.html"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="New strangelights.com Look | Strangelights"/>
+    <meta property="og:description" content="<p><font face="Arial">You may have noticed that strangelights.com has a nice you look and feel. This was prompted by a major overhaul of the software I’m running. I upgraded from .text blogging software to <a href="http://sourceforge.net/projects/subtext/">subtext</a>. While the difference between the two isn’t huge but I’m really pleased with the upgrade because they seem to have fixed virtually everything I didn’t like about .text. Also .text took nearly the whole day to setup and required me to hack the code base for to get it working with my former ISP, brinkster, whereas <a href="http://sourceforge.net/projects/subtext/">subtext</a> only took about an hour to get going, including transferring all the data from .text and didn’t require any code changes.</font></p>
+"/>
+    <meta property="twitter:card" content="summary"/>
+    <meta property="twitter:url" content="http://www.strangelights.com//posts/achrive/2007/2/18/new-strangelights.com-look.aspx.html"/>
+    <meta property="twitter:title" content="New strangelights.com Look | Strangelights"/>
+    <meta property="twitter:description" content="<p><font face="Arial">You may have noticed that strangelights.com has a nice you look and feel. This was prompted by a major overhaul of the software I’m running. I upgraded from .text blogging software to <a href="http://sourceforge.net/projects/subtext/">subtext</a>. While the difference between the two isn’t huge but I’m really pleased with the upgrade because they seem to have fixed virtually everything I didn’t like about .text. Also .text took nearly the whole day to setup and required me to hack the code base for to get it working with my former ISP, brinkster, whereas <a href="http://sourceforge.net/projects/subtext/">subtext</a> only took about an hour to get going, including transferring all the data from .text and didn’t require any code changes.</font></p>
+"/>
+    <meta property="og:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+    <meta property="twitter:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <a class="navbar-item" href="/">
+            Home
+          </a>
+          <a class="navbar-item" href="/about.html">
+            About
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-info is-bold">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            <span class="transparent-backgroud">
+              Strangelights
+            </span>
+          </h1>
+          <h3>
+            <span class="transparent-backgroud">
+              Another tech blog.
+            </span>
+          </h3>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="articles">
+        <div class="column is-8 is-offset-2">
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-text-centered">
+                <div>
+                  <input type="checkbox" id="check" style="display: none;"/>
+                  <label for="check">
+                    <img class="author-image" src="/images/266A7910_small.jpg"/>
+                  </label>
+                  <label for="check">
+                    <div id="cover">
+                      <div id="box">
+                        <img class="author-image-large" src="/images/266A7910_large.jpg"/>
+                      </div>
+                    </div>
+                  </label>
+                  <p class="title">
+                    <span class="transparent-backgroud">
+                      <a href="https://linkedin.com/in/robertpickering">
+                        <i class="fa fa-linkedin-square fa-1x"></i>
+                      </a>
+                      <a href="https://github.com/robertpi">
+                        <i class="fa fa-github-square fa-1x"></i>
+                      </a>
+                      <a href="https://twitter.com/robertpi">
+                        <i class="fa fa-twitter-square fa-1x"></i>
+                      </a>
+                      <a href="https://facebook.com/robertfpickering">
+                        <i class="fa fa-facebook-square fa-1x"></i>
+                      </a>
+                      <a href="https://instagram.com/robertfpickering">
+                        <i class="fa fa-instagram fa-1x"></i>
+                      </a>
+                    </span>
+                  </p>
+                </div>
+                <p>
+                  &nbsp;
+                </p>
+                <p class="title article-title">
+                  <span class="transparent-backgroud">
+                    <a href="/posts/achrive/2007/2/18/new-strangelights.com-look.aspx.html">
+                      New strangelights.com Look
+                    </a>
+                  </span>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  <a href="#">
+                    
+                  </a>
+                  Published: 2007-02-18
+                </p>
+                <div class="share-text">
+                  <a href="https://www.addtoany.com/add_to/twitter?linkurl=%2fposts%2fachrive%2f2007%2f2%2f18%2fnew-strangelights.com-look.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/twitter.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/linkedin?linkurl=%2fposts%2fachrive%2f2007%2f2%2f18%2fnew-strangelights.com-look.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/linkedin.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/facebook?linkurl=%2fposts%2fachrive%2f2007%2f2%2f18%2fnew-strangelights.com-look.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/facebook.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/reddit?linkurl=%2fposts%2fachrive%2f2007%2f2%2f18%2fnew-strangelights.com-look.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/reddit.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/email?linkurl=%2fposts%2fachrive%2f2007%2f2%2f18%2fnew-strangelights.com-look.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/email.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/mastodon?linkurl=%2fposts%2fachrive%2f2007%2f2%2f18%2fnew-strangelights.com-look.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/mastodon.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/copy_link?linkurl=%2fposts%2fachrive%2f2007%2f2%2f18%2fnew-strangelights.com-look.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/link.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/share#url=%2fposts%2fachrive%2f2007%2f2%2f18%2fnew-strangelights.com-look.aspx.html&amp;title=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/a2a.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                </div>
+              </div>
+              <div class="content article-body">
+                <p><font face="Arial">You may have noticed that strangelights.com has a nice you look and feel. This was prompted by a major overhaul of the software I’m running. I upgraded from .text blogging software to <a href="http://sourceforge.net/projects/subtext/">subtext</a>. While the difference between the two isn’t huge but I’m really pleased with the upgrade because they seem to have fixed virtually everything I didn’t like about .text. Also .text took nearly the whole day to setup and required me to hack the code base for to get it working with my former ISP, brinkster, whereas <a href="http://sourceforge.net/projects/subtext/">subtext</a> only took about an hour to get going, including transferring all the data from .text and didn’t require any code changes.</font></p>
+<p><font face="Arial">I also upgrade the version of <a href="http://www.flexwiki.com/">flexwiki</a> I’m running; this caused me the most pain for the least gain and ultimately caused me to change ISP. Basically when I upgraded to .NET 2.0 to get the latest version of <a href="http://sourceforge.net/projects/subtext/">subtext</a> going <a href="http://www.flexwiki.com/">flexwiki</a> stopped working, this is because when I asked brinkster to change my account from .NET 1.1 to .NET 2.0 it automatically moved to run under medium trust, this meant all access to any path outside of the web root disappeared and I store my wiki database in directory outside the webroot. Brinkster support guy where quite unhelpful about this issue and eventually told me to make sure all dll where marked with AllowPartiallTrustedCaller and pointed me to the following article (<a href="http://forums.brinkster.com/forummessage.asp?id=113605&amp;Forum=23">http://forums.brinkster.com/forummessage.asp?id=113605&amp;Forum=23</a>) – not the greatest advent for their service. Anyway, it looks to me like accessing paths outside of the webroot simple will not work in medium trust whether or AllowPartiallTrustedCaller is there or not. I must admit I decided not to test this, as enough is enough and I have said goodbye to brinkster and hopped over to <a href="http://www.webhost4life.com/default.asp?refid=robertpi">WebHost4Life</a>, they may not be perfect but they give much more control over the way your website runs and are cheaper to boot. </font></p>
+<p><font face="Arial">Finally a big thanks to <a href="http://www.spw.dk">Mads Phikamphon</a>, demon coder and master ninja, who pointed out the website didn’t work in FireFox 2.0, or at least looked a bit misaligned, this is now fixed (thus I finally feel I can make this announcement).</font></p>
+<p><font face="Arial">Anyway welcome to the new look strangelights.com, I hope to be blogging a lot more now the book is just about done. I may even talk a bit about life in France, apparently there’s an election on at the moment.</font></p>
+
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,267 @@
+<html>
+  <head>
+
+        <script type="text/javascript">
+          var wsUri = "ws://localhost:8080/websocket";
+      function init()
+      {
+        websocket = new WebSocket(wsUri);
+        websocket.onclose = function(evt) { onClose(evt) };
+      }
+      function onClose(evt)
+      {
+        console.log('closing');
+        websocket.close();
+        document.location.reload();
+      }
+      window.addEventListener("load", init, false);
+      </script>
+            <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      Strangelights
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <meta property="og:url" content="http://www.strangelights.com//posts/achrive/2007/5/25/game-of-life-in-silverlight-and-fsharp.aspx.html"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Game of Life in Silverlight and F# | Strangelights"/>
+    <meta property="og:description" content="<p class="MsoNormal" style="MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">I’m too tired to write a proper blog post about this but I managed to port DonSyme’s Game of Life Demo that comes with the F# Distribution to Silverlight. It’s not a full port as there were some UI events that I couldn’t get to work for love nor money – I think these maybe bugs in Silverlight itself. However the game does look pretty cool. Also Silverlight currently has no way to marshal back to the UI thread which makes multithreading a bit difficult.</font></p>
+"/>
+    <meta property="twitter:card" content="summary"/>
+    <meta property="twitter:url" content="http://www.strangelights.com//posts/achrive/2007/5/25/game-of-life-in-silverlight-and-fsharp.aspx.html"/>
+    <meta property="twitter:title" content="Game of Life in Silverlight and F# | Strangelights"/>
+    <meta property="twitter:description" content="<p class="MsoNormal" style="MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">I’m too tired to write a proper blog post about this but I managed to port DonSyme’s Game of Life Demo that comes with the F# Distribution to Silverlight. It’s not a full port as there were some UI events that I couldn’t get to work for love nor money – I think these maybe bugs in Silverlight itself. However the game does look pretty cool. Also Silverlight currently has no way to marshal back to the UI thread which makes multithreading a bit difficult.</font></p>
+"/>
+    <meta property="og:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+    <meta property="twitter:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <a class="navbar-item" href="/">
+            Home
+          </a>
+          <a class="navbar-item" href="/about.html">
+            About
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-info is-bold">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            <span class="transparent-backgroud">
+              Strangelights
+            </span>
+          </h1>
+          <h3>
+            <span class="transparent-backgroud">
+              Another tech blog.
+            </span>
+          </h3>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="articles">
+        <div class="column is-8 is-offset-2">
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-text-centered">
+                <div>
+                  <input type="checkbox" id="check" style="display: none;"/>
+                  <label for="check">
+                    <img class="author-image" src="/images/266A7910_small.jpg"/>
+                  </label>
+                  <label for="check">
+                    <div id="cover">
+                      <div id="box">
+                        <img class="author-image-large" src="/images/266A7910_large.jpg"/>
+                      </div>
+                    </div>
+                  </label>
+                  <p class="title">
+                    <span class="transparent-backgroud">
+                      <a href="https://linkedin.com/in/robertpickering">
+                        <i class="fa fa-linkedin-square fa-1x"></i>
+                      </a>
+                      <a href="https://github.com/robertpi">
+                        <i class="fa fa-github-square fa-1x"></i>
+                      </a>
+                      <a href="https://twitter.com/robertpi">
+                        <i class="fa fa-twitter-square fa-1x"></i>
+                      </a>
+                      <a href="https://facebook.com/robertfpickering">
+                        <i class="fa fa-facebook-square fa-1x"></i>
+                      </a>
+                      <a href="https://instagram.com/robertfpickering">
+                        <i class="fa fa-instagram fa-1x"></i>
+                      </a>
+                    </span>
+                  </p>
+                </div>
+                <p>
+                  &nbsp;
+                </p>
+                <p class="title article-title">
+                  <span class="transparent-backgroud">
+                    <a href="/posts/achrive/2007/5/25/game-of-life-in-silverlight-and-fsharp.aspx.html">
+                      Game of Life in Silverlight and F#
+                    </a>
+                  </span>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  <a href="#">
+                    
+                  </a>
+                  Published: 2007-05-25
+                </p>
+                <div class="share-text">
+                  <a href="https://www.addtoany.com/add_to/twitter?linkurl=%2fposts%2fachrive%2f2007%2f5%2f25%2fgame-of-life-in-silverlight-and-fsharp.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/twitter.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/linkedin?linkurl=%2fposts%2fachrive%2f2007%2f5%2f25%2fgame-of-life-in-silverlight-and-fsharp.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/linkedin.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/facebook?linkurl=%2fposts%2fachrive%2f2007%2f5%2f25%2fgame-of-life-in-silverlight-and-fsharp.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/facebook.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/reddit?linkurl=%2fposts%2fachrive%2f2007%2f5%2f25%2fgame-of-life-in-silverlight-and-fsharp.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/reddit.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/email?linkurl=%2fposts%2fachrive%2f2007%2f5%2f25%2fgame-of-life-in-silverlight-and-fsharp.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/email.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/mastodon?linkurl=%2fposts%2fachrive%2f2007%2f5%2f25%2fgame-of-life-in-silverlight-and-fsharp.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/mastodon.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/copy_link?linkurl=%2fposts%2fachrive%2f2007%2f5%2f25%2fgame-of-life-in-silverlight-and-fsharp.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/link.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/share#url=%2fposts%2fachrive%2f2007%2f5%2f25%2fgame-of-life-in-silverlight-and-fsharp.aspx.html&amp;title=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/a2a.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                </div>
+              </div>
+              <div class="content article-body">
+                <p class="MsoNormal" style="MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">I’m too tired to write a proper blog post about this but I managed to port DonSyme’s Game of Life Demo that comes with the F# Distribution to Silverlight. It’s not a full port as there were some UI events that I couldn’t get to work for love nor money – I think these maybe bugs in Silverlight itself. However the game does look pretty cool. Also Silverlight currently has no way to marshal back to the UI thread which makes multithreading a bit difficult.</font></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">The game was relatively simple to port, in fact I kept the first few files, “alg.fsi”, “alg.fs” and “worker.fs” in tacked and just replaced the client.fs with the following:</font></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes">#light<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes">namespace</span><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"> SilverLife<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes">open</span><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"> System;<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes">open</span><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"> System.Collections.Generic;<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes">open</span><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"> System.Windows.Browser;<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes">open</span><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"> System.Threading;<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes">open</span><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"> System.Windows<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes">open</span><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"> System.Windows.Controls<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes">open</span><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"> System.Windows.Documents<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes">open</span><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"> System.Windows.Ink<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes">open</span><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"> System.Windows.Input<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes">open</span><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"> System.Windows.Media<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes">open</span><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"> System.Windows.Media.Animation<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes">open</span><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"> System.Windows.Shapes<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes">type</span><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"> Page() = <span style="COLOR: blue">class<o:p></o:p></span></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">    </span><span style="COLOR: blue">inherit</span> Canvas() <span style="COLOR: blue">as</span> base<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">    </span><span style="COLOR: blue">member</span> x.Page_Loaded(o : obj,<span style="mso-spacerun: yes">  </span>e : EventArgs) = <o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">        </span><span style="COLOR: blue">let</span> canvas = o :?&gt; Canvas<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">        </span><span style="COLOR: blue">let</span> gridSize = 23 <o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">        </span><o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">        </span><span style="COLOR: green">/// Create and configure the worker automata, ready to be placed<o:p></o:p></span></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">        </span><span style="COLOR: green">/// onto a thread. <o:p></o:p></span></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">        </span><span style="COLOR: blue">let</span> <span style="COLOR: blue">rec</span> worker = Worker.mkWorker gridSize<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">        </span><o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">        </span><span style="COLOR: blue">and</span> grid =<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">            </span>[| <span style="COLOR: blue">for</span> x <span style="COLOR: blue">in</span> 0 .. gridSize <span style="COLOR: blue">-&gt;<o:p></o:p></span></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">                </span>[| <span style="COLOR: blue">for</span> y <span style="COLOR: blue">in</span> 0 .. gridSize <span style="COLOR: blue">-&gt;<o:p></o:p></span></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">                    </span><span style="COLOR: blue">let</span> image = <span style="COLOR: blue">new</span> Image()<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">                    </span>image.Source &lt;- <span style="COLOR: blue">new</span> Uri(<span style="COLOR: #a31515">"RedBloodcellOff.jpg"</span>, UriKind.Relative)<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">                    </span>image.SetValue(Canvas.TopProperty, y * 14)<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">                    </span>image.SetValue(Canvas.LeftProperty, x * 14)<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">                    </span>canvas.Children.Add(image) <o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">                    </span>image |] |]<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">        </span><o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">        </span><span style="COLOR: blue">and</span> bornQueue = <span style="COLOR: blue">new</span> Queue&lt;Game.points&gt;()<span style="mso-spacerun: yes">  </span><o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">        </span><span style="COLOR: blue">and</span> diedQueue = <span style="COLOR: blue">new</span> Queue&lt;Game.points&gt;()<span style="mso-spacerun: yes">  </span><o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">        </span><span style="COLOR: green">// This is the refresh operation that will be invoked by the worker. <o:p></o:p></span></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">        </span><span style="COLOR: blue">and</span> workerNotifyUpdates (born,died) =<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">            </span>lock bornQueue (<span style="COLOR: blue">fun</span> () <span style="COLOR: blue">-&gt;</span> bornQueue.Enqueue(born))<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">      </span><span style="mso-spacerun: yes">      </span>lock diedQueue (<span style="COLOR: blue">fun</span> () <span style="COLOR: blue">-&gt;</span> diedQueue.Enqueue(died))<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">             </span><o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">             </span><o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">        </span><span style="COLOR: blue">and</span> workerThread = <span style="COLOR: blue">new</span> Thread(start=(<span style="COLOR: blue">fun</span> () <span style="COLOR: blue">-&gt;</span> worker.Start()), IsBackground = <span style="COLOR: blue">true</span>, Priority = ThreadPriority.Lowest)<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">          </span><o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">        </span>worker.Updates.Add(workerNotifyUpdates)<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">        </span><span style="COLOR: blue">let</span> dequeueAll (queue : Queue&lt;Game.points&gt;) image =<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">            </span><span style="COLOR: blue">while</span> (queue.Count &gt; 0) <span style="COLOR: blue">do</span> <o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">                </span><span style="COLOR: blue">let</span> points = queue.Dequeue()<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">                </span>List.iter (<span style="COLOR: blue">fun</span> (x,y) <span style="COLOR: blue">-&gt;</span> grid.[x].[y].Source &lt;- <span style="COLOR: blue">new</span> Uri(image, UriKind.Relative) ) points<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">                </span><o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">        </span><span style="COLOR: blue">let</span> timer_Tick _ =<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">            </span>lock bornQueue (<span style="COLOR: blue">fun</span> () <span style="COLOR: blue">-&gt;</span> dequeueAll bornQueue <span style="COLOR: #a31515">"RedBloodcellOn.jpg"</span>)<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">            </span>lock diedQueue (<span style="COLOR: blue">fun</span> () <span style="COLOR: blue">-&gt;</span> dequeueAll diedQueue <span style="COLOR: #a31515">"RedBloodcellOff.jpg"</span>)<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">            </span><o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">        </span><span style="COLOR: blue">let</span> timer = <span style="COLOR: blue">new</span> HtmlTimer()<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">        </span>timer.Interval &lt;- 1<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">        </span>timer.Tick.Add(timer_Tick)<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">        </span>timer.Enabled &lt;- <span style="COLOR: blue">true<o:p></o:p></span></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">        </span>workerThread.Start()<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">        </span>()<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes"><span style="mso-spacerun: yes">    </span><span style="COLOR: blue">member</span> x.ClickSquare(sender : obj,<span style="mso-spacerun: yes">  </span>e : MouseEventArgs) = ()<o:p></o:p></span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 10pt"><span style="FONT-SIZE: 10pt; COLOR: blue; LINE-HEIGHT: 115%; FONT-FAMILY: &quot;Courier New&quot;; mso-no-proof: yes">end</span></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">You can see the game at the following URL (careful I’ve noticed it crashes the browser sometimes, I guess that’s what they mean by “alpha”):</font></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 10pt"><a href="http://www.strangelights.com/fsharp/silverlight/life.aspx"><font face="Calibri" color="#800080" size="3">http://www.strangelights.com/fsharp/silverlight/life.aspx</font></a></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">Of course you need the silverlight 1.1 alpha installed here’s a screen shot for those that don’t have that.</font></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 10pt"><img alt="" src="/blog/photos/life.jpg" /></p>
+<h3>Feedback:</h3>
+<p><em>Feedback was imported from my only blog engine, it's no longer possible to post feedback here.</em></p>
+<p><strong>Silverlight Cream for May 25 - http://geekswithblogs.net/wynapsetechnicalmusings/archive/2007/05/25/112762.aspx</strong></p>
+<p>Silverlight Cream for May 25</p>
+<p><strong>Game of Life in Silverlight and F# - http://blogs.msdn.com/dsyme/archive/2007/05/25/game-of-life-in-silverlight-and-f.aspx</strong></p>
+<p>Game of Life in Silverlight and F#</p>
+<p><strong>Game of Life in Silverlight and F# - http://blogs.msdn.com/walterst/archive/2007/05/27/game-of-life-in-silverlight-and-f.aspx</strong></p>
+<p>Game of Life in Silverlight and F#</p>
+<p><strong>re: Game of Life in Silverlight and F# - <a href="http://www.devlinq.com/">Richard Hein</a></strong></p>
+<p>Great stuff, I wanted to put F# and Silverlight together as well.  I am looking into how to best combine this with Monorail.  Cheers,  Richard Hein</p>
+<p><strong>re: Game of Life in Silverlight and F# - <a href="http://strangelights.com/blog">Robert Pickering</a></strong></p>
+<p>Hi Richard,<br /><br />Thanks for the feedback. You maybe insterested in this more detailed post I've just written:<br />http://www.strangelights.com/blog/archive/2007/05/28/1585.aspx<br /><br />I've not actually had chance to play with the monorail stuff but I'm looking forward to see what you come up with.<br /><br />Cheers,<br />Rob</p>
+<p><strong>Silverlight Examples - <a href="http://weblogs.asp.net/mschwarz/archive/2007/06/04/silverlight-examples.aspx">Michael's Blog</a></strong></p>
+<p>During the weekend I spent some minutes to collect some of the greatest Silverlight examples. Most of</p>
+<p><strong>Non-Stop Mix 07 Paris - <a href="http://www.fdesign.fr/blog">Richard J. Rothery Jr.</a></strong></p>
+<p>Robert,<br /><br />Nice one F# and Silverlight!<br />Your are an Englishman a Paris...<br />I am and Amercican a Marseille...<br /><br />See you at Mix 07 in Paris if you are planning to attend.<br /><br />Best Regards,<br />Richard</p>
+<p><strong>【转】分享数十个silverlight示例和blog - <a href="http://www.cnblogs.com/BryanChow/archive/2007/07/19/824505.html">Bryan Chow</a></strong></p>
+<p>分享几个国外的silverlight例子和blogGreatVisualStudioQuickStarts</p>
+<p><strong>re: Game of Life in Silverlight and F# - <a href="http://nearfar.org/">Sridhar Ratnakumar</a></strong></p>
+<p>I tried my best to compile, but even though I have Silverlight latest version installed I get this error -<br /><br /><br />C:\Users\srid&gt;fsc -I &quot;C:\Program Files\Microsoft Silverlight\2.0.30523.6&quot; -r System.SilverLight.dll -r agclr.dll -r Microsoft.Scripting.Vestigial.dll -r System.<br />dll -r Microsoft.Scripting.Silverlight.dll -r Microsoft.Scripting.dll --clr-root &quot;C:\Program Files\Microsoft Silverlight&quot; --no-framework --no-mllib --static-lin<br />k fslib  test.fs<br />Implicitly referencing 'C:\Program Files\Microsoft Silverlight\2.0.30523.6\System.dll'...<br /><br />startup(1,0): error FS0191: Unable to find the file System.SilverLight.dll in any of<br /> C:\Program Files\Microsoft Silverlight<br /> C:\Program Files\Microsoft Silverlight\2.0.30523.6<br /> C:\Users\srid<br /> C:\Program Files\FSharp-1.9.4.17\bin.</p>
+<p><strong>re: Game of Life in Silverlight and F# - Ray</strong></p>
+<p>Pretty interesting. Though, there is little to no use of F# in this example as code pretty much imperative - about just same as if it was wrote in C#...</p>
+<p><strong>re: Game of Life in Silverlight and F# - <a href="http://strangelights.com/blog/Default.aspx">Robert Pickering</a></strong></p>
+<p>Hi Ray,<br /><br />I agree the layer that interacts with silverlight is pretty imperative, mainly because its a UI layer, which is the sample code presented in this blog. However layers that actually drive the simulation, which come from the F# example pack are good functional style. These were distributed with F# but now need to be downloaded from:<br /><a rel="nofollow external" href="http://code.msdn.microsoft.com/fsharpsamples" title="http://code.msdn.microsoft.com/fsharpsamples">http://code.msdn.microsoft.com/fsharpsamples</a><br /><br />Cheers,<br />Rob</p>
+
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

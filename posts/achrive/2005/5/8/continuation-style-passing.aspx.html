@@ -1,0 +1,203 @@
+<html>
+  <head>
+
+        <script type="text/javascript">
+          var wsUri = "ws://localhost:8080/websocket";
+      function init()
+      {
+        websocket = new WebSocket(wsUri);
+        websocket.onclose = function(evt) { onClose(evt) };
+      }
+      function onClose(evt)
+      {
+        console.log('closing');
+        websocket.close();
+        document.location.reload();
+      }
+      window.addEventListener("load", init, false);
+      </script>
+            <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      Strangelights
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <meta property="og:url" content="http://www.strangelights.com//posts/achrive/2005/5/8/continuation-style-passing.aspx.html"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Continuation Style Passing | Strangelights"/>
+    <meta property="og:description" content="<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT face=Arial size=2>Don Box made another post on <A href="http://pluralsight.com/blogs/dbox/archive/2005/04/27/7780.aspx">Continuations and Closures</A> that made me realised I&#8217;d made a mistake in my last post. I had not used continuation; I merely used a closure that captured some mutable variables. Also F#/Caml does not have continuations in the same way <A href="http://www.ruby-lang.org">Ruby</A> does.&nbsp;F#&nbsp;does however have continuation style passing, also discussed in Mr. Box aforementioned post.</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p><FONT face=Arial size=2>&nbsp;</FONT></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT face=Arial size=2>Anyway I thought I&#8217;d write a sort piece to show continuation style passing in action in F# , using my old favourite the Fibonacci series. Consider the following recursive code function that calculated the Fibonacci series. </FONT></P>
+"/>
+    <meta property="twitter:card" content="summary"/>
+    <meta property="twitter:url" content="http://www.strangelights.com//posts/achrive/2005/5/8/continuation-style-passing.aspx.html"/>
+    <meta property="twitter:title" content="Continuation Style Passing | Strangelights"/>
+    <meta property="twitter:description" content="<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT face=Arial size=2>Don Box made another post on <A href="http://pluralsight.com/blogs/dbox/archive/2005/04/27/7780.aspx">Continuations and Closures</A> that made me realised I&#8217;d made a mistake in my last post. I had not used continuation; I merely used a closure that captured some mutable variables. Also F#/Caml does not have continuations in the same way <A href="http://www.ruby-lang.org">Ruby</A> does.&nbsp;F#&nbsp;does however have continuation style passing, also discussed in Mr. Box aforementioned post.</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p><FONT face=Arial size=2>&nbsp;</FONT></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT face=Arial size=2>Anyway I thought I&#8217;d write a sort piece to show continuation style passing in action in F# , using my old favourite the Fibonacci series. Consider the following recursive code function that calculated the Fibonacci series. </FONT></P>
+"/>
+    <meta property="og:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+    <meta property="twitter:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <a class="navbar-item" href="/">
+            Home
+          </a>
+          <a class="navbar-item" href="/about.html">
+            About
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-info is-bold">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            <span class="transparent-backgroud">
+              Strangelights
+            </span>
+          </h1>
+          <h3>
+            <span class="transparent-backgroud">
+              Another tech blog.
+            </span>
+          </h3>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="articles">
+        <div class="column is-8 is-offset-2">
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-text-centered">
+                <div>
+                  <input type="checkbox" id="check" style="display: none;"/>
+                  <label for="check">
+                    <img class="author-image" src="/images/266A7910_small.jpg"/>
+                  </label>
+                  <label for="check">
+                    <div id="cover">
+                      <div id="box">
+                        <img class="author-image-large" src="/images/266A7910_large.jpg"/>
+                      </div>
+                    </div>
+                  </label>
+                  <p class="title">
+                    <span class="transparent-backgroud">
+                      <a href="https://linkedin.com/in/robertpickering">
+                        <i class="fa fa-linkedin-square fa-1x"></i>
+                      </a>
+                      <a href="https://github.com/robertpi">
+                        <i class="fa fa-github-square fa-1x"></i>
+                      </a>
+                      <a href="https://twitter.com/robertpi">
+                        <i class="fa fa-twitter-square fa-1x"></i>
+                      </a>
+                      <a href="https://facebook.com/robertfpickering">
+                        <i class="fa fa-facebook-square fa-1x"></i>
+                      </a>
+                      <a href="https://instagram.com/robertfpickering">
+                        <i class="fa fa-instagram fa-1x"></i>
+                      </a>
+                    </span>
+                  </p>
+                </div>
+                <p>
+                  &nbsp;
+                </p>
+                <p class="title article-title">
+                  <span class="transparent-backgroud">
+                    <a href="/posts/achrive/2005/5/8/continuation-style-passing.aspx.html">
+                      Continuation Style Passing
+                    </a>
+                  </span>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  <a href="#">
+                    
+                  </a>
+                  Published: 2005-05-08
+                </p>
+                <div class="share-text">
+                  <a href="https://www.addtoany.com/add_to/twitter?linkurl=%2fposts%2fachrive%2f2005%2f5%2f8%2fcontinuation-style-passing.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/twitter.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/linkedin?linkurl=%2fposts%2fachrive%2f2005%2f5%2f8%2fcontinuation-style-passing.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/linkedin.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/facebook?linkurl=%2fposts%2fachrive%2f2005%2f5%2f8%2fcontinuation-style-passing.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/facebook.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/reddit?linkurl=%2fposts%2fachrive%2f2005%2f5%2f8%2fcontinuation-style-passing.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/reddit.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/email?linkurl=%2fposts%2fachrive%2f2005%2f5%2f8%2fcontinuation-style-passing.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/email.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/mastodon?linkurl=%2fposts%2fachrive%2f2005%2f5%2f8%2fcontinuation-style-passing.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/mastodon.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/copy_link?linkurl=%2fposts%2fachrive%2f2005%2f5%2f8%2fcontinuation-style-passing.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/link.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/share#url=%2fposts%2fachrive%2f2005%2f5%2f8%2fcontinuation-style-passing.aspx.html&amp;title=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/a2a.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                </div>
+              </div>
+              <div class="content article-body">
+                <P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT face=Arial size=2>Don Box made another post on <A href="http://pluralsight.com/blogs/dbox/archive/2005/04/27/7780.aspx">Continuations and Closures</A> that made me realised I&#8217;d made a mistake in my last post. I had not used continuation; I merely used a closure that captured some mutable variables. Also F#/Caml does not have continuations in the same way <A href="http://www.ruby-lang.org">Ruby</A> does.&nbsp;F#&nbsp;does however have continuation style passing, also discussed in Mr. Box aforementioned post.</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p><FONT face=Arial size=2>&nbsp;</FONT></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT face=Arial size=2>Anyway I thought I&#8217;d write a sort piece to show continuation style passing in action in F# , using my old favourite the Fibonacci series. Consider the following recursive code function that calculated the Fibonacci series. </FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><o:p><FONT size=2>&nbsp;</FONT></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2>let rec fib i j =<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>if i &lt; 1000 then <o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>let _ = Printf.printf "%d\n" i in<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>fib j (i + j)<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN>else ()<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><o:p><FONT size=2>&nbsp;</FONT></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2>let _ = fib 0 1<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="mso-bidi-font-family: Arial"><o:p><FONT face=Arial size=2>&nbsp;</FONT></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="mso-bidi-font-family: Arial"><FONT face=Arial><FONT size=2>While this is quite a nice implementation of the Fibonacci series there are a couple of problems with it. The basic problem is lack of flexibility; you can neither produce Fibonacci numbers above1000 nor can you do anything other than write them to the console. This can be solved using continuation style passing, the function could be rewritten removing all flow control and printing and replacing them with a continuation. A worker function can then be produced that replaces everything that was hard coded into the old function.<o:p></o:p></FONT></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><o:p><FONT size=2>&nbsp;</FONT></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2>let rec fib i j cont =<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>cont i;<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>fib j (i + j) cont<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT size=2><SPAN style="FONT-FAMILY: 'Courier New'"><SPAN style="mso-spacerun: yes">&nbsp;</SPAN></SPAN><SPAN style="mso-bidi-font-family: Arial"><o:p></o:p></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2>let worker i = <o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>if i &gt; 1000 then raise (new System.Exception()); <o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Printf.printf "%d\n" i<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><o:p><FONT size=2>&nbsp;</FONT></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2>let _ = <o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>try <o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>fib 0 1 worker with<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-FAMILY: 'Courier New'"><FONT size=2><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>_ -&gt; ()<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="mso-bidi-font-family: Arial"><o:p><FONT face=Arial size=2>&nbsp;</FONT></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="mso-bidi-font-family: Arial"><FONT size=2><FONT face=Arial>It is interesting to note an expectation is used to control the flow. In imperative programming we are often told not use exceptions as flow control. I have begun to wonder if this statement is a little bit silly, after all exception are a mechanism for flow control, so not used them as flow control would mean not to use them at all. In functional programming it is somewhat less of a taboo, as they are extremely useful for breaking out of infinite loops or recursion with resorting to more imperative style flow control.<o:p></o:p></FONT></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="mso-bidi-font-family: Arial"><o:p><FONT face=Arial size=2>&nbsp;</FONT></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="mso-bidi-font-family: Arial"><FONT size=2><FONT face=Arial>I think final solution looks something similar to the Fibonacci stream in Joe Duffy&#8217;s post on <SPAN style="mso-spacerun: yes">&nbsp;</SPAN><A href="http://www.bluebytesoftware.com/blog/PermaLink.aspx?guid=14228fc5-b1c6-467e-a1d4-9bb9fea5ad14 ">laziness and streams in C# 2.0</A>. Sure it not lazy, but the function does hand you a infinite set of numbers until you decide you don&#8217;t want any more. Of course F# does support streams and laziness.<o:p></o:p></FONT></FONT></SPAN></P>
+
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

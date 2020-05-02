@@ -1,0 +1,416 @@
+<html>
+  <head>
+
+        <script type="text/javascript">
+          var wsUri = "ws://localhost:8080/websocket";
+      function init()
+      {
+        websocket = new WebSocket(wsUri);
+        websocket.onclose = function(evt) { onClose(evt) };
+      }
+      function onClose(evt)
+      {
+        console.log('closing');
+        websocket.close();
+        document.location.reload();
+      }
+      window.addEventListener("load", init, false);
+      </script>
+            <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      Strangelights
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <meta property="og:url" content="http://www.strangelights.com/posts/archive/page18.html"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Another tech blog."/>
+    <meta property="og:description" content="Another tech blog."/>
+    <meta property="twitter:card" content="summary"/>
+    <meta property="twitter:url" content="http://www.strangelights.com/posts/archive/page18.html"/>
+    <meta property="twitter:title" content="Another tech blog."/>
+    <meta property="twitter:description" content="Another tech blog."/>
+    <meta property="og:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+    <meta property="twitter:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <a class="navbar-item is-active" href="/">
+            Home
+          </a>
+          <a class="navbar-item" href="/about.html">
+            About
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-info is-bold">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            <span class="transparent-backgroud">
+              Strangelights
+            </span>
+          </h1>
+          <h3>
+            <span class="transparent-backgroud">
+              Another tech blog.
+            </span>
+          </h3>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="articles">
+        <div class="column is-8 is-offset-2">
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-text-centered">
+                <div>
+                  <input type="checkbox" id="check" style="display: none;"/>
+                  <label for="check">
+                    <img class="author-image" src="/images/266A7910_small.jpg"/>
+                  </label>
+                  <label for="check">
+                    <div id="cover">
+                      <div id="box">
+                        <img class="author-image-large" src="/images/266A7910_large.jpg"/>
+                      </div>
+                    </div>
+                  </label>
+                  <p class="title">
+                    <span class="transparent-backgroud">
+                      <a href="https://linkedin.com/in/robertpickering">
+                        <i class="fa fa-linkedin-square fa-1x"></i>
+                      </a>
+                      <a href="https://github.com/robertpi">
+                        <i class="fa fa-github-square fa-1x"></i>
+                      </a>
+                      <a href="https://twitter.com/robertpi">
+                        <i class="fa fa-twitter-square fa-1x"></i>
+                      </a>
+                      <a href="https://facebook.com/robertfpickering">
+                        <i class="fa fa-facebook-square fa-1x"></i>
+                      </a>
+                      <a href="https://instagram.com/robertfpickering">
+                        <i class="fa fa-instagram fa-1x"></i>
+                      </a>
+                    </span>
+                  </p>
+                </div>
+                <p>
+                  &nbsp;
+                </p>
+                <p class="title article-title">
+                  <span class="transparent-backgroud">
+                    <a href="/posts/achrive/2004/6/10/behaviour-of-sql-statement-raiseerror-with-datasets-and-idatareaders.aspx.html">
+                      Behaviour of SQL statement RaiseError with DataSets and IDataReaders
+                    </a>
+                  </span>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  <a href="#">
+                    
+                  </a>
+                  Published: 2004-06-10
+                </p>
+              </div>
+              <div class="content article-body">
+                <P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Arial size=2>A developer at work queried me to why RaiseError generates an exception when working with a DataSet but not when working with an IDataReader. Here is a short code fragement that demonstrates the problem.</FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p><FONT face=Arial size=2>&nbsp;</FONT></o:p></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"><FONT size=2><SPAN style="COLOR: blue; FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt">using</SPAN><SPAN style="FONT-FAMILY: 'Courier New'; mso-bidi-font-size: 10.0pt"> System;<o:p></o:p></SPAN></FONT></P>
+
+              </div>
+              <div class="content article-body">
+                <a href="/posts/achrive/2004/6/10/behaviour-of-sql-statement-raiseerror-with-datasets-and-idatareaders.aspx.html">
+                  Continue reading ...
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-text-centered">
+                <div>
+                  <input type="checkbox" id="check" style="display: none;"/>
+                  <label for="check">
+                    <img class="author-image" src="/images/266A7910_small.jpg"/>
+                  </label>
+                  <label for="check">
+                    <div id="cover">
+                      <div id="box">
+                        <img class="author-image-large" src="/images/266A7910_large.jpg"/>
+                      </div>
+                    </div>
+                  </label>
+                  <p class="title">
+                    <span class="transparent-backgroud">
+                      <a href="https://linkedin.com/in/robertpickering">
+                        <i class="fa fa-linkedin-square fa-1x"></i>
+                      </a>
+                      <a href="https://github.com/robertpi">
+                        <i class="fa fa-github-square fa-1x"></i>
+                      </a>
+                      <a href="https://twitter.com/robertpi">
+                        <i class="fa fa-twitter-square fa-1x"></i>
+                      </a>
+                      <a href="https://facebook.com/robertfpickering">
+                        <i class="fa fa-facebook-square fa-1x"></i>
+                      </a>
+                      <a href="https://instagram.com/robertfpickering">
+                        <i class="fa fa-instagram fa-1x"></i>
+                      </a>
+                    </span>
+                  </p>
+                </div>
+                <p>
+                  &nbsp;
+                </p>
+                <p class="title article-title">
+                  <span class="transparent-backgroud">
+                    <a href="/posts/achrive/2004/6/10/danish-customs-2.aspx.html">
+                      Danish customs 2
+                    </a>
+                  </span>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  <a href="#">
+                    
+                  </a>
+                  Published: 2004-06-10
+                </p>
+              </div>
+              <div class="content article-body">
+                <FONT face=Arial size=2>
+<P><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">If you get married in </SPAN><?xml:namespace prefix = st1 ns = "urn:schemas-microsoft-com:office:smarttags" /><st1:country-region><st1:place><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Denmark</SPAN></st1:place></st1:country-region><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"> the groom does not know when his stag&nbsp;(bachelor) party will be. His friends arrange to kidnap him some time before the big day and return him some time later, hopefully before the wedding.</SPAN><?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></P></FONT>
+
+              </div>
+              <div class="content article-body">
+                <a href="/posts/achrive/2004/6/10/danish-customs-2.aspx.html">
+                  Continue reading ...
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-text-centered">
+                <div>
+                  <input type="checkbox" id="check" style="display: none;"/>
+                  <label for="check">
+                    <img class="author-image" src="/images/266A7910_small.jpg"/>
+                  </label>
+                  <label for="check">
+                    <div id="cover">
+                      <div id="box">
+                        <img class="author-image-large" src="/images/266A7910_large.jpg"/>
+                      </div>
+                    </div>
+                  </label>
+                  <p class="title">
+                    <span class="transparent-backgroud">
+                      <a href="https://linkedin.com/in/robertpickering">
+                        <i class="fa fa-linkedin-square fa-1x"></i>
+                      </a>
+                      <a href="https://github.com/robertpi">
+                        <i class="fa fa-github-square fa-1x"></i>
+                      </a>
+                      <a href="https://twitter.com/robertpi">
+                        <i class="fa fa-twitter-square fa-1x"></i>
+                      </a>
+                      <a href="https://facebook.com/robertfpickering">
+                        <i class="fa fa-facebook-square fa-1x"></i>
+                      </a>
+                      <a href="https://instagram.com/robertfpickering">
+                        <i class="fa fa-instagram fa-1x"></i>
+                      </a>
+                    </span>
+                  </p>
+                </div>
+                <p>
+                  &nbsp;
+                </p>
+                <p class="title article-title">
+                  <span class="transparent-backgroud">
+                    <a href="/posts/achrive/2004/6/8/danish-customs.aspx.html">
+                      Danish customs
+                    </a>
+                  </span>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  <a href="#">
+                    
+                  </a>
+                  Published: 2004-06-08
+                </p>
+              </div>
+              <div class="content article-body">
+                <p>If you are not married by the you're 25 birthday you are given cinnamon. If you're still unmarried at 30 you get pepper.</p>
+<h3>Feedback:</h3>
+
+              </div>
+              <div class="content article-body">
+                <a href="/posts/achrive/2004/6/8/danish-customs.aspx.html">
+                  Continue reading ...
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-text-centered">
+                <div>
+                  <input type="checkbox" id="check" style="display: none;"/>
+                  <label for="check">
+                    <img class="author-image" src="/images/266A7910_small.jpg"/>
+                  </label>
+                  <label for="check">
+                    <div id="cover">
+                      <div id="box">
+                        <img class="author-image-large" src="/images/266A7910_large.jpg"/>
+                      </div>
+                    </div>
+                  </label>
+                  <p class="title">
+                    <span class="transparent-backgroud">
+                      <a href="https://linkedin.com/in/robertpickering">
+                        <i class="fa fa-linkedin-square fa-1x"></i>
+                      </a>
+                      <a href="https://github.com/robertpi">
+                        <i class="fa fa-github-square fa-1x"></i>
+                      </a>
+                      <a href="https://twitter.com/robertpi">
+                        <i class="fa fa-twitter-square fa-1x"></i>
+                      </a>
+                      <a href="https://facebook.com/robertfpickering">
+                        <i class="fa fa-facebook-square fa-1x"></i>
+                      </a>
+                      <a href="https://instagram.com/robertfpickering">
+                        <i class="fa fa-instagram fa-1x"></i>
+                      </a>
+                    </span>
+                  </p>
+                </div>
+                <p>
+                  &nbsp;
+                </p>
+                <p class="title article-title">
+                  <span class="transparent-backgroud">
+                    <a href="/posts/achrive/2004/5/28/.text-blogging-tool-is-not-easy-to-set-up..aspx.html">
+                      .Text blogging tool is not easy to set up.
+                    </a>
+                  </span>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  <a href="#">
+                    
+                  </a>
+                  Published: 2004-05-28
+                </p>
+              </div>
+              <div class="content article-body">
+                <P>&nbsp;</P>
+<P>The first big difficultly I had was with the web.config file, choosing the right one is very import, yet there very little explination of the differnce between the configuration files. The configuration files rely heavily on the "HandlerConfiguration" node, this node and it's children provides a bunch of regualar expressions that match agaist the url and redirect you to the apporate places. I choose to use "Single1_Web.config" this was a big mistake as the regualar expression in this file are only suitable&nbsp;this is only sutiable if you intend to run you blog in the root of your web site. If you want to run you're blog in a sub dir then you need "Single2_Web.config".</P>
+<P>The second problem I had is that .Text requires you to host it in an IIS application. Not a huge problem if you can do that but my ISP don&#8217;t give enough control of IIS to create a sub directory in its own application. After a lot of head scratching I started thinking like this: What exactly does .Text uses the IIS application for? Well it used for two things, to read the user settings out of the sql server database and to decided whether the URL being requested is part of a blog. Neither of these things are exactly require there own application, so I when thought the source searching for .ApplicationFolder and replaced it with the name of the dir I wanted. Yes this was morally wrong to hard code it like that and I felt dirty afterwards but after a little rogering of the vs projects it worked exactly how I wanted it to work, no changes to IIS required.</P>
+
+              </div>
+              <div class="content article-body">
+                <a href="/posts/achrive/2004/5/28/.text-blogging-tool-is-not-easy-to-set-up..aspx.html">
+                  Continue reading ...
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-text-centered">
+                <div>
+                  <input type="checkbox" id="check" style="display: none;"/>
+                  <label for="check">
+                    <img class="author-image" src="/images/266A7910_small.jpg"/>
+                  </label>
+                  <label for="check">
+                    <div id="cover">
+                      <div id="box">
+                        <img class="author-image-large" src="/images/266A7910_large.jpg"/>
+                      </div>
+                    </div>
+                  </label>
+                  <p class="title">
+                    <span class="transparent-backgroud">
+                      <a href="https://linkedin.com/in/robertpickering">
+                        <i class="fa fa-linkedin-square fa-1x"></i>
+                      </a>
+                      <a href="https://github.com/robertpi">
+                        <i class="fa fa-github-square fa-1x"></i>
+                      </a>
+                      <a href="https://twitter.com/robertpi">
+                        <i class="fa fa-twitter-square fa-1x"></i>
+                      </a>
+                      <a href="https://facebook.com/robertfpickering">
+                        <i class="fa fa-facebook-square fa-1x"></i>
+                      </a>
+                      <a href="https://instagram.com/robertfpickering">
+                        <i class="fa fa-instagram fa-1x"></i>
+                      </a>
+                    </span>
+                  </p>
+                </div>
+                <p>
+                  &nbsp;
+                </p>
+                <p class="title article-title">
+                  <span class="transparent-backgroud">
+                    <a href="/posts/achrive/2004/5/27/fsharp-updates.aspx.html">
+                      F# updates
+                    </a>
+                  </span>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  <a href="#">
+                    
+                  </a>
+                  Published: 2004-05-27
+                </p>
+              </div>
+              <div class="content article-body">
+                <P>I'll be noting all f# updates in my blog, so you can just subscribe to the "F# updates" feed and be automatically informed of any new F# updates.</P>
+<P>On a related note I've added 5 new tutorals to the f sharp site. A summary of these is available <A href="http://www.strangelights.com/FSharp/tut1-intro.aspx">here</A>.</P>
+
+              </div>
+              <div class="content article-body">
+                <a href="/posts/achrive/2004/5/27/fsharp-updates.aspx.html">
+                  Continue reading ...
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <div class="container has-text-centered">
+        <a href="/posts/archive/page17.html">
+          Previous
+        </a>
+        19 of 19
+        <a href="#">
+          Next
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,191 @@
+<html>
+  <head>
+
+        <script type="text/javascript">
+          var wsUri = "ws://localhost:8080/websocket";
+      function init()
+      {
+        websocket = new WebSocket(wsUri);
+        websocket.onclose = function(evt) { onClose(evt) };
+      }
+      function onClose(evt)
+      {
+        console.log('closing');
+        websocket.close();
+        document.location.reload();
+      }
+      window.addEventListener("load", init, false);
+      </script>
+            <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      Strangelights
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <meta property="og:url" content="http://www.strangelights.com//posts/achrive/2013/12/trying-out-linux-for-a-while.html"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Trying Out Linux for a While | Strangelights"/>
+    <meta property="og:description" content="<div class="entry-content"><p>So, I had a good time at <a href="http://BuildStuff.lt/">BuildStuff.lt</a>, but my laptop died in quite an odd way. I&rsquo;ll write more about the laptop death in another post.
+I&rsquo;ll also write more about <a href="http://BuildStuff.lt/">BuildStuff.lt</a> in another post. This post is about the laptops resurrection.</p>
+"/>
+    <meta property="twitter:card" content="summary"/>
+    <meta property="twitter:url" content="http://www.strangelights.com//posts/achrive/2013/12/trying-out-linux-for-a-while.html"/>
+    <meta property="twitter:title" content="Trying Out Linux for a While | Strangelights"/>
+    <meta property="twitter:description" content="<div class="entry-content"><p>So, I had a good time at <a href="http://BuildStuff.lt/">BuildStuff.lt</a>, but my laptop died in quite an odd way. I&rsquo;ll write more about the laptop death in another post.
+I&rsquo;ll also write more about <a href="http://BuildStuff.lt/">BuildStuff.lt</a> in another post. This post is about the laptops resurrection.</p>
+"/>
+    <meta property="og:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+    <meta property="twitter:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <a class="navbar-item" href="/">
+            Home
+          </a>
+          <a class="navbar-item" href="/about.html">
+            About
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-info is-bold">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            <span class="transparent-backgroud">
+              Strangelights
+            </span>
+          </h1>
+          <h3>
+            <span class="transparent-backgroud">
+              Another tech blog.
+            </span>
+          </h3>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="articles">
+        <div class="column is-8 is-offset-2">
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-text-centered">
+                <div>
+                  <input type="checkbox" id="check" style="display: none;"/>
+                  <label for="check">
+                    <img class="author-image" src="/images/266A7910_small.jpg"/>
+                  </label>
+                  <label for="check">
+                    <div id="cover">
+                      <div id="box">
+                        <img class="author-image-large" src="/images/266A7910_large.jpg"/>
+                      </div>
+                    </div>
+                  </label>
+                  <p class="title">
+                    <span class="transparent-backgroud">
+                      <a href="https://linkedin.com/in/robertpickering">
+                        <i class="fa fa-linkedin-square fa-1x"></i>
+                      </a>
+                      <a href="https://github.com/robertpi">
+                        <i class="fa fa-github-square fa-1x"></i>
+                      </a>
+                      <a href="https://twitter.com/robertpi">
+                        <i class="fa fa-twitter-square fa-1x"></i>
+                      </a>
+                      <a href="https://facebook.com/robertfpickering">
+                        <i class="fa fa-facebook-square fa-1x"></i>
+                      </a>
+                      <a href="https://instagram.com/robertfpickering">
+                        <i class="fa fa-instagram fa-1x"></i>
+                      </a>
+                    </span>
+                  </p>
+                </div>
+                <p>
+                  &nbsp;
+                </p>
+                <p class="title article-title">
+                  <span class="transparent-backgroud">
+                    <a href="/posts/achrive/2013/12/trying-out-linux-for-a-while.html">
+                      Trying Out Linux for a While
+                    </a>
+                  </span>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  <a href="#">
+                    
+                  </a>
+                  Published: 2013-12-14
+                </p>
+                <div class="share-text">
+                  <a href="https://www.addtoany.com/add_to/twitter?linkurl=%2fposts%2fachrive%2f2013%2f12%2ftrying-out-linux-for-a-while.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/twitter.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/linkedin?linkurl=%2fposts%2fachrive%2f2013%2f12%2ftrying-out-linux-for-a-while.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/linkedin.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/facebook?linkurl=%2fposts%2fachrive%2f2013%2f12%2ftrying-out-linux-for-a-while.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/facebook.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/reddit?linkurl=%2fposts%2fachrive%2f2013%2f12%2ftrying-out-linux-for-a-while.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/reddit.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/email?linkurl=%2fposts%2fachrive%2f2013%2f12%2ftrying-out-linux-for-a-while.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/email.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/mastodon?linkurl=%2fposts%2fachrive%2f2013%2f12%2ftrying-out-linux-for-a-while.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/mastodon.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/copy_link?linkurl=%2fposts%2fachrive%2f2013%2f12%2ftrying-out-linux-for-a-while.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/link.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/share#url=%2fposts%2fachrive%2f2013%2f12%2ftrying-out-linux-for-a-while.html&amp;title=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/a2a.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                </div>
+              </div>
+              <div class="content article-body">
+                <div class="entry-content"><p>So, I had a good time at <a href="http://BuildStuff.lt/">BuildStuff.lt</a>, but my laptop died in quite an odd way. I&rsquo;ll write more about the laptop death in another post.
+I&rsquo;ll also write more about <a href="http://BuildStuff.lt/">BuildStuff.lt</a> in another post. This post is about the laptops resurrection.</p>
+<p>I tried to repair the laptop using a windows using a bootable USB rescue disk kindly provided by <a href="https://twitter.com/thinkb4coding">Jemery</a> and <a href="https://twitter.com/ronanklyne">Ronan</a>, but despite taking a long time this just made it worse.</p>
+<p>So when I got home I decided to zap everything and install Linux. I&rsquo;ve been a Windows for a long, long time now. I&rsquo;ve made various attempts to use Linux instead but I&rsquo;ve also either hosted Linux in a VM or duel booted and this means I always drift back to Windows in the end, more for the software than the OS. So this time instead of missing the windows software, I&rsquo;m going to attempt to do things the &ldquo;Linux way&rdquo;, meaning instead of using specialist software for each task (ie Visual Studio for coding, Word for writing, Live Writer for blogging etc.), I&rsquo;m going to try and learn one text editor well and use it for doing all those things in plain text plus markup/markdown.</p>
+<p>This new blog is the first visible sign of this. It&rsquo;s octopress based and hosted on github, if everything works out I&rsquo;ll eventually migrate my domain and old blog posts here. If it doesn&rsquo;t it&rsquo;ll be quietly dropped.</p>
+<p>The first 72 hours has had it&rsquo;s ups and downs. Here&rsquo;s a summary:</p>
+<h1>The good</h1>
+<p>The Linux terminal is great, light years heard of either cmd or powershell in Windows. If I do go back to Windows, I think I&rsquo;ll just use Cygwin as my terminal and do more stuff through that.</p>
+<p>Having repository based app installation is great, especially as if a command is missing the shell will often tell you what package it&rsquo;s in.</p>
+<h1>The bad</h1>
+<p>The version of LibreOffice wouldn&rsquo;t open (I didn&rsquo;t want to use it for writing but I need to be able to read a word doc). Doing <code>apt-get install libreoffice</code> fixed this, but still if it comes pre-installed would be nice if it worked out the box, right?</p>
+<p>The latest version of Skype wouldn&rsquo;t install, so I&rsquo;m stuck with one from apt-get which has no web cam support.</p>
+<p>The cloud disky type thing I&rsquo;m using, copy.com, has a Linux client, but it comes with no installer. You install it where you like. Which had me scratching my head where should I install this?</p>
+<p>Octopress depends on version 1.9.3 of Ruby that isn&rsquo;t on apt-get. The solution seems to be building from source. Getting the right source and building was pretty easy. The problem is running <code>./configure</code> cleverly doesn&rsquo;t compile the bits that rely on libraries that aren&rsquo;t there. This is great if you don&rsquo;t need that bit, but if you do it sends you down a cycle of find the library, install it then recompile. This is what was missing for me:</p>
+<ul>
+<li>You need to change the default yaml parser to install a gem that octopress relies on, following the instructions from <a href="http://collectiveidea.com/blog/archives/2011/10/31/install-ruby-193-with-libyaml-on-centos/">this post</a></li>
+<li>Ensure zlib is installed, the apt-get package name is zlibc on zlib</li>
+<li>Ensure OpenSsl is installed, the apt-get packages that need to be installed can be <a href="https://help.ubuntu.com/community/OpenSSL">found here</a></li>
+</ul>
+<p>On the one hand, this is all noobe stuff, on the other hand it makes me feel I&rsquo;m climbing a hill that didn&rsquo;t ought to be there.</p>
+
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

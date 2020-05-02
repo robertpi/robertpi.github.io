@@ -1,0 +1,198 @@
+<html>
+  <head>
+
+        <script type="text/javascript">
+          var wsUri = "ws://localhost:8080/websocket";
+      function init()
+      {
+        websocket = new WebSocket(wsUri);
+        websocket.onclose = function(evt) { onClose(evt) };
+      }
+      function onClose(evt)
+      {
+        console.log('closing');
+        websocket.close();
+        document.location.reload();
+      }
+      window.addEventListener("load", init, false);
+      </script>
+            <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      Strangelights
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <meta property="og:url" content="http://www.strangelights.com//posts/achrive/2009/12/26/update-about-functionalnhibernate.aspx.html"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Update about FunctionalNHibernate | Strangelights"/>
+    <meta property="og:description" content="<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><span style="mso-ansi-language: EN-US" lang="EN-US"><font size="3">I’ve been working quite a lot on the FunctionalNHibernate project recently. I’ve implemented the following features:<o:p /></font></span></p>
+"/>
+    <meta property="twitter:card" content="summary"/>
+    <meta property="twitter:url" content="http://www.strangelights.com//posts/achrive/2009/12/26/update-about-functionalnhibernate.aspx.html"/>
+    <meta property="twitter:title" content="Update about FunctionalNHibernate | Strangelights"/>
+    <meta property="twitter:description" content="<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><span style="mso-ansi-language: EN-US" lang="EN-US"><font size="3">I’ve been working quite a lot on the FunctionalNHibernate project recently. I’ve implemented the following features:<o:p /></font></span></p>
+"/>
+    <meta property="og:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+    <meta property="twitter:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <a class="navbar-item" href="/">
+            Home
+          </a>
+          <a class="navbar-item" href="/about.html">
+            About
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-info is-bold">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            <span class="transparent-backgroud">
+              Strangelights
+            </span>
+          </h1>
+          <h3>
+            <span class="transparent-backgroud">
+              Another tech blog.
+            </span>
+          </h3>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="articles">
+        <div class="column is-8 is-offset-2">
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-text-centered">
+                <div>
+                  <input type="checkbox" id="check" style="display: none;"/>
+                  <label for="check">
+                    <img class="author-image" src="/images/266A7910_small.jpg"/>
+                  </label>
+                  <label for="check">
+                    <div id="cover">
+                      <div id="box">
+                        <img class="author-image-large" src="/images/266A7910_large.jpg"/>
+                      </div>
+                    </div>
+                  </label>
+                  <p class="title">
+                    <span class="transparent-backgroud">
+                      <a href="https://linkedin.com/in/robertpickering">
+                        <i class="fa fa-linkedin-square fa-1x"></i>
+                      </a>
+                      <a href="https://github.com/robertpi">
+                        <i class="fa fa-github-square fa-1x"></i>
+                      </a>
+                      <a href="https://twitter.com/robertpi">
+                        <i class="fa fa-twitter-square fa-1x"></i>
+                      </a>
+                      <a href="https://facebook.com/robertfpickering">
+                        <i class="fa fa-facebook-square fa-1x"></i>
+                      </a>
+                      <a href="https://instagram.com/robertfpickering">
+                        <i class="fa fa-instagram fa-1x"></i>
+                      </a>
+                    </span>
+                  </p>
+                </div>
+                <p>
+                  &nbsp;
+                </p>
+                <p class="title article-title">
+                  <span class="transparent-backgroud">
+                    <a href="/posts/achrive/2009/12/26/update-about-functionalnhibernate.aspx.html">
+                      Update about FunctionalNHibernate
+                    </a>
+                  </span>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  <a href="#">
+                    
+                  </a>
+                  Published: 2009-12-26
+                </p>
+                <div class="share-text">
+                  <a href="https://www.addtoany.com/add_to/twitter?linkurl=%2fposts%2fachrive%2f2009%2f12%2f26%2fupdate-about-functionalnhibernate.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/twitter.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/linkedin?linkurl=%2fposts%2fachrive%2f2009%2f12%2f26%2fupdate-about-functionalnhibernate.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/linkedin.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/facebook?linkurl=%2fposts%2fachrive%2f2009%2f12%2f26%2fupdate-about-functionalnhibernate.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/facebook.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/reddit?linkurl=%2fposts%2fachrive%2f2009%2f12%2f26%2fupdate-about-functionalnhibernate.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/reddit.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/email?linkurl=%2fposts%2fachrive%2f2009%2f12%2f26%2fupdate-about-functionalnhibernate.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/email.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/mastodon?linkurl=%2fposts%2fachrive%2f2009%2f12%2f26%2fupdate-about-functionalnhibernate.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/mastodon.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/copy_link?linkurl=%2fposts%2fachrive%2f2009%2f12%2f26%2fupdate-about-functionalnhibernate.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/link.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/share#url=%2fposts%2fachrive%2f2009%2f12%2f26%2fupdate-about-functionalnhibernate.aspx.html&amp;title=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/a2a.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                </div>
+              </div>
+              <div class="content article-body">
+                <p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><span style="mso-ansi-language: EN-US" lang="EN-US"><font size="3">I’ve been working quite a lot on the FunctionalNHibernate project recently. I’ve implemented the following features:<o:p /></font></span></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><span style="mso-ansi-language: EN-US" lang="EN-US"><font size="3">- Save records with native F# lists.<o:p /></font></span></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><span style="mso-ansi-language: EN-US" lang="EN-US"><font size="3">- Create one-to-many and many-to-many relations<o:p /></font></span></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><span style="mso-ansi-language: EN-US" lang="EN-US"><font size="3">- Generate identities automatically<o:p /></font></span></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><span style="mso-ansi-language: EN-US" lang="EN-US"><o:p><font size="3"> </font></o:p></span></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><span style="mso-ansi-language: EN-US" lang="EN-US"><font size="3">We can now do just about everything you the <a href="http://github.com/jagregory/fluent-nhibernate/tree/master/src/Examples.FirstProject">FluentNHibernate first example</a></font></span><span style="mso-ansi-language: EN-US" lang="EN-US"><font size="3"> project does, although admittedly this is just a very small subset of what one can do with FluentNHibernate<span style="mso-spacerun: yes">  </span>and NHibernate itself. <span style="mso-spacerun: yes"> </span><o:p /></font></span></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><span style="mso-ansi-language: EN-US" lang="EN-US"><o:p><font size="3"> </font></o:p></span></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><span style="mso-ansi-language: EN-US" lang="EN-US"><font size="3">In the future I’ll be looking at how to broadening what you can do with FunctionalNHibernate ClassMap descriptions and improve data access by integrating Linq like features.<o:p /></font></span></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><span style="mso-ansi-language: EN-US" lang="EN-US"><o:p><font size="3"> </font></o:p></span></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><span style="mso-ansi-language: EN-US" lang="EN-US"><font size="3">In terms of usability, it’s still early days but I think it’s probably usable for a project with simple data access needs. Obviously you need to ready to put up with some teething problems and there will definitely be some breaking changes as the project evolves.<o:p /></font></span></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><span style="mso-ansi-language: EN-US" lang="EN-US"><o:p><font size="3"> </font></o:p></span></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><span style="mso-ansi-language: EN-US" lang="EN-US"><font size="3">The project uses Mercurial for source control and is hosted at bitbucket.org, but don’t need to install Mercurial to use it, you can download the zipped source here: </font></span><a href="http://bitbucket.org/robertpi/functionalnhibernate/downloads/"><span style="mso-ansi-language: EN-US" lang="EN-US"><font size="3">http://bitbucket.org/robertpi/functionalnhibernate/downloads/</font></span></a><span style="mso-ansi-language: EN-US" lang="EN-US"><o:p /></span></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><span style="mso-ansi-language: EN-US" lang="EN-US"><o:p><font size="3"> </font></o:p></span></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><span style="mso-ansi-language: EN-US" lang="EN-US"><font size="3">I’ve licensed it under a simple BSD like license: </font></span><a href="http://bitbucket.org/robertpi/functionalnhibernate/src/tip/LICENSE.txt"><span style="mso-ansi-language: EN-US" lang="EN-US"><font size="3">http://bitbucket.org/robertpi/functionalnhibernate/src/tip/LICENSE.txt</font></span></a><span style="mso-ansi-language: EN-US"><font size="3"> <span lang="EN-US"><o:p /></span></font></span></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><span style="mso-ansi-language: EN-US" lang="EN-US"><o:p><font size="3"> </font></o:p></span></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><span style="mso-ansi-language: EN-US" lang="EN-US"><font size="3">I’ve also created a google group for announcements, discussions and questions about the project:<br />
+<a href="http://groups.google.com/group/functionalnhibernate">http://groups.google.com/group/functionalnhibernate</a></font></span></p>
+<h3>Feedback:</h3>
+<p><em>Feedback was imported from my only blog engine, it's no longer possible to post feedback here.</em></p>
+<p>**Twitter Trackbacks for</p>
+<pre><code>    Update about FunctionalNHibernate 
+    [strangelights.com]
+    on Topsy.com - http://topsy.com/tb/bit.ly/7O1vAb**
+</code></pre>
+<p><br />        Twitter Trackbacks for<br />         <br />        Update about FunctionalNHibernate <br />        [strangelights.com]<br />        on Topsy.com<br /></p>
+<p><strong>The Morning Brew - Chris Alcock  &amp;amp;raquo; The Morning Brew #506 - http://blog.cwa.me.uk/2009/12/29/the-morning-brew-506/</strong></p>
+<p>The Morning Brew - Chris Alcock  &amp;amp;raquo; The Morning Brew #506</p>
+<p><strong>Discoveries This Week 12/29/2009 - <a href="http://www.atalasoft.com/cs/blogs/rickm/archive/2009/12/29/discoveries-this-week-12-29-2009.aspx">Rick Minerich's Development Wonderland</a></strong></p>
+<p>It’s been a bit of a light week with the holidays.&amp;amp;#160; Although, for the truly dedicated, that’s just</p>
+
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

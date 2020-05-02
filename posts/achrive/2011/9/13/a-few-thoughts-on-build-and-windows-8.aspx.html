@@ -1,0 +1,170 @@
+<html>
+  <head>
+
+        <script type="text/javascript">
+          var wsUri = "ws://localhost:8080/websocket";
+      function init()
+      {
+        websocket = new WebSocket(wsUri);
+        websocket.onclose = function(evt) { onClose(evt) };
+      }
+      function onClose(evt)
+      {
+        console.log('closing');
+        websocket.close();
+        document.location.reload();
+      }
+      window.addEventListener("load", init, false);
+      </script>
+            <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      Strangelights
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <meta property="og:url" content="http://www.strangelights.com//posts/achrive/2011/9/13/a-few-thoughts-on-build-and-windows-8.aspx.html"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="A few thoughts on build and Windows 8 | Strangelights"/>
+    <meta property="og:description" content="<p>I actually have the last two episodes of my <a href="http://strangelights.com/blog/archive/2011/09/05/f-ravendb-and-picomvc-ndash-creating-an-autocomplete-ndash-scenario.aspx">RavenDB</a> <a href="http://strangelights.com/blog/archive/2011/09/07/f-ravendb-and-picomvc-ndash-creating-an-autocomplete-ndash-the.aspx">series</a> ready to go, but doesn’t seem much point publishing them this week, so here’s a few thoughts on stuff from build and Windows 8 instead.</p> 
+"/>
+    <meta property="twitter:card" content="summary"/>
+    <meta property="twitter:url" content="http://www.strangelights.com//posts/achrive/2011/9/13/a-few-thoughts-on-build-and-windows-8.aspx.html"/>
+    <meta property="twitter:title" content="A few thoughts on build and Windows 8 | Strangelights"/>
+    <meta property="twitter:description" content="<p>I actually have the last two episodes of my <a href="http://strangelights.com/blog/archive/2011/09/05/f-ravendb-and-picomvc-ndash-creating-an-autocomplete-ndash-scenario.aspx">RavenDB</a> <a href="http://strangelights.com/blog/archive/2011/09/07/f-ravendb-and-picomvc-ndash-creating-an-autocomplete-ndash-the.aspx">series</a> ready to go, but doesn’t seem much point publishing them this week, so here’s a few thoughts on stuff from build and Windows 8 instead.</p> 
+"/>
+    <meta property="og:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+    <meta property="twitter:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <a class="navbar-item" href="/">
+            Home
+          </a>
+          <a class="navbar-item" href="/about.html">
+            About
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-info is-bold">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            <span class="transparent-backgroud">
+              Strangelights
+            </span>
+          </h1>
+          <h3>
+            <span class="transparent-backgroud">
+              Another tech blog.
+            </span>
+          </h3>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="articles">
+        <div class="column is-8 is-offset-2">
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-text-centered">
+                <div>
+                  <input type="checkbox" id="check" style="display: none;"/>
+                  <label for="check">
+                    <img class="author-image" src="/images/266A7910_small.jpg"/>
+                  </label>
+                  <label for="check">
+                    <div id="cover">
+                      <div id="box">
+                        <img class="author-image-large" src="/images/266A7910_large.jpg"/>
+                      </div>
+                    </div>
+                  </label>
+                  <p class="title">
+                    <span class="transparent-backgroud">
+                      <a href="https://linkedin.com/in/robertpickering">
+                        <i class="fa fa-linkedin-square fa-1x"></i>
+                      </a>
+                      <a href="https://github.com/robertpi">
+                        <i class="fa fa-github-square fa-1x"></i>
+                      </a>
+                      <a href="https://twitter.com/robertpi">
+                        <i class="fa fa-twitter-square fa-1x"></i>
+                      </a>
+                      <a href="https://facebook.com/robertfpickering">
+                        <i class="fa fa-facebook-square fa-1x"></i>
+                      </a>
+                      <a href="https://instagram.com/robertfpickering">
+                        <i class="fa fa-instagram fa-1x"></i>
+                      </a>
+                    </span>
+                  </p>
+                </div>
+                <p>
+                  &nbsp;
+                </p>
+                <p class="title article-title">
+                  <span class="transparent-backgroud">
+                    <a href="/posts/achrive/2011/9/13/a-few-thoughts-on-build-and-windows-8.aspx.html">
+                      A few thoughts on build and Windows 8
+                    </a>
+                  </span>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  <a href="#">
+                    
+                  </a>
+                  Published: 2011-09-13
+                </p>
+                <div class="share-text">
+                  <a href="https://www.addtoany.com/add_to/twitter?linkurl=%2fposts%2fachrive%2f2011%2f9%2f13%2fa-few-thoughts-on-build-and-windows-8.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/twitter.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/linkedin?linkurl=%2fposts%2fachrive%2f2011%2f9%2f13%2fa-few-thoughts-on-build-and-windows-8.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/linkedin.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/facebook?linkurl=%2fposts%2fachrive%2f2011%2f9%2f13%2fa-few-thoughts-on-build-and-windows-8.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/facebook.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/reddit?linkurl=%2fposts%2fachrive%2f2011%2f9%2f13%2fa-few-thoughts-on-build-and-windows-8.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/reddit.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/email?linkurl=%2fposts%2fachrive%2f2011%2f9%2f13%2fa-few-thoughts-on-build-and-windows-8.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/email.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/mastodon?linkurl=%2fposts%2fachrive%2f2011%2f9%2f13%2fa-few-thoughts-on-build-and-windows-8.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/mastodon.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/copy_link?linkurl=%2fposts%2fachrive%2f2011%2f9%2f13%2fa-few-thoughts-on-build-and-windows-8.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/link.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/share#url=%2fposts%2fachrive%2f2011%2f9%2f13%2fa-few-thoughts-on-build-and-windows-8.aspx.html&amp;title=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/a2a.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                </div>
+              </div>
+              <div class="content article-body">
+                <p>I actually have the last two episodes of my <a href="http://strangelights.com/blog/archive/2011/09/05/f-ravendb-and-picomvc-ndash-creating-an-autocomplete-ndash-scenario.aspx">RavenDB</a> <a href="http://strangelights.com/blog/archive/2011/09/07/f-ravendb-and-picomvc-ndash-creating-an-autocomplete-ndash-the.aspx">series</a> ready to go, but doesn’t seem much point publishing them this week, so here’s a few thoughts on stuff from build and Windows 8 instead.</p>  <p>Firstly Windows 8: I thought the build keynotes did a nice job of selling Windows 8, although adjectives like super and amazing were used far too much for my tastes. I would like a Windows 8 tablet because it seems to do a nice job of bring it all together, yes it’s nothing you can’t get already from Apple (iPad, Mac Air, etc.) but you can’t yet get this in the same device form Apple. I don’t yet own a tablet, as I take my laptop nearly every where, so I don’t want to carry another device. I spend much of my time either emailing or code, I don’t think a tablet would change that much, but it would be nice to have a laptop that turned into a tablet for the times that I do want to read an article on the train or bus, or maybe watch a movie. I guess the question is, do most consumers fall into the same category as me? Do they need a device that can do laptop with keyboard and tablet or would simply a tablet do for there portable device? There’s also an interesting questing around will people start using the tablet style metro interface to do their jobs? I don’t pretend to know the answer to that but here’s why it’s an important question: (it seems to me that) most working programmers develop software for business to help people do there jobs better. Tablets are clearly consumer orientated at the moment, this has created something of a boom in consumer software for them. As a result of this boom more programmers have moved over to creating apps for both phones and tablets, but to me most software development jobs seems to be in developing apps for business. So will the trend for consumer apps continue or will we see this market mature and stagnate? Here I am prepared to say I think the we will see this market mature and then stagnate, leaving most programmers where they were before, building software for business. So if tablets want to remain an appealing platform for programmers then we’ll need to see business users adopting tablets for their work, so it will be interesting to see if this does happens.</p>  <p>As for build itself, I think clearly the doom sayers are wrong. Even <a href="http://www.zdnet.com/blog/microsoft/microsoft-to-developers-metro-is-your-future/10611?tag=mantle_skin;content">this piece on ZDNet published today</a> seems to me to be wrong. Yes “Metro” is clearly what Microsoft are pushing, but you can develop metro apps in .NET, it’s not just HTML5 and JS. I’ve looked though the program and yes there are many sessions on Metro and HTLM5, but there are also a lot of interesting looking sessions on .NET and other technical topics like Visual Studio, Azure and performance tuning (I haven’t counted but I would say at least as many if not more). Also, Metro in HTML5/JS troubles me a bit, if HTML5/JS is to be a good platform of development of Metro apps then surely it will need extensions to access all the Win8 specific stuff, and if it has extensions, then it’s not cross platform, so what’s the point?</p>  <p>Anyway, here’s the list of session’s I’ll be looking out for:</p>  <h3><a href="http://channel9.msdn.com/events/BUILD/BUILD2011/SAC-592T">Optimal cloud performance with BranchCache</a></h3>  <h3><a href="http://channel9.msdn.com/events/BUILD/BUILD2011/SAC-593T">New techniques to develop low-latency network apps</a></h3>  <h3><a href="http://channel9.msdn.com/events/BUILD/BUILD2011/SAC-973F">Windows Server 8</a></h3>  <h3><a href="http://channel9.msdn.com/events/BUILD/BUILD2011/TOOL-816T">Future directions for C# and Visual Basic</a></h3>  <h3><a href="http://channel9.msdn.com/events/BUILD/BUILD2011/TOOL-834T">What's new in .NET Framework 4.5</a></h3>  <h3><a href="http://channel9.msdn.com/events/BUILD/BUILD2011/HW-245T">Running Windows from an external USB drive with Windows To Go</a></h3>  <h3><a href="http://channel9.msdn.com/events/BUILD/BUILD2011/HW-664C">Chalk talk for sensor and location support in Windows</a></h3>  <h3><a href="http://channel9.msdn.com/Events/BUILD/BUILD2011/TOOL-813T">Deep dive into the kernel of the .NET Framework</a></h3>  <p> </p>  <p>And saving the best for last:</p>  <h3><a href="http://channel9.msdn.com/events/BUILD/BUILD2011/SAC-904T">F# 3.0: data, services, Web, cloud, at your fingertips</a></h3>
+
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

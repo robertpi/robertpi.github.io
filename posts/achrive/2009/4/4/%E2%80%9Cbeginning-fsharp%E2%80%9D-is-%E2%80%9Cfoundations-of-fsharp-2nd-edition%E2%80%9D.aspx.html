@@ -1,0 +1,184 @@
+<html>
+  <head>
+
+        <script type="text/javascript">
+          var wsUri = "ws://localhost:8080/websocket";
+      function init()
+      {
+        websocket = new WebSocket(wsUri);
+        websocket.onclose = function(evt) { onClose(evt) };
+      }
+      function onClose(evt)
+      {
+        console.log('closing');
+        websocket.close();
+        document.location.reload();
+      }
+      window.addEventListener("load", init, false);
+      </script>
+            <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      Strangelights
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <meta property="og:url" content="http://www.strangelights.com//posts/achrive/2009/4/4/“beginning-fsharp”-is-“foundations-of-fsharp-2nd-edition”.aspx.html"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="“Beginning F#” is “Foundations of F# 2nd Edition” | Strangelights"/>
+    <meta property="og:description" content="<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><font size="3">A few people have noticed that a new book “Beginning F#” by me is available for <a href="http://www.amazon.com/gp/product/1430223898?ie=UTF8&amp;tag=strangelights-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1430223898">pre-order on Amazon</a>. I wanted to make it clear that this is the new title for the second edition of “Foundations of F#”. The publisher wanted the title change to make it clear that this was a complementary rather title to “Expert F#” rather than competing with it. It also reflects that during the rewrite that I’m focusing a lot on making the book more accessible to people with no functional programming experience. </font></p>
+"/>
+    <meta property="twitter:card" content="summary"/>
+    <meta property="twitter:url" content="http://www.strangelights.com//posts/achrive/2009/4/4/“beginning-fsharp”-is-“foundations-of-fsharp-2nd-edition”.aspx.html"/>
+    <meta property="twitter:title" content="“Beginning F#” is “Foundations of F# 2nd Edition” | Strangelights"/>
+    <meta property="twitter:description" content="<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><font size="3">A few people have noticed that a new book “Beginning F#” by me is available for <a href="http://www.amazon.com/gp/product/1430223898?ie=UTF8&amp;tag=strangelights-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1430223898">pre-order on Amazon</a>. I wanted to make it clear that this is the new title for the second edition of “Foundations of F#”. The publisher wanted the title change to make it clear that this was a complementary rather title to “Expert F#” rather than competing with it. It also reflects that during the rewrite that I’m focusing a lot on making the book more accessible to people with no functional programming experience. </font></p>
+"/>
+    <meta property="og:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+    <meta property="twitter:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <a class="navbar-item" href="/">
+            Home
+          </a>
+          <a class="navbar-item" href="/about.html">
+            About
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-info is-bold">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            <span class="transparent-backgroud">
+              Strangelights
+            </span>
+          </h1>
+          <h3>
+            <span class="transparent-backgroud">
+              Another tech blog.
+            </span>
+          </h3>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="articles">
+        <div class="column is-8 is-offset-2">
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-text-centered">
+                <div>
+                  <input type="checkbox" id="check" style="display: none;"/>
+                  <label for="check">
+                    <img class="author-image" src="/images/266A7910_small.jpg"/>
+                  </label>
+                  <label for="check">
+                    <div id="cover">
+                      <div id="box">
+                        <img class="author-image-large" src="/images/266A7910_large.jpg"/>
+                      </div>
+                    </div>
+                  </label>
+                  <p class="title">
+                    <span class="transparent-backgroud">
+                      <a href="https://linkedin.com/in/robertpickering">
+                        <i class="fa fa-linkedin-square fa-1x"></i>
+                      </a>
+                      <a href="https://github.com/robertpi">
+                        <i class="fa fa-github-square fa-1x"></i>
+                      </a>
+                      <a href="https://twitter.com/robertpi">
+                        <i class="fa fa-twitter-square fa-1x"></i>
+                      </a>
+                      <a href="https://facebook.com/robertfpickering">
+                        <i class="fa fa-facebook-square fa-1x"></i>
+                      </a>
+                      <a href="https://instagram.com/robertfpickering">
+                        <i class="fa fa-instagram fa-1x"></i>
+                      </a>
+                    </span>
+                  </p>
+                </div>
+                <p>
+                  &nbsp;
+                </p>
+                <p class="title article-title">
+                  <span class="transparent-backgroud">
+                    <a href="/posts/achrive/2009/4/4/“beginning-fsharp”-is-“foundations-of-fsharp-2nd-edition”.aspx.html">
+                      “Beginning F#” is “Foundations of F# 2nd Edition”
+                    </a>
+                  </span>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  <a href="#">
+                    
+                  </a>
+                  Published: 2009-04-04
+                </p>
+                <div class="share-text">
+                  <a href="https://www.addtoany.com/add_to/twitter?linkurl=%2fposts%2fachrive%2f2009%2f4%2f4%2f%e2%80%9cbeginning-fsharp%e2%80%9d-is-%e2%80%9cfoundations-of-fsharp-2nd-edition%e2%80%9d.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/twitter.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/linkedin?linkurl=%2fposts%2fachrive%2f2009%2f4%2f4%2f%e2%80%9cbeginning-fsharp%e2%80%9d-is-%e2%80%9cfoundations-of-fsharp-2nd-edition%e2%80%9d.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/linkedin.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/facebook?linkurl=%2fposts%2fachrive%2f2009%2f4%2f4%2f%e2%80%9cbeginning-fsharp%e2%80%9d-is-%e2%80%9cfoundations-of-fsharp-2nd-edition%e2%80%9d.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/facebook.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/reddit?linkurl=%2fposts%2fachrive%2f2009%2f4%2f4%2f%e2%80%9cbeginning-fsharp%e2%80%9d-is-%e2%80%9cfoundations-of-fsharp-2nd-edition%e2%80%9d.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/reddit.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/email?linkurl=%2fposts%2fachrive%2f2009%2f4%2f4%2f%e2%80%9cbeginning-fsharp%e2%80%9d-is-%e2%80%9cfoundations-of-fsharp-2nd-edition%e2%80%9d.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/email.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/mastodon?linkurl=%2fposts%2fachrive%2f2009%2f4%2f4%2f%e2%80%9cbeginning-fsharp%e2%80%9d-is-%e2%80%9cfoundations-of-fsharp-2nd-edition%e2%80%9d.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/mastodon.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/copy_link?linkurl=%2fposts%2fachrive%2f2009%2f4%2f4%2f%e2%80%9cbeginning-fsharp%e2%80%9d-is-%e2%80%9cfoundations-of-fsharp-2nd-edition%e2%80%9d.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/link.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/share#url=%2fposts%2fachrive%2f2009%2f4%2f4%2f%e2%80%9cbeginning-fsharp%e2%80%9d-is-%e2%80%9cfoundations-of-fsharp-2nd-edition%e2%80%9d.aspx.html&amp;title=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/a2a.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                </div>
+              </div>
+              <div class="content article-body">
+                <p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><font size="3">A few people have noticed that a new book “Beginning F#” by me is available for <a href="http://www.amazon.com/gp/product/1430223898?ie=UTF8&amp;tag=strangelights-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1430223898">pre-order on Amazon</a>. I wanted to make it clear that this is the new title for the second edition of “Foundations of F#”. The publisher wanted the title change to make it clear that this was a complementary rather title to “Expert F#” rather than competing with it. It also reflects that during the rewrite that I’m focusing a lot on making the book more accessible to people with no functional programming experience. </font></p>
+<h3>Feedback:</h3>
+<p><em>Feedback was imported from my only blog engine, it's no longer possible to post feedback here.</em></p>
+<p>** - <a href="http://jasonhaley.com/blog/post/2009/04/05/Interesting-Finds-April-5-2009.aspx">Jason Haley</a>**</p>
+<p>Interesting Finds: April 5, 2009</p>
+<p><strong>re: “Beginning F#” is “Foundations of F# 2nd Edition” - <a href="http://www.myfavoritemovies.us/movies">Nair</a></strong></p>
+<p>Thanks and yes please add some more fundamentals for the beginners like me. Funcational programming is little difficult to put our heads around for people who have been doing OO for years. Also just a suggestion, if you could discuss little bit about DLR interactions would be great.<br />Thanks again.</p>
+<p><strong>re: “Beginning F#” is “Foundations of F# 2nd Edition” - <a href="http://strangelights.com/blog/Default.aspx">Robert Pickering</a></strong></p>
+<p>I’m definitely trying to focus on fundamentals for beginners. There’ll probably be a small section on using F# with other CLI, ie mono, silverlight etc.</p>
+<p><strong>re: “Beginning F#” is “Foundations of F# 2nd Edition” - Girish Bhat</strong></p>
+<p>What a strange co-incidence (or rather intended effect) the way you<br />have documented is exactly how I am using the two books - I keep going<br />back and forth between the two books to reinforce the same concepts.<br /><br /></p>
+<p><strong>re: “Beginning F#” is “Foundations of F# 2nd Edition” - Mano</strong></p>
+<p>Am I able to get the code snippets featured in the book? Apress website (<a rel="nofollow external" href="http://apress.com/book/sourcecode" title="http://apress.com/book/sourcecode">http://apress.com/book/sourcecode</a>) has the source code for the old edition of the book, but not for the new one.</p>
+<p><strong>re: “Beginning F#” is “Foundations of F# 2nd Edition” - <a href="http://strangelights.com/blog/Default.aspx">Robert Pickering</a></strong></p>
+<p>The source code for the book is available on codeplex.com: <a rel="nofollow external" href="http://bfs.codeplex.com/" title="http://bfs.codeplex.com/">http://bfs.codeplex.com/</a></p>
+
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

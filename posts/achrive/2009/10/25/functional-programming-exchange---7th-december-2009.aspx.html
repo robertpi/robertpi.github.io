@@ -1,0 +1,189 @@
+<html>
+  <head>
+
+        <script type="text/javascript">
+          var wsUri = "ws://localhost:8080/websocket";
+      function init()
+      {
+        websocket = new WebSocket(wsUri);
+        websocket.onclose = function(evt) { onClose(evt) };
+      }
+      function onClose(evt)
+      {
+        console.log('closing');
+        websocket.close();
+        document.location.reload();
+      }
+      window.addEventListener("load", init, false);
+      </script>
+            <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      Strangelights
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <meta property="og:url" content="http://www.strangelights.com//posts/achrive/2009/10/25/functional-programming-exchange---7th-december-2009.aspx.html"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Functional Programming eXchange - 7th December 2009 | Strangelights"/>
+    <meta property="og:description" content="<p><font face="">I’m very happy to announce the <a href="http://skillsmatter.com/event/design-architecture/functional-programming-exchange-2009">“Functional Programming eXchange”</a> which will take place in <a href="http://skillsmatter.com/location-details/design-architecture/536/96">London at Skills Mater head quarters</a> on the 7th December. I’ve been involved in organizing a program which will cover F#, Erlang, Scala and Haskell. The program has been designed to interested both people actively involved in functional programming in industry and working programmers with an interest in functional programming would like to learn more about how they can use these two techniques in their day job. The program will include, me, as well as:</font></p>
+"/>
+    <meta property="twitter:card" content="summary"/>
+    <meta property="twitter:url" content="http://www.strangelights.com//posts/achrive/2009/10/25/functional-programming-exchange---7th-december-2009.aspx.html"/>
+    <meta property="twitter:title" content="Functional Programming eXchange - 7th December 2009 | Strangelights"/>
+    <meta property="twitter:description" content="<p><font face="">I’m very happy to announce the <a href="http://skillsmatter.com/event/design-architecture/functional-programming-exchange-2009">“Functional Programming eXchange”</a> which will take place in <a href="http://skillsmatter.com/location-details/design-architecture/536/96">London at Skills Mater head quarters</a> on the 7th December. I’ve been involved in organizing a program which will cover F#, Erlang, Scala and Haskell. The program has been designed to interested both people actively involved in functional programming in industry and working programmers with an interest in functional programming would like to learn more about how they can use these two techniques in their day job. The program will include, me, as well as:</font></p>
+"/>
+    <meta property="og:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+    <meta property="twitter:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <a class="navbar-item" href="/">
+            Home
+          </a>
+          <a class="navbar-item" href="/about.html">
+            About
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-info is-bold">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            <span class="transparent-backgroud">
+              Strangelights
+            </span>
+          </h1>
+          <h3>
+            <span class="transparent-backgroud">
+              Another tech blog.
+            </span>
+          </h3>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="articles">
+        <div class="column is-8 is-offset-2">
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-text-centered">
+                <div>
+                  <input type="checkbox" id="check" style="display: none;"/>
+                  <label for="check">
+                    <img class="author-image" src="/images/266A7910_small.jpg"/>
+                  </label>
+                  <label for="check">
+                    <div id="cover">
+                      <div id="box">
+                        <img class="author-image-large" src="/images/266A7910_large.jpg"/>
+                      </div>
+                    </div>
+                  </label>
+                  <p class="title">
+                    <span class="transparent-backgroud">
+                      <a href="https://linkedin.com/in/robertpickering">
+                        <i class="fa fa-linkedin-square fa-1x"></i>
+                      </a>
+                      <a href="https://github.com/robertpi">
+                        <i class="fa fa-github-square fa-1x"></i>
+                      </a>
+                      <a href="https://twitter.com/robertpi">
+                        <i class="fa fa-twitter-square fa-1x"></i>
+                      </a>
+                      <a href="https://facebook.com/robertfpickering">
+                        <i class="fa fa-facebook-square fa-1x"></i>
+                      </a>
+                      <a href="https://instagram.com/robertfpickering">
+                        <i class="fa fa-instagram fa-1x"></i>
+                      </a>
+                    </span>
+                  </p>
+                </div>
+                <p>
+                  &nbsp;
+                </p>
+                <p class="title article-title">
+                  <span class="transparent-backgroud">
+                    <a href="/posts/achrive/2009/10/25/functional-programming-exchange---7th-december-2009.aspx.html">
+                      Functional Programming eXchange - 7th December 2009
+                    </a>
+                  </span>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  <a href="#">
+                    
+                  </a>
+                  Published: 2009-10-25
+                </p>
+                <div class="share-text">
+                  <a href="https://www.addtoany.com/add_to/twitter?linkurl=%2fposts%2fachrive%2f2009%2f10%2f25%2ffunctional-programming-exchange---7th-december-2009.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/twitter.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/linkedin?linkurl=%2fposts%2fachrive%2f2009%2f10%2f25%2ffunctional-programming-exchange---7th-december-2009.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/linkedin.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/facebook?linkurl=%2fposts%2fachrive%2f2009%2f10%2f25%2ffunctional-programming-exchange---7th-december-2009.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/facebook.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/reddit?linkurl=%2fposts%2fachrive%2f2009%2f10%2f25%2ffunctional-programming-exchange---7th-december-2009.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/reddit.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/email?linkurl=%2fposts%2fachrive%2f2009%2f10%2f25%2ffunctional-programming-exchange---7th-december-2009.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/email.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/mastodon?linkurl=%2fposts%2fachrive%2f2009%2f10%2f25%2ffunctional-programming-exchange---7th-december-2009.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/mastodon.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/copy_link?linkurl=%2fposts%2fachrive%2f2009%2f10%2f25%2ffunctional-programming-exchange---7th-december-2009.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/link.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/share#url=%2fposts%2fachrive%2f2009%2f10%2f25%2ffunctional-programming-exchange---7th-december-2009.aspx.html&amp;title=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/a2a.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                </div>
+              </div>
+              <div class="content article-body">
+                <p><font face="">I’m very happy to announce the <a href="http://skillsmatter.com/event/design-architecture/functional-programming-exchange-2009">“Functional Programming eXchange”</a> which will take place in <a href="http://skillsmatter.com/location-details/design-architecture/536/96">London at Skills Mater head quarters</a> on the 7th December. I’ve been involved in organizing a program which will cover F#, Erlang, Scala and Haskell. The program has been designed to interested both people actively involved in functional programming in industry and working programmers with an interest in functional programming would like to learn more about how they can use these two techniques in their day job. The program will include, me, as well as:</font></p>
+<p><font face=""><a href="http://www.well-typed.com/who_we_are">Duncan Coutts</a> of <a href="http://www.well-typed.com">Well-Typed</a><br />
+<a href="http://skillsmatter.com/expert-profile/design-architecture/ganesh-sittampalam">Ganesh Sittampalam</a> of <a href="http://www.credit-suisse.com">Credit Suisse</a><br />
+<a href="http://research.microsoft.com/en-us/people/antonsc/">Anton Schwaighofer</a> of <a href="http://research.microsoft.com">MSR</a><br />
+<a href="http://sadekdrobi.com">Sadek Drobi</a> of <a href="http://valtech.com">ValTech</a></font></p>
+<p><font face="">... with more exciting speakers to be announced soon!</font></p>
+<p><font face="">Book before 30th October and you’ll be able to register for just £25, places are limited to just 125 delegates to sign up quickly for what should be an interesting, informative and fun day out of the office. <br />
+</font></p>
+<h3>Feedback:</h3>
+<p><em>Feedback was imported from my only blog engine, it's no longer possible to post feedback here.</em></p>
+<p>**Twitter Trackbacks for</p>
+<pre><code>    Functional Programming eXchange - 7th December 2009 
+    [strangelights.com]
+    on Topsy.com - http://topsy.com/tb/bit.ly/1BgsjN**
+</code></pre>
+<p><br />        Twitter Trackbacks for<br />         <br />        Functional Programming eXchange - 7th December 2009 <br />        [strangelights.com]<br />        on Topsy.com<br /></p>
+<p><strong>Social comments and analytics for this post - <a href="http://www.ubervu.com/conversations/strangelights.com/blog/archive/2009/10/25/1646.aspx">uberVU - social comments</a></strong></p>
+<p>This post was mentioned on Twitter by robertpi: Conference on Functional Programming in December in London: <a rel="nofollow external" href="http://bit.ly/1BgsjN" title="http://bit.ly/1BgsjN">http://bit.ly/1BgsjN</a> book now to ensure a place!</p>
+<p><strong>Visualizing Concurrency, F# and More &amp;amp;laquo; Tales from a Trading Desk - http://mdavey.wordpress.com/2009/10/26/visualizing-concurrency-and-more/</strong></p>
+<p>Visualizing Concurrency, F# and More &amp;amp;laquo; Tales from a Trading Desk</p>
+
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

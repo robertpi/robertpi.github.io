@@ -1,0 +1,176 @@
+<html>
+  <head>
+
+        <script type="text/javascript">
+          var wsUri = "ws://localhost:8080/websocket";
+      function init()
+      {
+        websocket = new WebSocket(wsUri);
+        websocket.onclose = function(evt) { onClose(evt) };
+      }
+      function onClose(evt)
+      {
+        console.log('closing');
+        websocket.close();
+        document.location.reload();
+      }
+      window.addEventListener("load", init, false);
+      </script>
+            <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      Strangelights
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <meta property="og:url" content="http://www.strangelights.com//posts/achrive/2011/9/7/see-my-stack-overflow-dev-days-talk.aspx.html"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="See My Stack Overflow Dev Days Talk | Strangelights"/>
+    <meta property="og:description" content="<p>So <a href="http://blog.stackoverflow.com/2011/09/devdays-2011-is-cancelled/">Stack Overflow Dev Days has been cancelled</a>. Obviously it’s a big disappointment to everyone involved, I thought the line up for the London event was great and I was looking forward to attending the conference as much as I was looking forward to speaking at it.</p> 
+"/>
+    <meta property="twitter:card" content="summary"/>
+    <meta property="twitter:url" content="http://www.strangelights.com//posts/achrive/2011/9/7/see-my-stack-overflow-dev-days-talk.aspx.html"/>
+    <meta property="twitter:title" content="See My Stack Overflow Dev Days Talk | Strangelights"/>
+    <meta property="twitter:description" content="<p>So <a href="http://blog.stackoverflow.com/2011/09/devdays-2011-is-cancelled/">Stack Overflow Dev Days has been cancelled</a>. Obviously it’s a big disappointment to everyone involved, I thought the line up for the London event was great and I was looking forward to attending the conference as much as I was looking forward to speaking at it.</p> 
+"/>
+    <meta property="og:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+    <meta property="twitter:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <a class="navbar-item" href="/">
+            Home
+          </a>
+          <a class="navbar-item" href="/about.html">
+            About
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-info is-bold">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            <span class="transparent-backgroud">
+              Strangelights
+            </span>
+          </h1>
+          <h3>
+            <span class="transparent-backgroud">
+              Another tech blog.
+            </span>
+          </h3>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="articles">
+        <div class="column is-8 is-offset-2">
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-text-centered">
+                <div>
+                  <input type="checkbox" id="check" style="display: none;"/>
+                  <label for="check">
+                    <img class="author-image" src="/images/266A7910_small.jpg"/>
+                  </label>
+                  <label for="check">
+                    <div id="cover">
+                      <div id="box">
+                        <img class="author-image-large" src="/images/266A7910_large.jpg"/>
+                      </div>
+                    </div>
+                  </label>
+                  <p class="title">
+                    <span class="transparent-backgroud">
+                      <a href="https://linkedin.com/in/robertpickering">
+                        <i class="fa fa-linkedin-square fa-1x"></i>
+                      </a>
+                      <a href="https://github.com/robertpi">
+                        <i class="fa fa-github-square fa-1x"></i>
+                      </a>
+                      <a href="https://twitter.com/robertpi">
+                        <i class="fa fa-twitter-square fa-1x"></i>
+                      </a>
+                      <a href="https://facebook.com/robertfpickering">
+                        <i class="fa fa-facebook-square fa-1x"></i>
+                      </a>
+                      <a href="https://instagram.com/robertfpickering">
+                        <i class="fa fa-instagram fa-1x"></i>
+                      </a>
+                    </span>
+                  </p>
+                </div>
+                <p>
+                  &nbsp;
+                </p>
+                <p class="title article-title">
+                  <span class="transparent-backgroud">
+                    <a href="/posts/achrive/2011/9/7/see-my-stack-overflow-dev-days-talk.aspx.html">
+                      See My Stack Overflow Dev Days Talk
+                    </a>
+                  </span>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  <a href="#">
+                    
+                  </a>
+                  Published: 2011-09-07
+                </p>
+                <div class="share-text">
+                  <a href="https://www.addtoany.com/add_to/twitter?linkurl=%2fposts%2fachrive%2f2011%2f9%2f7%2fsee-my-stack-overflow-dev-days-talk.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/twitter.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/linkedin?linkurl=%2fposts%2fachrive%2f2011%2f9%2f7%2fsee-my-stack-overflow-dev-days-talk.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/linkedin.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/facebook?linkurl=%2fposts%2fachrive%2f2011%2f9%2f7%2fsee-my-stack-overflow-dev-days-talk.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/facebook.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/reddit?linkurl=%2fposts%2fachrive%2f2011%2f9%2f7%2fsee-my-stack-overflow-dev-days-talk.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/reddit.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/email?linkurl=%2fposts%2fachrive%2f2011%2f9%2f7%2fsee-my-stack-overflow-dev-days-talk.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/email.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/mastodon?linkurl=%2fposts%2fachrive%2f2011%2f9%2f7%2fsee-my-stack-overflow-dev-days-talk.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/mastodon.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/copy_link?linkurl=%2fposts%2fachrive%2f2011%2f9%2f7%2fsee-my-stack-overflow-dev-days-talk.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/link.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/share#url=%2fposts%2fachrive%2f2011%2f9%2f7%2fsee-my-stack-overflow-dev-days-talk.aspx.html&amp;title=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/a2a.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                </div>
+              </div>
+              <div class="content article-body">
+                <p>So <a href="http://blog.stackoverflow.com/2011/09/devdays-2011-is-cancelled/">Stack Overflow Dev Days has been cancelled</a>. Obviously it’s a big disappointment to everyone involved, I thought the line up for the London event was great and I was looking forward to attending the conference as much as I was looking forward to speaking at it.</p>  <p>If it’s any compensation you can see me do this talk at skill matter as one of their in the brain sessions:</p>  <p><strong><a href="http://skillsmatter.com/podcast/scala/dsls-fsharp">The Combinator Approach to Programming Domain Specific Languages with F#</a></strong></p>  <p><em>Using a “combinator” approach to create internal Domain Specific Languages (DSLs) is something that has been popular in Haskell and the ML family of programming languages for quite some time. Much has been written about it in academic circles, yet this approach to creating DSLs has yet to become popular in main stream industrial programming. Now that F#, a member of the ML family of programing languages, is available out of the box in Visual Studio 2010, this means that these techniques are now much more accessible to programmers working in industry.</em></p>  <p><em>This talk will start by addressing the question of what is a combinator and show why combinators are a great way of building internal DSLs. It will then go on to show how this programming technique any be applied to many different problem domains, all of which are very relevant to the modern industrial developer. We’ll also look at some of the existing combinator libraries available for F# such as FParsec and FsCheck.</em></p>  <p>Please <a href="http://skillsmatter.com/podcast/scala/dsls-fsharp">register on the talks pages</a> and if that interests you have a look at my <a href="http://skillsmatter.com/course/scala/robert-pickerings-beginning-f-workshop/js-2102">Beginning F# Workshop</a> running on the same day.</p>  <p><strong>Update:</strong> Some how forgot to mention that both the “In the Brain” session and the “Beginning F# Workshop” are on 1st November.</p>
+<h3>Feedback:</h3>
+<p><em>Feedback was imported from my only blog engine, it's no longer possible to post feedback here.</em></p>
+<p><strong>re: See My Stack Overflow Dev Days Talk - Yann Schwartz</strong></p>
+<p>Great. I've been nursing an unhealthy fascination for parser combinators for a while so I can't wait to see your session.<br />Do you plan on having a version of it for alt.net?</p>
+<p><strong>re: See My Stack Overflow Dev Days Talk - <a href="http://strangelights.com/blog">Robert Pickering</a></strong></p>
+<p>Sure, I'll do a alt.net.fr session if there is demand for it.</p>
+
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

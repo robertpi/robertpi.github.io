@@ -1,0 +1,230 @@
+<html>
+  <head>
+
+        <script type="text/javascript">
+          var wsUri = "ws://localhost:8080/websocket";
+      function init()
+      {
+        websocket = new WebSocket(wsUri);
+        websocket.onclose = function(evt) { onClose(evt) };
+      }
+      function onClose(evt)
+      {
+        console.log('closing');
+        websocket.close();
+        document.location.reload();
+      }
+      window.addEventListener("load", init, false);
+      </script>
+            <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      Strangelights
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <meta property="og:url" content="http://www.strangelights.com//posts/achrive/2009/3/28/interesting-performance-consequences-of-seq.map.aspx.html"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Interesting performance Consequences of Seq.map | Strangelights"/>
+    <meta property="og:description" content="<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><font size="3">It’s fairly well know that Sequences or “seq”, the short hand for IEnumerable, are lazy. This has some interesting performance consequence I had not considered until recently. When we execute a line like:</font></p>
+"/>
+    <meta property="twitter:card" content="summary"/>
+    <meta property="twitter:url" content="http://www.strangelights.com//posts/achrive/2009/3/28/interesting-performance-consequences-of-seq.map.aspx.html"/>
+    <meta property="twitter:title" content="Interesting performance Consequences of Seq.map | Strangelights"/>
+    <meta property="twitter:description" content="<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><font size="3">It’s fairly well know that Sequences or “seq”, the short hand for IEnumerable, are lazy. This has some interesting performance consequence I had not considered until recently. When we execute a line like:</font></p>
+"/>
+    <meta property="og:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+    <meta property="twitter:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <a class="navbar-item" href="/">
+            Home
+          </a>
+          <a class="navbar-item" href="/about.html">
+            About
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-info is-bold">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            <span class="transparent-backgroud">
+              Strangelights
+            </span>
+          </h1>
+          <h3>
+            <span class="transparent-backgroud">
+              Another tech blog.
+            </span>
+          </h3>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="articles">
+        <div class="column is-8 is-offset-2">
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-text-centered">
+                <div>
+                  <input type="checkbox" id="check" style="display: none;"/>
+                  <label for="check">
+                    <img class="author-image" src="/images/266A7910_small.jpg"/>
+                  </label>
+                  <label for="check">
+                    <div id="cover">
+                      <div id="box">
+                        <img class="author-image-large" src="/images/266A7910_large.jpg"/>
+                      </div>
+                    </div>
+                  </label>
+                  <p class="title">
+                    <span class="transparent-backgroud">
+                      <a href="https://linkedin.com/in/robertpickering">
+                        <i class="fa fa-linkedin-square fa-1x"></i>
+                      </a>
+                      <a href="https://github.com/robertpi">
+                        <i class="fa fa-github-square fa-1x"></i>
+                      </a>
+                      <a href="https://twitter.com/robertpi">
+                        <i class="fa fa-twitter-square fa-1x"></i>
+                      </a>
+                      <a href="https://facebook.com/robertfpickering">
+                        <i class="fa fa-facebook-square fa-1x"></i>
+                      </a>
+                      <a href="https://instagram.com/robertfpickering">
+                        <i class="fa fa-instagram fa-1x"></i>
+                      </a>
+                    </span>
+                  </p>
+                </div>
+                <p>
+                  &nbsp;
+                </p>
+                <p class="title article-title">
+                  <span class="transparent-backgroud">
+                    <a href="/posts/achrive/2009/3/28/interesting-performance-consequences-of-seq.map.aspx.html">
+                      Interesting performance Consequences of Seq.map
+                    </a>
+                  </span>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  <a href="#">
+                    
+                  </a>
+                  Published: 2009-03-28
+                </p>
+                <div class="share-text">
+                  <a href="https://www.addtoany.com/add_to/twitter?linkurl=%2fposts%2fachrive%2f2009%2f3%2f28%2finteresting-performance-consequences-of-seq.map.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/twitter.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/linkedin?linkurl=%2fposts%2fachrive%2f2009%2f3%2f28%2finteresting-performance-consequences-of-seq.map.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/linkedin.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/facebook?linkurl=%2fposts%2fachrive%2f2009%2f3%2f28%2finteresting-performance-consequences-of-seq.map.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/facebook.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/reddit?linkurl=%2fposts%2fachrive%2f2009%2f3%2f28%2finteresting-performance-consequences-of-seq.map.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/reddit.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/email?linkurl=%2fposts%2fachrive%2f2009%2f3%2f28%2finteresting-performance-consequences-of-seq.map.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/email.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/mastodon?linkurl=%2fposts%2fachrive%2f2009%2f3%2f28%2finteresting-performance-consequences-of-seq.map.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/mastodon.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/copy_link?linkurl=%2fposts%2fachrive%2f2009%2f3%2f28%2finteresting-performance-consequences-of-seq.map.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/link.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/share#url=%2fposts%2fachrive%2f2009%2f3%2f28%2finteresting-performance-consequences-of-seq.map.aspx.html&amp;title=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/a2a.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                </div>
+              </div>
+              <div class="content article-body">
+                <p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><font size="3">It’s fairly well know that Sequences or “seq”, the short hand for IEnumerable, are lazy. This has some interesting performance consequence I had not considered until recently. When we execute a line like:</font></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><span style="LINE-HEIGHT: 115%; FONT-FAMILY: &quot;Courier New&quot;; COLOR: blue; FONT-SIZE: 10pt; mso-no-proof: yes">let</span><span style="LINE-HEIGHT: 115%; FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 10pt; mso-no-proof: yes"> lotsOfInts = Seq.map (<span style="COLOR: blue">fun</span> x <span style="COLOR: blue">-&gt;</span> x + 1) (seq { 1 .. 1000000 })</span></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><font size="3">The command executes almost instantaneously, despite the fact we’re creating a list of a million integers (Real: 00:00:00.001, CPU: 00:00:00.000 on my PC). <span style="mso-spacerun: yes"> </span>This is because everything is lazy; no actual work is done till the list is enumerated. Executing a command like: </font></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><span style="LINE-HEIGHT: 115%; FONT-FAMILY: &quot;Courier New&quot;; COLOR: blue; FONT-SIZE: 10pt; mso-no-proof: yes">let</span><span style="LINE-HEIGHT: 115%; FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 10pt; mso-no-proof: yes"> lotsOfInts' = List.of_seq lotsOfInts</span></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><font size="3">Takes a significant amount of time (Real: 00:00:01.107, CPU: 00:00:01.076 for me), because we turn the lazy collection into a concrete collection. This is often pretty much what we want, not to do any work until we need to enumerate the collection. The thing to beware of is that we do this work every time we enumerate the collection. This may be desirable for some times of collection, for example say something that reads from a file of data base that’s like to change between enumerations. But there’s also a class of problem were this is highly undesirable. Consider the following code:</font></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; COLOR: blue; FONT-SIZE: 10pt; mso-no-proof: yes">let</span><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 10pt; mso-no-proof: yes"> <span style="COLOR: blue">rec</span> loop seq iteration =<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 10pt; mso-no-proof: yes"><span style="mso-spacerun: yes">    </span><span style="COLOR: blue">let</span> timer = <span style="COLOR: blue">new</span> System.Diagnostics.Stopwatch()<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 10pt; mso-no-proof: yes"><span style="mso-spacerun: yes">    </span>timer.Start()<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 10pt; mso-no-proof: yes"><span style="mso-spacerun: yes">    </span><span style="COLOR: blue">let</span> seq' = Seq.map (<span style="COLOR: blue">fun</span> x <span style="COLOR: blue">-&gt;</span> x + 1) seq<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 10pt; mso-no-proof: yes"><span style="mso-spacerun: yes">    </span><span style="COLOR: blue">let</span> list = List.of_seq seq'<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 10pt; mso-no-proof: yes"><span style="mso-spacerun: yes">    </span>printfn <span style="COLOR: maroon">"Interation: %i time: %i"</span> iteration timer.ElapsedMilliseconds<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 10pt; mso-no-proof: yes"><span style="mso-spacerun: yes">    </span><span style="COLOR: blue">if</span> iteration &lt; 10 <span style="COLOR: blue">then<o:p /></span></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 10pt; mso-no-proof: yes"><span style="mso-spacerun: yes">        </span>loop seq' (iteration + 1)<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 10pt; mso-no-proof: yes"><o:p> </o:p></span></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><span style="LINE-HEIGHT: 115%; FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 10pt; mso-no-proof: yes">loop (seq { 1 .. 1000000 }) 0</span></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><font size="3">Each iteration will take longer than the last, as each time “</font><span style="LINE-HEIGHT: 115%; FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 10pt; mso-no-proof: yes">List.of_seq seq</span><font size="3">” is execute the sequence is recursively reiterated. I get the following results on my computer:</font></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 8pt; mso-no-proof: yes">Interation: 0 time: 953<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 8pt; mso-no-proof: yes">Interation: 1 time: 919<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 8pt; mso-no-proof: yes">Interation: 2 time: 1151<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 8pt; mso-no-proof: yes">Interation: 3 time: 1857<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 8pt; mso-no-proof: yes">Interation: 4 time: 1528<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 8pt; mso-no-proof: yes">Interation: 5 time: 2041<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 8pt; mso-no-proof: yes">Interation: 6 time: 1820<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 8pt; mso-no-proof: yes">Interation: 7 time: 2341<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 8pt; mso-no-proof: yes">Interation: 8 time: 2300<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 8pt; mso-no-proof: yes">Interation: 9 time: 2747<o:p /></span></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><span style="LINE-HEIGHT: 115%; FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 8pt; mso-no-proof: yes">Interation: 10 time: 2673</span></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><font size="3"><span style="mso-spacerun: yes"> </span>It’s trivial to fix this problem, simply use the “Seq.cache” function:</font></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; COLOR: blue; FONT-SIZE: 10pt; mso-no-proof: yes">let</span><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 10pt; mso-no-proof: yes"> <span style="COLOR: blue">rec</span> loop' seq iteration =<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 10pt; mso-no-proof: yes"><span style="mso-spacerun: yes">    </span><span style="COLOR: blue">let</span> timer = <span style="COLOR: blue">new</span> System.Diagnostics.Stopwatch()<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 10pt; mso-no-proof: yes"><span style="mso-spacerun: yes">    </span>timer.Start()<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 10pt; mso-no-proof: yes"><span style="mso-spacerun: yes">    </span><span style="COLOR: blue">let</span> seq' = Seq.cache (Seq.map (<span style="COLOR: blue">fun</span> x <span style="COLOR: blue">-&gt;</span> x + 1) seq)<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 10pt; mso-no-proof: yes"><span style="mso-spacerun: yes">    </span><span style="COLOR: blue">let</span> list = List.of_seq seq<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 10pt; mso-no-proof: yes"><span style="mso-spacerun: yes">    </span>printfn <span style="COLOR: maroon">"Interation: %i time: %i"</span> iteration timer.ElapsedMilliseconds<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 10pt; mso-no-proof: yes"><span style="mso-spacerun: yes">    </span><span style="COLOR: blue">if</span> iteration &lt; 10 <span style="COLOR: blue">then<o:p /></span></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 10pt; mso-no-proof: yes"><span style="mso-spacerun: yes">        </span>loop' (seq' :&gt; seq&lt;_&gt;) (iteration + 1)<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 10pt; mso-no-proof: yes"><o:p> </o:p></span></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><span style="LINE-HEIGHT: 115%; FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 10pt; mso-no-proof: yes">loop' (seq { 1 .. 1000000 }) 0</span></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><font size="3">Which gives the following results:</font></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 8pt; mso-no-proof: yes">Interation: 0 time: 1014<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 8pt; mso-no-proof: yes">Interation: 1 time: 2337<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 8pt; mso-no-proof: yes">Interation: 2 time: 2303<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 8pt; mso-no-proof: yes">Interation: 3 time: 2294<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 8pt; mso-no-proof: yes">Interation: 4 time: 2506<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 8pt; mso-no-proof: yes">Interation: 5 time: 2343<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 8pt; mso-no-proof: yes">Interation: 6 time: 2449<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 8pt; mso-no-proof: yes">Interation: 7 time: 2075<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 8pt; mso-no-proof: yes">Interation: 8 time: 2242<o:p /></span></p>
+<p style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none" class="MsoNormal"><span style="FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 8pt; mso-no-proof: yes">Interation: 9 time: 2370<o:p /></span></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><span style="LINE-HEIGHT: 115%; FONT-FAMILY: &quot;Courier New&quot;; FONT-SIZE: 8pt; mso-no-proof: yes">Interation: 10 time: 2107</span></p>
+<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><font size="3">(Of course in this case it’s probably easier to password the concrete list we’ve already created, but in most places you’ll want to use “Seq.cache”)</font></p>
+<h3>Feedback:</h3>
+<p><em>Feedback was imported from my only blog engine, it's no longer possible to post feedback here.</em></p>
+<p><strong>re: Interesting performance Consequences of Seq.map - kot</strong></p>
+<p>typo?<br />&quot;Executing a command like:<br /><br />&lt;&lt; what? &gt;&gt;<br /><br />Takes a....&quot;</p>
+<p><strong>re: Interesting performance Consequences of Seq.map - <a href="http://strangelights.com/blog/Default.aspx">Robert Pickering</a></strong></p>
+<p>Yes, rather unfortunate typo (well copy &amp; paste error), should have read:<br /><br />let lotsOfInts' = List.of_seq lotsOfInts<br /><br />Fixed now.</p>
+<p><strong>re: Interesting performance Consequences of Seq.map - <a href="http://pandamonial.com/">Amanda Laucher</a></strong></p>
+<p>I think another copy paste error. Typing blogs can suck :) (Blog comments also!)<br /><br />let rec loop' seq iteration =<br />    let timer = new System.Diagnostics.Stopwatch()<br />    timer.Start()<br />    let seq' = Seq.cache (Seq.map (fun x -&gt; x + 1) seq)<br />    let list = List.of_seq seq'<br />    printfn &quot;Interation: %i time: %i&quot; iteration timer.ElapsedMilliseconds<br />    if iteration &lt; 10 then<br />        loop' seq' (iteration + 1)<br /><br />loop' (seq { 1 .. 1000000 }) 0</p>
+<p><strong>re: Interesting performance Consequences of Seq.map - <a href="http://strangelights.com/blog/Default.aspx">Robert Pickering</a></strong></p>
+<p>Thanks for the correction Amanda, glad some ones paying attention! Add the missing prime in line now.</p>
+
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

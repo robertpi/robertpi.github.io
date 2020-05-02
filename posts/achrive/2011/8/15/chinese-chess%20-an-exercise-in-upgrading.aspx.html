@@ -1,0 +1,170 @@
+<html>
+  <head>
+
+        <script type="text/javascript">
+          var wsUri = "ws://localhost:8080/websocket";
+      function init()
+      {
+        websocket = new WebSocket(wsUri);
+        websocket.onclose = function(evt) { onClose(evt) };
+      }
+      function onClose(evt)
+      {
+        console.log('closing');
+        websocket.close();
+        document.location.reload();
+      }
+      window.addEventListener("load", init, false);
+      </script>
+            <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      Strangelights
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <meta property="og:url" content="http://www.strangelights.com//posts/achrive/2011/8/15/chinese-chess -an-exercise-in-upgrading.aspx.html"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Chinese Chess: An Exercise in Upgrading | Strangelights"/>
+    <meta property="og:description" content="<p>Way back in 2005 Nguyen Van Thien and Dinh Thi Thuy Nga, two computer science students from Vietnam, got in contact asking me to help them share the “Chinese Chess” computer game they’d written in F#. The game plays well and has nice graphics and sounds, quite an achievement given that F# was still in its infancy back in those days. Naturally I want to help them so I gave it a place on my website.</p> 
+"/>
+    <meta property="twitter:card" content="summary"/>
+    <meta property="twitter:url" content="http://www.strangelights.com//posts/achrive/2011/8/15/chinese-chess -an-exercise-in-upgrading.aspx.html"/>
+    <meta property="twitter:title" content="Chinese Chess: An Exercise in Upgrading | Strangelights"/>
+    <meta property="twitter:description" content="<p>Way back in 2005 Nguyen Van Thien and Dinh Thi Thuy Nga, two computer science students from Vietnam, got in contact asking me to help them share the “Chinese Chess” computer game they’d written in F#. The game plays well and has nice graphics and sounds, quite an achievement given that F# was still in its infancy back in those days. Naturally I want to help them so I gave it a place on my website.</p> 
+"/>
+    <meta property="og:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+    <meta property="twitter:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <a class="navbar-item" href="/">
+            Home
+          </a>
+          <a class="navbar-item" href="/about.html">
+            About
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-info is-bold">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            <span class="transparent-backgroud">
+              Strangelights
+            </span>
+          </h1>
+          <h3>
+            <span class="transparent-backgroud">
+              Another tech blog.
+            </span>
+          </h3>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="articles">
+        <div class="column is-8 is-offset-2">
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-text-centered">
+                <div>
+                  <input type="checkbox" id="check" style="display: none;"/>
+                  <label for="check">
+                    <img class="author-image" src="/images/266A7910_small.jpg"/>
+                  </label>
+                  <label for="check">
+                    <div id="cover">
+                      <div id="box">
+                        <img class="author-image-large" src="/images/266A7910_large.jpg"/>
+                      </div>
+                    </div>
+                  </label>
+                  <p class="title">
+                    <span class="transparent-backgroud">
+                      <a href="https://linkedin.com/in/robertpickering">
+                        <i class="fa fa-linkedin-square fa-1x"></i>
+                      </a>
+                      <a href="https://github.com/robertpi">
+                        <i class="fa fa-github-square fa-1x"></i>
+                      </a>
+                      <a href="https://twitter.com/robertpi">
+                        <i class="fa fa-twitter-square fa-1x"></i>
+                      </a>
+                      <a href="https://facebook.com/robertfpickering">
+                        <i class="fa fa-facebook-square fa-1x"></i>
+                      </a>
+                      <a href="https://instagram.com/robertfpickering">
+                        <i class="fa fa-instagram fa-1x"></i>
+                      </a>
+                    </span>
+                  </p>
+                </div>
+                <p>
+                  &nbsp;
+                </p>
+                <p class="title article-title">
+                  <span class="transparent-backgroud">
+                    <a href="/posts/achrive/2011/8/15/chinese-chess -an-exercise-in-upgrading.aspx.html">
+                      Chinese Chess: An Exercise in Upgrading
+                    </a>
+                  </span>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  <a href="#">
+                    
+                  </a>
+                  Published: 2011-08-15
+                </p>
+                <div class="share-text">
+                  <a href="https://www.addtoany.com/add_to/twitter?linkurl=%2fposts%2fachrive%2f2011%2f8%2f15%2fchinese-chess+-an-exercise-in-upgrading.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/twitter.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/linkedin?linkurl=%2fposts%2fachrive%2f2011%2f8%2f15%2fchinese-chess+-an-exercise-in-upgrading.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/linkedin.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/facebook?linkurl=%2fposts%2fachrive%2f2011%2f8%2f15%2fchinese-chess+-an-exercise-in-upgrading.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/facebook.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/reddit?linkurl=%2fposts%2fachrive%2f2011%2f8%2f15%2fchinese-chess+-an-exercise-in-upgrading.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/reddit.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/email?linkurl=%2fposts%2fachrive%2f2011%2f8%2f15%2fchinese-chess+-an-exercise-in-upgrading.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/email.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/mastodon?linkurl=%2fposts%2fachrive%2f2011%2f8%2f15%2fchinese-chess+-an-exercise-in-upgrading.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/mastodon.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/copy_link?linkurl=%2fposts%2fachrive%2f2011%2f8%2f15%2fchinese-chess+-an-exercise-in-upgrading.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/link.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/share#url=%2fposts%2fachrive%2f2011%2f8%2f15%2fchinese-chess+-an-exercise-in-upgrading.aspx.html&amp;title=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/a2a.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                </div>
+              </div>
+              <div class="content article-body">
+                <p>Way back in 2005 Nguyen Van Thien and Dinh Thi Thuy Nga, two computer science students from Vietnam, got in contact asking me to help them share the “Chinese Chess” computer game they’d written in F#. The game plays well and has nice graphics and sounds, quite an achievement given that F# was still in its infancy back in those days. Naturally I want to help them so I gave it a place on my website.</p>  <p>Recently I had a couple of emails saying the link was broken (which I never got round to replying too, sorry guys!) so as part of the site revamp I took the time to upgrade the game to latest version of F# and <a href="https://github.com/robertpi/MLChineseChess">post it github</a>. </p>  <p>F# has change quite a bit since 2005 and although these changes are for the better it does mean code from back then will no longer compile. Here’s rough guide to what has changed:</p>  <p>- The syntax for accessing an array element (or an indexer on a class) has changed from .(x) to .[x], this is the most annoying thing to fix as you can’t do a straight search and replace as brackets are used in other places too (although you can search and replace on .( which will fix half the problem). </p>  <p>- Library functions have been removed and renamed, mostly this means removing the underscores from the names. Notably Array.create_matrix has gone and so I used Array2D.create which creates a “square” rather than jagged matrix but servers the same purpose.</p>  <p>- You are no longer allowed to use “and” to define identifiers names when the identifiers are not recursive (this code bases used this heavily but I haven’t seen it used much else where). Fortunately this can be easily fixed by search and replacing with “in let” (the code bases uses the old non-whitespace sensitive syntax where in is to control identifiers scope).</p>  <p>- Bitwise operators like “land” (long and) are not no longer keywords and are now symbols &amp;&amp;&amp;.</p>  <p>Porting the game was made somewhat easier as it relied very little on library functions (meaning the second point wasn’t much of a problem), for example rather than rely on a library sorting functions they have their own quicksort implementation. I don’t generally this is a good coding style, but it does improve your chances of forward compatibility. </p>  <p>Anyway, it’s on <a href="https://github.com/robertpi/MLChineseChess">github now so enjoy</a>!</p>  <p><img src="http://dl.dropbox.com/u/4679672/cchess.PNG" /></p>
+
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

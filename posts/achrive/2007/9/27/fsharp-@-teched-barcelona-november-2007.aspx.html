@@ -1,0 +1,176 @@
+<html>
+  <head>
+
+        <script type="text/javascript">
+          var wsUri = "ws://localhost:8080/websocket";
+      function init()
+      {
+        websocket = new WebSocket(wsUri);
+        websocket.onclose = function(evt) { onClose(evt) };
+      }
+      function onClose(evt)
+      {
+        console.log('closing');
+        websocket.close();
+        document.location.reload();
+      }
+      window.addEventListener("load", init, false);
+      </script>
+            <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      Strangelights
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <meta property="og:url" content="http://www.strangelights.com//posts/achrive/2007/9/27/fsharp-@-teched-barcelona-november-2007.aspx.html"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="F# @ TechEd Barcelona November 2007 | Strangelights"/>
+    <meta property="og:description" content="<p class="MsoNormal" style="MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">There will be two F# presentations at TechEd Europe this year, one by Don Syme on concurrent programming in F#. See the full abstract below for more details</font></p>
+"/>
+    <meta property="twitter:card" content="summary"/>
+    <meta property="twitter:url" content="http://www.strangelights.com//posts/achrive/2007/9/27/fsharp-@-teched-barcelona-november-2007.aspx.html"/>
+    <meta property="twitter:title" content="F# @ TechEd Barcelona November 2007 | Strangelights"/>
+    <meta property="twitter:description" content="<p class="MsoNormal" style="MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">There will be two F# presentations at TechEd Europe this year, one by Don Syme on concurrent programming in F#. See the full abstract below for more details</font></p>
+"/>
+    <meta property="og:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+    <meta property="twitter:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <a class="navbar-item" href="/">
+            Home
+          </a>
+          <a class="navbar-item" href="/about.html">
+            About
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-info is-bold">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            <span class="transparent-backgroud">
+              Strangelights
+            </span>
+          </h1>
+          <h3>
+            <span class="transparent-backgroud">
+              Another tech blog.
+            </span>
+          </h3>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="articles">
+        <div class="column is-8 is-offset-2">
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-text-centered">
+                <div>
+                  <input type="checkbox" id="check" style="display: none;"/>
+                  <label for="check">
+                    <img class="author-image" src="/images/266A7910_small.jpg"/>
+                  </label>
+                  <label for="check">
+                    <div id="cover">
+                      <div id="box">
+                        <img class="author-image-large" src="/images/266A7910_large.jpg"/>
+                      </div>
+                    </div>
+                  </label>
+                  <p class="title">
+                    <span class="transparent-backgroud">
+                      <a href="https://linkedin.com/in/robertpickering">
+                        <i class="fa fa-linkedin-square fa-1x"></i>
+                      </a>
+                      <a href="https://github.com/robertpi">
+                        <i class="fa fa-github-square fa-1x"></i>
+                      </a>
+                      <a href="https://twitter.com/robertpi">
+                        <i class="fa fa-twitter-square fa-1x"></i>
+                      </a>
+                      <a href="https://facebook.com/robertfpickering">
+                        <i class="fa fa-facebook-square fa-1x"></i>
+                      </a>
+                      <a href="https://instagram.com/robertfpickering">
+                        <i class="fa fa-instagram fa-1x"></i>
+                      </a>
+                    </span>
+                  </p>
+                </div>
+                <p>
+                  &nbsp;
+                </p>
+                <p class="title article-title">
+                  <span class="transparent-backgroud">
+                    <a href="/posts/achrive/2007/9/27/fsharp-@-teched-barcelona-november-2007.aspx.html">
+                      F# @ TechEd Barcelona November 2007
+                    </a>
+                  </span>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  <a href="#">
+                    
+                  </a>
+                  Published: 2007-09-27
+                </p>
+                <div class="share-text">
+                  <a href="https://www.addtoany.com/add_to/twitter?linkurl=%2fposts%2fachrive%2f2007%2f9%2f27%2ffsharp-%40-teched-barcelona-november-2007.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/twitter.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/linkedin?linkurl=%2fposts%2fachrive%2f2007%2f9%2f27%2ffsharp-%40-teched-barcelona-november-2007.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/linkedin.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/facebook?linkurl=%2fposts%2fachrive%2f2007%2f9%2f27%2ffsharp-%40-teched-barcelona-november-2007.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/facebook.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/reddit?linkurl=%2fposts%2fachrive%2f2007%2f9%2f27%2ffsharp-%40-teched-barcelona-november-2007.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/reddit.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/email?linkurl=%2fposts%2fachrive%2f2007%2f9%2f27%2ffsharp-%40-teched-barcelona-november-2007.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/email.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/mastodon?linkurl=%2fposts%2fachrive%2f2007%2f9%2f27%2ffsharp-%40-teched-barcelona-november-2007.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/mastodon.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/add_to/copy_link?linkurl=%2fposts%2fachrive%2f2007%2f9%2f27%2ffsharp-%40-teched-barcelona-november-2007.aspx.html&amp;linkname=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/link.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                  <a href="https://www.addtoany.com/share#url=%2fposts%2fachrive%2f2007%2f9%2f27%2ffsharp-%40-teched-barcelona-november-2007.aspx.html&amp;title=" target="_blank">
+                    <img src="https://static.addtoany.com/buttons/a2a.svg" width="32" height="32" style="background-color: black;"/>
+                  </a>
+                </div>
+              </div>
+              <div class="content article-body">
+                <p class="MsoNormal" style="MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">There will be two F# presentations at TechEd Europe this year, one by Don Syme on concurrent programming in F#. See the full abstract below for more details</font></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 10pt"><strong style="mso-bidi-font-weight: normal"><em style="mso-bidi-font-style: normal"><font size="3"><font face="Calibri">Parallel and Asynchronous Functional Programming on .NET with F#<span style="mso-spacerun: yes">    </span><o:p></o:p></font></font></em></strong></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 10pt"><em style="mso-bidi-font-style: normal"><font face="Calibri" size="3">Functional programming a hot topic: there is a growing awareness of functional techniques in the developer community, and people are beginning to see that imperative OO programming has deep limitations in a networked and concurrent multi-core world. This session will use the research language F# to explore how declarative and functional techniques are relevant to these new programming challenges. F# includes constructs called asynchronous workflows that help you tame the complexity of asynchronous and parallel programming. We’ll look at how to use these how they relate to LINQ and Haskell. We’ll also look at some basic programming with F#, including how you can use F# to explore functional design patterns that are highly relevant no matter which language you’re working in.</font></em></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">The other presentation will be panel debate with Don Syme, Claudio Russo, a researcher in the Programming Principles and Tools group at Microsoft Research Cambridge, and I. It’ll be more on functional programming and concurrency. To prepare for this talk I’ll be running a series of blog posts on the concurrency options in F#, including information on the exciting new features introduced in 1.9.2 “asynchronous workflow expressions” and “mailboxes for asynchronous message passing”. The full abstract is below:</font></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 10pt"><strong style="mso-bidi-font-weight: normal"><em style="mso-bidi-font-style: normal"><font size="3"><font face="Calibri">The Near Future of Programming is All About Concurrency – But What do Technologies such as F# and the Joins Library Mean for Developers? <o:p></o:p></font></font></em></strong></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 10pt"><font size="3"><font face="Calibri"><em style="mso-bidi-font-style: normal">The rise of multi-core CPUs and multi-processor machines requires developers to exploit concurrency in their applications. And we all know, that’s anything else but easy. Microsoft research is currently investigating appropriate language and framework solutions to simplify concurrent programming for all developers – two promising technologies in this space are F# and the Joins Concurrency Library. This session gives you a chance to raise questions and give feedback on current developments to experts from Microsoft Research. We strongly recommend you attend the sessions “Parallel and Asynchronous Functional Programming on .NET with F#” and “The Joins Concurrency Library (Cω in a Box)” before attending this interactive session on how F# and join patterns might shape our future in software development!</em><span style="mso-spacerun: yes">  </span></font></font></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">Both presentations are on Friday so they are two very good reasons not to leave early the final day. If your off to TechEd too and would like to meet up for a beer and a chat about F#, or anything else, feel free to drop me a line at the usual address.</font></p>
+
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
