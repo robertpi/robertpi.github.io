@@ -113,32 +113,6 @@
                   </a>
                   Published: 2008-05-18
                 </p>
-                <div class="share-text">
-                  <a href="https://www.addtoany.com/add_to/twitter?linkurl=%2fposts%2fachrive%2f2008%2f5%2f18%2fimmutability-and-concurrency-%e2%80%93-part-i-%e2%80%93-getting-to-know-immutable-data-structures.aspx.html&amp;linkname=" target="_blank">
-                    <img src="https://static.addtoany.com/buttons/twitter.svg" width="32" height="32" style="background-color: black;"/>
-                  </a>
-                  <a href="https://www.addtoany.com/add_to/linkedin?linkurl=%2fposts%2fachrive%2f2008%2f5%2f18%2fimmutability-and-concurrency-%e2%80%93-part-i-%e2%80%93-getting-to-know-immutable-data-structures.aspx.html&amp;linkname=" target="_blank">
-                    <img src="https://static.addtoany.com/buttons/linkedin.svg" width="32" height="32" style="background-color: black;"/>
-                  </a>
-                  <a href="https://www.addtoany.com/add_to/facebook?linkurl=%2fposts%2fachrive%2f2008%2f5%2f18%2fimmutability-and-concurrency-%e2%80%93-part-i-%e2%80%93-getting-to-know-immutable-data-structures.aspx.html&amp;linkname=" target="_blank">
-                    <img src="https://static.addtoany.com/buttons/facebook.svg" width="32" height="32" style="background-color: black;"/>
-                  </a>
-                  <a href="https://www.addtoany.com/add_to/reddit?linkurl=%2fposts%2fachrive%2f2008%2f5%2f18%2fimmutability-and-concurrency-%e2%80%93-part-i-%e2%80%93-getting-to-know-immutable-data-structures.aspx.html&amp;linkname=" target="_blank">
-                    <img src="https://static.addtoany.com/buttons/reddit.svg" width="32" height="32" style="background-color: black;"/>
-                  </a>
-                  <a href="https://www.addtoany.com/add_to/email?linkurl=%2fposts%2fachrive%2f2008%2f5%2f18%2fimmutability-and-concurrency-%e2%80%93-part-i-%e2%80%93-getting-to-know-immutable-data-structures.aspx.html&amp;linkname=" target="_blank">
-                    <img src="https://static.addtoany.com/buttons/email.svg" width="32" height="32" style="background-color: black;"/>
-                  </a>
-                  <a href="https://www.addtoany.com/add_to/mastodon?linkurl=%2fposts%2fachrive%2f2008%2f5%2f18%2fimmutability-and-concurrency-%e2%80%93-part-i-%e2%80%93-getting-to-know-immutable-data-structures.aspx.html&amp;linkname=" target="_blank">
-                    <img src="https://static.addtoany.com/buttons/mastodon.svg" width="32" height="32" style="background-color: black;"/>
-                  </a>
-                  <a href="https://www.addtoany.com/add_to/copy_link?linkurl=%2fposts%2fachrive%2f2008%2f5%2f18%2fimmutability-and-concurrency-%e2%80%93-part-i-%e2%80%93-getting-to-know-immutable-data-structures.aspx.html&amp;linkname=" target="_blank">
-                    <img src="https://static.addtoany.com/buttons/link.svg" width="32" height="32" style="background-color: black;"/>
-                  </a>
-                  <a href="https://www.addtoany.com/share#url=%2fposts%2fachrive%2f2008%2f5%2f18%2fimmutability-and-concurrency-%e2%80%93-part-i-%e2%80%93-getting-to-know-immutable-data-structures.aspx.html&amp;title=" target="_blank">
-                    <img src="https://static.addtoany.com/buttons/a2a.svg" width="32" height="32" style="background-color: black;"/>
-                  </a>
-                </div>
               </div>
               <div class="content article-body">
                 <p class="MsoNormal" style="MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">When asking the question how does functional programming help me with concurrent programming? The standard response tends to be functional programming use immutable data structures, read-only data structures can be shared between threads without issues, end of problem. Except it isn’t. Immutable data structures have a different set of problems associated with them when working on concurrent problems. This post will examine what these problems are, and then show that this is just a special case of a more general set of problems when working with immutable data structures. Finally will start taking a look at how we solve some of these problems, but in a single thread environment first of all.</font></p>

@@ -113,32 +113,6 @@
                   </a>
                   Published: 2007-10-15
                 </p>
-                <div class="share-text">
-                  <a href="https://www.addtoany.com/add_to/twitter?linkurl=%2fposts%2fachrive%2f2007%2f10%2f15%2fconcurrency-in-fsharp---understanding-how-asynchronous-workflows-work.aspx.html&amp;linkname=" target="_blank">
-                    <img src="https://static.addtoany.com/buttons/twitter.svg" width="32" height="32" style="background-color: black;"/>
-                  </a>
-                  <a href="https://www.addtoany.com/add_to/linkedin?linkurl=%2fposts%2fachrive%2f2007%2f10%2f15%2fconcurrency-in-fsharp---understanding-how-asynchronous-workflows-work.aspx.html&amp;linkname=" target="_blank">
-                    <img src="https://static.addtoany.com/buttons/linkedin.svg" width="32" height="32" style="background-color: black;"/>
-                  </a>
-                  <a href="https://www.addtoany.com/add_to/facebook?linkurl=%2fposts%2fachrive%2f2007%2f10%2f15%2fconcurrency-in-fsharp---understanding-how-asynchronous-workflows-work.aspx.html&amp;linkname=" target="_blank">
-                    <img src="https://static.addtoany.com/buttons/facebook.svg" width="32" height="32" style="background-color: black;"/>
-                  </a>
-                  <a href="https://www.addtoany.com/add_to/reddit?linkurl=%2fposts%2fachrive%2f2007%2f10%2f15%2fconcurrency-in-fsharp---understanding-how-asynchronous-workflows-work.aspx.html&amp;linkname=" target="_blank">
-                    <img src="https://static.addtoany.com/buttons/reddit.svg" width="32" height="32" style="background-color: black;"/>
-                  </a>
-                  <a href="https://www.addtoany.com/add_to/email?linkurl=%2fposts%2fachrive%2f2007%2f10%2f15%2fconcurrency-in-fsharp---understanding-how-asynchronous-workflows-work.aspx.html&amp;linkname=" target="_blank">
-                    <img src="https://static.addtoany.com/buttons/email.svg" width="32" height="32" style="background-color: black;"/>
-                  </a>
-                  <a href="https://www.addtoany.com/add_to/mastodon?linkurl=%2fposts%2fachrive%2f2007%2f10%2f15%2fconcurrency-in-fsharp---understanding-how-asynchronous-workflows-work.aspx.html&amp;linkname=" target="_blank">
-                    <img src="https://static.addtoany.com/buttons/mastodon.svg" width="32" height="32" style="background-color: black;"/>
-                  </a>
-                  <a href="https://www.addtoany.com/add_to/copy_link?linkurl=%2fposts%2fachrive%2f2007%2f10%2f15%2fconcurrency-in-fsharp---understanding-how-asynchronous-workflows-work.aspx.html&amp;linkname=" target="_blank">
-                    <img src="https://static.addtoany.com/buttons/link.svg" width="32" height="32" style="background-color: black;"/>
-                  </a>
-                  <a href="https://www.addtoany.com/share#url=%2fposts%2fachrive%2f2007%2f10%2f15%2fconcurrency-in-fsharp---understanding-how-asynchronous-workflows-work.aspx.html&amp;title=" target="_blank">
-                    <img src="https://static.addtoany.com/buttons/a2a.svg" width="32" height="32" style="background-color: black;"/>
-                  </a>
-                </div>
               </div>
               <div class="content article-body">
                 <p class="MsoNormal" style="MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">As Don Syme points out in <a href="http://blogs.msdn.com/dsyme/archive/2007/10/11/introducing-f-asynchronous-workflows.aspx">his piece on asynchronous workflows</a>, they are not about getting the whole of concurrency right but rather about getting asynchronous I/O.<span style="mso-spacerun: yes">  </span>I think that to fully appreciate the beauty of asynchronous workflows one must understand the ugliness of what it’s like to do asynchronous I/O without them. I think this may be true for many areas of software development,<span style="mso-spacerun: yes">  </span>hell even good old C looks great if you’ve been forced to spend some time assembler, and I guess <a href="http://www.joelonsoftware.com/articles/LeakyAbstractions.html">Joel and his law of “leaky abstractions”</a> is saying something along a similar lines. So I guess the aim of this article is to make you think that workflows are great by show you the “assembler” of asynchronous programming, or at least the asynchronous I/O part of it.</font></p>

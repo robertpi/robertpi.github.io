@@ -113,32 +113,6 @@
                   </a>
                   Published: 2009-12-20
                 </p>
-                <div class="share-text">
-                  <a href="https://www.addtoany.com/add_to/twitter?linkurl=%2fposts%2fachrive%2f2009%2f12%2f20%2fintroducing-functionalnhibernate.aspx.html&amp;linkname=" target="_blank">
-                    <img src="https://static.addtoany.com/buttons/twitter.svg" width="32" height="32" style="background-color: black;"/>
-                  </a>
-                  <a href="https://www.addtoany.com/add_to/linkedin?linkurl=%2fposts%2fachrive%2f2009%2f12%2f20%2fintroducing-functionalnhibernate.aspx.html&amp;linkname=" target="_blank">
-                    <img src="https://static.addtoany.com/buttons/linkedin.svg" width="32" height="32" style="background-color: black;"/>
-                  </a>
-                  <a href="https://www.addtoany.com/add_to/facebook?linkurl=%2fposts%2fachrive%2f2009%2f12%2f20%2fintroducing-functionalnhibernate.aspx.html&amp;linkname=" target="_blank">
-                    <img src="https://static.addtoany.com/buttons/facebook.svg" width="32" height="32" style="background-color: black;"/>
-                  </a>
-                  <a href="https://www.addtoany.com/add_to/reddit?linkurl=%2fposts%2fachrive%2f2009%2f12%2f20%2fintroducing-functionalnhibernate.aspx.html&amp;linkname=" target="_blank">
-                    <img src="https://static.addtoany.com/buttons/reddit.svg" width="32" height="32" style="background-color: black;"/>
-                  </a>
-                  <a href="https://www.addtoany.com/add_to/email?linkurl=%2fposts%2fachrive%2f2009%2f12%2f20%2fintroducing-functionalnhibernate.aspx.html&amp;linkname=" target="_blank">
-                    <img src="https://static.addtoany.com/buttons/email.svg" width="32" height="32" style="background-color: black;"/>
-                  </a>
-                  <a href="https://www.addtoany.com/add_to/mastodon?linkurl=%2fposts%2fachrive%2f2009%2f12%2f20%2fintroducing-functionalnhibernate.aspx.html&amp;linkname=" target="_blank">
-                    <img src="https://static.addtoany.com/buttons/mastodon.svg" width="32" height="32" style="background-color: black;"/>
-                  </a>
-                  <a href="https://www.addtoany.com/add_to/copy_link?linkurl=%2fposts%2fachrive%2f2009%2f12%2f20%2fintroducing-functionalnhibernate.aspx.html&amp;linkname=" target="_blank">
-                    <img src="https://static.addtoany.com/buttons/link.svg" width="32" height="32" style="background-color: black;"/>
-                  </a>
-                  <a href="https://www.addtoany.com/share#url=%2fposts%2fachrive%2f2009%2f12%2f20%2fintroducing-functionalnhibernate.aspx.html&amp;title=" target="_blank">
-                    <img src="https://static.addtoany.com/buttons/a2a.svg" width="32" height="32" style="background-color: black;"/>
-                  </a>
-                </div>
               </div>
               <div class="content article-body">
                 <p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal"><span style="mso-ansi-language: EN-US" lang="EN-US"><font size="3">It’s already fairly well documented that <a href="http://www.atrevido.net/blog/2009/04/01/Using+Fluent+NHibernate+With+F.aspx">F# doesn’t play too well with NHibernate and Fluent NHibernate</a>, although you can <a href="http://www.atrevido.net/blog/2009/04/23/Update+On+F+With+Fluent+NHibernate.aspx">make it play a littler nice with a bit of effort</a>. However there are a few fundamental problems with this approach. The first is F# class’ are not really designed to be data containers because that’s what its record type is for. The second is that F# class’ do not put too much emphasis on virtual methods as in functional programming we tend to using pass functions as values as a way to achieve polymorphism rather than virtual methods. Third and finally FluentNHibernate works with C#’s expression trees, it would be nice use F#’s quotation system instead. <o:p /></font></span></p>
