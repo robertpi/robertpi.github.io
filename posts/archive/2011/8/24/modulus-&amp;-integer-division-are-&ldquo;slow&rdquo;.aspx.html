@@ -1,0 +1,134 @@
+<html>
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      Strangelights
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <meta property="og:url" content="http://www.strangelights.com//posts/archive/2011/8/24/modulus-&amp;-integer-division-are-&ldquo;slow&rdquo;.aspx.html"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Modulus &amp; Integer Division are &ldquo;Slow&rdquo; | Strangelights"/>
+    <meta property="og:description" content="
+<p>I recently read the “<a href="http://disruptor.googlecode.com/files/Disruptor-1.0.pdf">Disruptor: High performance alternative to bounded queues for exchanging data between concurrent threads</a>” by the people at LMax. Some deeper thoughts on this are coming later. One interesting little tip-bit I learned is “On most processors there is a very high cost for the remainder calculation”, in other words calculating a modulus is slow. The paper goes on to say “This cost can be greatly reduced by making the ring size a power of 2. A bit mask of size minus one can be used to perform the remainder operation efficiently.” In other words:</p> "/>
+    <meta property="twitter:card" content="summary"/>
+    <meta property="twitter:url" content="http://www.strangelights.com//posts/archive/2011/8/24/modulus-&amp;-integer-division-are-&ldquo;slow&rdquo;.aspx.html"/>
+    <meta property="twitter:title" content="Modulus &amp; Integer Division are &ldquo;Slow&rdquo; | Strangelights"/>
+    <meta property="twitter:description" content="
+<p>I recently read the “<a href="http://disruptor.googlecode.com/files/Disruptor-1.0.pdf">Disruptor: High performance alternative to bounded queues for exchanging data between concurrent threads</a>” by the people at LMax. Some deeper thoughts on this are coming later. One interesting little tip-bit I learned is “On most processors there is a very high cost for the remainder calculation”, in other words calculating a modulus is slow. The paper goes on to say “This cost can be greatly reduced by making the ring size a power of 2. A bit mask of size minus one can be used to perform the remainder operation efficiently.” In other words:</p> "/>
+    <meta property="og:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+    <meta property="twitter:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <a class="navbar-item" href="/">
+            Home
+          </a>
+          <a class="navbar-item" href="/about.html">
+            About
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-info is-bold">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            <span class="transparent-backgroud">
+              Strangelights
+            </span>
+          </h1>
+          <h3>
+            <span class="transparent-backgroud">
+              Another tech blog.
+            </span>
+          </h3>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="articles">
+        <div class="column is-8 is-offset-2">
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-text-centered">
+                <div>
+                  <input type="checkbox" id="check" style="display: none;"/>
+                  <label for="check">
+                    <img class="author-image" src="/images/266A7910_small.jpg"/>
+                  </label>
+                  <label for="check">
+                    <div id="cover">
+                      <div id="box">
+                        <img class="author-image-large" src="/images/266A7910_large.jpg"/>
+                      </div>
+                    </div>
+                  </label>
+                  <p class="title">
+                    <span class="transparent-backgroud">
+                      <a href="https://linkedin.com/in/robertpickering">
+                        <i class="fa fa-linkedin-square fa-1x"></i>
+                      </a>
+                      <a href="https://github.com/robertpi">
+                        <i class="fa fa-github-square fa-1x"></i>
+                      </a>
+                      <a href="https://twitter.com/robertpi">
+                        <i class="fa fa-twitter-square fa-1x"></i>
+                      </a>
+                      <a href="https://facebook.com/robertfpickering">
+                        <i class="fa fa-facebook-square fa-1x"></i>
+                      </a>
+                      <a href="https://instagram.com/robertfpickering">
+                        <i class="fa fa-instagram fa-1x"></i>
+                      </a>
+                    </span>
+                  </p>
+                </div>
+                <p>
+                  &nbsp;
+                </p>
+                <p class="title article-title">
+                  <span class="transparent-backgroud">
+                    <a href="/posts/archive/2011/8/24/modulus-&amp;-integer-division-are-&ldquo;slow&rdquo;.aspx.html">
+                      Modulus &amp; Integer Division are &ldquo;Slow&rdquo;
+                    </a>
+                  </span>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  <a href="#">
+                    
+                  </a>
+                  Published: 2011-08-24
+                </p>
+              </div>
+              <div class="content article-body">
+                <p>I recently read the “<a href="http://disruptor.googlecode.com/files/Disruptor-1.0.pdf">Disruptor: High performance alternative to bounded queues for exchanging data between concurrent threads</a>” by the people at LMax. Some deeper thoughts on this are coming later. One interesting little tip-bit I learned is “On most processors there is a very high cost for the remainder calculation”, in other words calculating a modulus is slow. The paper goes on to say “This cost can be greatly reduced by making the ring size a power of 2. A bit mask of size minus one can be used to perform the remainder operation efficiently.” In other words:</p>  <blockquote>   <p><font face="Courier New">(37 % 32) = (37 &amp;&amp;&amp; 31)</font></p> </blockquote>  <p>And this will hold if we replace 32 and 31 with any other number that is a power of two and that number minus one respectively. This is because of how integers are laid out, below are shown the bit patterns for 37, 31 and 5 (37 % 5), only the first 16 bits are shown:</p>  <blockquote>   <p><font face="Courier New">0000 0000 0010 0101 (37)</font></p>    <p><font face="Courier New">0000 0000 0001 1111 (31)</font></p>    <p><font face="Courier New">0000 0000 0000 0101 (5)</font></p> </blockquote>  <p>It fairly obvious that, as 31 is a row of 5 ones, then any number that is anded with 31 will result in modulus 32 of that number as only the bottom 5 bits will remain.</p>  <p>Out of curiosity I decided to test just how slow a modulus operation was, this is fairly simple using F# interactive’s timing functionality. The timing results are shown in comments after the line that was executed.</p>  <blockquote>   <p><font face="Courier New">#time;;</font></p>    <p><font face="Courier New">for _ in System.Int32.MinValue .. System.Int32.MaxValue do 37 % 32</font></p>    <p><font face="Courier New">// Real: 00:00:01.786, CPU: 00:00:01.778, GC gen0: 0, gen1: 0, gen2: 0</font></p> </blockquote>  <p>So, that’s 4294967296 operations in 1.786 seconds which means each operation taking approximately 415 picoseconds, slow is obviously a relative term here. What really surprised me is when I tested the version with a bit mask.</p>  <blockquote>   <p><font face="Courier New">for _ in System.Int32.MinValue .. System.Int32.MaxValue do 37 &amp;&amp;&amp; 31</font></p>    <p><font face="Courier New">// Real: 00:00:00.000, CPU: 00:00:00.000, GC gen0: 0, gen1: 0, gen2: 0</font></p> </blockquote>  <p>So that’s one operation for every bit pattern possibly with 32 bits and all the operations took place in less than a millisecond. Even if we assume that this looping operation took close to a millisecond that still means that each iteration is happening in sub-picosecond time. I tried to bump up the number of operations but the easiest way to do this is to use a 64 bit integer as a counter and this results in greatly slowing the overall operation time as incrementing the 64 bit number is slow (only a 32bit version of F# interactive is available). Yes there are several ways I could have worked round this, including creating a compiled 64 bit program, but at the end of I couldn’t be bothered. I did go as far as to test the other arithmetic operators:</p>  <blockquote>   <p><font face="Courier New">for _ in System.Int32.MinValue .. System.Int32.MaxValue do 37 + 32</font></p>    <p><font face="Courier New">// Real: 00:00:00.000, CPU: 00:00:00.000, GC gen0: 0, gen1: 0, gen2: 0</font></p>    <p><font face="Courier New">for _ in System.Int32.MinValue .. System.Int32.MaxValue do 37 - 32</font></p>    <p><font face="Courier New">// Real: 00:00:00.000, CPU: 00:00:00.000, GC gen0: 0, gen1: 0, gen2: 0</font></p>    <p><font face="Courier New">for _ in System.Int32.MinValue .. System.Int32.MaxValue do 37 * 32</font></p>    <p><font face="Courier New">// Real: 00:00:00.000, CPU: 00:00:00.000, GC gen0: 0, gen1: 0, gen2: 0</font></p>    <p><font face="Courier New">for _ in System.Int32.MinValue .. System.Int32.MaxValue do 37 / 32</font></p>    <p><font face="Courier New">// Real: 00:00:01.804, CPU: 00:00:01.809, GC gen0: 0, gen1: 0, gen2: 0</font></p> </blockquote>  <p>And like the bitwise &amp;&amp;&amp; operator the arithmetic operators plus, minus, and multiply all execute in sub milliseconds times for 2 ^ 32 operations. Only division is slower having a similar execution speed to the modulus operations. </p>  <p>So is this information important? Most of the time probably not, integer division and modulus operations are fast enough in most cases. Even though they seem to be at least a factor of 100 slower that the other arithmetic and bitwise operators, they will execute much quick that doing any sort of IO, whether that’s IO to main memory, to the disk or worst still across the network. However, it is some nice to spend some time getting a feel for the relative cost of operations and occasionally in a HPC context it may be worth your while to replace an modulus operation with something bit mask based that will yield the same result.</p>
+<h3>Feedback:</h3>
+<p><em>Feedback was imported from my only blog engine, it's no longer possible to post feedback here.</em></p>
+<p><strong>re: Modulus &amp; Integer Division are “Slow” - <a href="http://eamon.nerbonne.org/">Eamon Nerbonne</a></strong></p>
+<p>You're drawing premature conclusions.<br /><br />First of all, since you're not using the result of the computation, the compiler is free to optimize it by omitting the computation entirely.  On my machine, timings seem a little slower than those you report, but much slower if you store the result in a mutable variable:<br /><br />let mutable z = 0<br />for x in System.Int32.MinValue .. System.Int32.MaxValue do z &lt;- x % 32<br /><br />with that kind of code, I see the bitmasking variant take roughly half the time of the modulo variant; the difference isn't nearly as pronounced.<br /><br />However, it's more complicated than that; the loop itself has considerable overhead.  We can reduce the relevance of that overhead by using more operations:<br /><br />for x in System.Int32.MinValue .. System.Int32.MaxValue do z &lt;- x % 128 % 64 % 32 % 16<br /><br />With 4 such operations per iteration, the loop takes 21.5 seconds here with modulo vs. 5.2 with bitmasking.  By comparison, the loop that just assigns the value takes 1.9 seconds; this suggests bitmasking is around 6 times faster.<br /><br />But that too is a little simplistic.  It could still be that compiler optimizations for this overly simple program are permitting unreasonably fast code; we'd be testing optimizations not CPU performance.  Also; almost all modern CPU's are superscalar and extract instruction-level parallelism by starting subsequent instructions before their predecessors have completed when possible.  So even when two operations complete just as quickly, one may still be cheaper in that in realistic workloads it is more commonly executed &quot;for free&quot; due to the availability of a CPU unit that can compute it.<br /><br />Then there's the fact that CPU's are tuned for real programs.  Constants - like 31 or 32 - are encoded differently than variables in the instruction stream.  So you cannot necessarily extrapolate performance using constants to performance using variables; e.g. on my Q9300 floating point addition of variables is much faster than floating point addition of a constant.<br /><br />So yes; bitmasking is faster than modulo, seemingly by around one order of magnitude, but there are lots of caveats.<br /><br />Finally, the paper you're linking to concerns concurrent synchronization; and that means (at the very least) cache line synchronization and possible main memory access or something else.  Such operations are much slower that either bitmasking or modulo, so although every little bit helps I don't believe that this choice is actually significant in their use-case; ring number computation is almost certainly just a minor part of the overall synchronization cost so savings there cannot make a big difference.</p>
+<p><strong>re: Modulus &amp; Integer Division are “Slow” - <a href="http://strangelights.com/blog">Robert Pickering</a></strong></p>
+<p>Thanks for the additional information. I thought that the compiler optimizing away the calculation could be a problem, but assumed this wasn't the case since the results for % and / differ from those of + - *, however when I checked generated code I saw the compiler doesn't even bother generating IL code for the + - * loops. I'm a little surprised by this difference but guess I should have dug a little deeper before posting my results.<br /><br />I'm aware that this won't make a any difference to performance in most cases but thought people won't find it an interesting piece of trivia.<br /><br /></p>
+
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

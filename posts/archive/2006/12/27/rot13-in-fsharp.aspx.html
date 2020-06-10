@@ -1,0 +1,152 @@
+<html>
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      Strangelights
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <meta property="og:url" content="http://www.strangelights.com//posts/archive/2006/12/27/rot13-in-fsharp.aspx.html"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="ROT13 in F# | Strangelights"/>
+    <meta property="og:description" content="
+<FONT face=Arial>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-GB">Over on his blog, Andrei Formiga has a series of post on implementing ROT13 in F# and Haskell.<?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-GB"><A href="http://codemiscellany.blogspot.com/2006/12/rot13-in-f.html"><FONT color=#800080>http://codemiscellany.blogspot.com/2006/12/rot13-in-f.html</FONT></A><o:p></o:p></SPAN></P>"/>
+    <meta property="twitter:card" content="summary"/>
+    <meta property="twitter:url" content="http://www.strangelights.com//posts/archive/2006/12/27/rot13-in-fsharp.aspx.html"/>
+    <meta property="twitter:title" content="ROT13 in F# | Strangelights"/>
+    <meta property="twitter:description" content="
+<FONT face=Arial>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-GB">Over on his blog, Andrei Formiga has a series of post on implementing ROT13 in F# and Haskell.<?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-GB"><A href="http://codemiscellany.blogspot.com/2006/12/rot13-in-f.html"><FONT color=#800080>http://codemiscellany.blogspot.com/2006/12/rot13-in-f.html</FONT></A><o:p></o:p></SPAN></P>"/>
+    <meta property="og:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+    <meta property="twitter:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <a class="navbar-item" href="/">
+            Home
+          </a>
+          <a class="navbar-item" href="/about.html">
+            About
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-info is-bold">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            <span class="transparent-backgroud">
+              Strangelights
+            </span>
+          </h1>
+          <h3>
+            <span class="transparent-backgroud">
+              Another tech blog.
+            </span>
+          </h3>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="articles">
+        <div class="column is-8 is-offset-2">
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-text-centered">
+                <div>
+                  <input type="checkbox" id="check" style="display: none;"/>
+                  <label for="check">
+                    <img class="author-image" src="/images/266A7910_small.jpg"/>
+                  </label>
+                  <label for="check">
+                    <div id="cover">
+                      <div id="box">
+                        <img class="author-image-large" src="/images/266A7910_large.jpg"/>
+                      </div>
+                    </div>
+                  </label>
+                  <p class="title">
+                    <span class="transparent-backgroud">
+                      <a href="https://linkedin.com/in/robertpickering">
+                        <i class="fa fa-linkedin-square fa-1x"></i>
+                      </a>
+                      <a href="https://github.com/robertpi">
+                        <i class="fa fa-github-square fa-1x"></i>
+                      </a>
+                      <a href="https://twitter.com/robertpi">
+                        <i class="fa fa-twitter-square fa-1x"></i>
+                      </a>
+                      <a href="https://facebook.com/robertfpickering">
+                        <i class="fa fa-facebook-square fa-1x"></i>
+                      </a>
+                      <a href="https://instagram.com/robertfpickering">
+                        <i class="fa fa-instagram fa-1x"></i>
+                      </a>
+                    </span>
+                  </p>
+                </div>
+                <p>
+                  &nbsp;
+                </p>
+                <p class="title article-title">
+                  <span class="transparent-backgroud">
+                    <a href="/posts/archive/2006/12/27/rot13-in-fsharp.aspx.html">
+                      ROT13 in F#
+                    </a>
+                  </span>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  <a href="#">
+                    
+                  </a>
+                  Published: 2006-12-27
+                </p>
+              </div>
+              <div class="content article-body">
+                <FONT face=Arial>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-GB">Over on his blog, Andrei Formiga has a series of post on implementing ROT13 in F# and Haskell.<?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-GB"><A href="http://codemiscellany.blogspot.com/2006/12/rot13-in-f.html"><FONT color=#800080>http://codemiscellany.blogspot.com/2006/12/rot13-in-f.html</FONT></A><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-GB"><A href="http://codemiscellany.blogspot.com/2006/12/rot13-in-haskell.html"><FONT color=#800080>http://codemiscellany.blogspot.com/2006/12/rot13-in-haskell.html</FONT></A><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-GB"><A href="http://codemiscellany.blogspot.com/2006/12/rot13-in-f-revisited.html"><FONT color=#800080>http://codemiscellany.blogspot.com/2006/12/rot13-in-f-revisited.html</FONT></A><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-GB"><A href="http://codemiscellany.blogspot.com/2006/12/still-more-rot13.html"><FONT color=#800080>http://codemiscellany.blogspot.com/2006/12/still-more-rot13.html</FONT></A><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-GB"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-GB">I like is implementation using library functions that don&#8217;t yet exist in F#, such as drop and zip. Here is the implementation itself, stripped of the extra library functions he had to implement, for the original see the above links. <o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 9pt; FONT-FAMILY: 'Courier New'; mso-ansi-language: EN-GB">#light<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 9pt; FONT-FAMILY: 'Courier New'; mso-ansi-language: EN-GB">let rot13 s = <BR><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN>let letters = ['a' .. 'z']<BR><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN>let transp = zip letters ((drop 13 letters) @ (take 13 letters))<BR><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN>let rotchar c = List.assoc c transp<BR><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN>strmap rotchar s<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-GB">The clever bit of this implementation is on the 4<SUP>th</SUP> line where he uses the functions drop and take to create a rotated list and the function zip to a map between that and the original letter list. While this is an interesting way of implementing this I think there is a way to do this without the need to define extra library functions. So here is my implementation, the same number of lines but more characters!<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 9pt; FONT-FAMILY: 'Courier New'; mso-ansi-language: EN-GB">#light<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 9pt; FONT-FAMILY: 'Courier New'; mso-ansi-language: EN-GB">let rot13 (s : string) =<SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 9pt; FONT-FAMILY: 'Courier New'; mso-ansi-language: EN-GB"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN>let letters = ['a' .. 'z']<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 9pt; FONT-FAMILY: 'Courier New'; mso-ansi-language: EN-GB"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN>let transp = letters |&gt; List.mapi (fun i l -&gt; l, List.nth letters ((i + 13) % 26))<SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 9pt; FONT-FAMILY: 'Courier New'; mso-ansi-language: EN-GB"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN>let rotchar c = List.assoc c transp<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="FONT-SIZE: 9pt; FONT-FAMILY: 'Courier New'; mso-ansi-language: EN-GB"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN>new string(s.ToCharArray() |&gt; Array.map rotchar)<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-GB style="mso-ansi-language: EN-GB"><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></SPAN></P></FONT>
+
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
