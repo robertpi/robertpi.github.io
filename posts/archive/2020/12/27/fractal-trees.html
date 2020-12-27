@@ -1,0 +1,151 @@
+<html>
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      Strangelights
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <meta property="og:url" content="http://www.strangelights.com//posts/archive/2020/12/27/fractal-trees.html"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Fractal Trees | Strangelights"/>
+    <meta property="og:description" content="
+I woke up early a couple of days ago and to pass the time till the rest of the house woke up, I decided to do a little hobby programming. I wanted to do a little animation around a star fractal. I didn't find the [Koch snowflake](https://en.wikipedia.org/wiki/Koch_snowflake) astatically pleasing, so I thought I'd make my own based on a [tree fractal algorithm](http://davis.wpi.edu/~matt/courses/fractals/trees.html) that I knew gave pleasing results. This got lost somewhere a long the way and I ended up reducing my goal to creating a pleasing tree.
+
+Rather than talk about the structure of the code, which is pretty simple, I thought it would interesting to review the sequence of images I created and talk about the decisions I made to come up with the next version. The code to produce the images is available on [github.com/robertpi/FractalTree](https://github.com/robertpi/FractalTree) and will be linked to, if you want to see what the code changes look like. I didn't store my earliest version of the algorithm in git, so some of the earlier have been reversed engineered from later version, but I think they're pretty close to what I had."/>
+    <meta property="twitter:card" content="summary"/>
+    <meta property="twitter:url" content="http://www.strangelights.com//posts/archive/2020/12/27/fractal-trees.html"/>
+    <meta property="twitter:title" content="Fractal Trees | Strangelights"/>
+    <meta property="twitter:description" content="
+I woke up early a couple of days ago and to pass the time till the rest of the house woke up, I decided to do a little hobby programming. I wanted to do a little animation around a star fractal. I didn't find the [Koch snowflake](https://en.wikipedia.org/wiki/Koch_snowflake) astatically pleasing, so I thought I'd make my own based on a [tree fractal algorithm](http://davis.wpi.edu/~matt/courses/fractals/trees.html) that I knew gave pleasing results. This got lost somewhere a long the way and I ended up reducing my goal to creating a pleasing tree.
+
+Rather than talk about the structure of the code, which is pretty simple, I thought it would interesting to review the sequence of images I created and talk about the decisions I made to come up with the next version. The code to produce the images is available on [github.com/robertpi/FractalTree](https://github.com/robertpi/FractalTree) and will be linked to, if you want to see what the code changes look like. I didn't store my earliest version of the algorithm in git, so some of the earlier have been reversed engineered from later version, but I think they're pretty close to what I had."/>
+    <meta property="og:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+    <meta property="twitter:image" content="http://www.strangelights.com/images/winter-macro-0266.jpg"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <a class="navbar-item" href="/">
+            Home
+          </a>
+          <a class="navbar-item" href="/about.html">
+            About
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-info is-bold">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            <span class="transparent-backgroud">
+              Strangelights
+            </span>
+          </h1>
+          <h3>
+            <span class="transparent-backgroud">
+              Another tech blog.
+            </span>
+          </h3>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="articles">
+        <div class="column is-8 is-offset-2">
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-text-centered">
+                <div>
+                  <input type="checkbox" id="check" style="display: none;"/>
+                  <label for="check">
+                    <img class="author-image" src="/images/266A7910_small.jpg"/>
+                  </label>
+                  <label for="check">
+                    <div id="cover">
+                      <div id="box">
+                        <img class="author-image-large" src="/images/266A7910_large.jpg"/>
+                      </div>
+                    </div>
+                  </label>
+                  <p class="title">
+                    <span class="transparent-backgroud">
+                      <a href="https://linkedin.com/in/robertpickering">
+                        <i class="fa fa-linkedin-square fa-1x"></i>
+                      </a>
+                      <a href="https://github.com/robertpi">
+                        <i class="fa fa-github-square fa-1x"></i>
+                      </a>
+                      <a href="https://twitter.com/robertpi">
+                        <i class="fa fa-twitter-square fa-1x"></i>
+                      </a>
+                      <a href="https://facebook.com/robertfpickering">
+                        <i class="fa fa-facebook-square fa-1x"></i>
+                      </a>
+                      <a href="https://instagram.com/robertfpickering">
+                        <i class="fa fa-instagram fa-1x"></i>
+                      </a>
+                    </span>
+                  </p>
+                </div>
+                <p>
+                  &nbsp;
+                </p>
+                <p class="title article-title">
+                  <span class="transparent-backgroud">
+                    <a href="/posts/archive/2020/12/27/fractal-trees.html">
+                      Fractal Trees
+                    </a>
+                  </span>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  <a href="#">
+                    
+                  </a>
+                  Published: 2020-12-27
+                </p>
+              </div>
+              <div class="content article-body">
+                <p>I woke up early a couple of days ago and to pass the time till the rest of the house woke up, I decided to do a little hobby programming. I wanted to do a little animation around a star fractal. I didn't find the <a href="https://en.wikipedia.org/wiki/Koch_snowflake">Koch snowflake</a> astatically pleasing, so I thought I'd make my own based on a <a href="http://davis.wpi.edu/%7Ematt/courses/fractals/trees.html">tree fractal algorithm</a> that I knew gave pleasing results. This got lost somewhere a long the way and I ended up reducing my goal to creating a pleasing tree.</p>
+<p>Rather than talk about the structure of the code, which is pretty simple, I thought it would interesting to review the sequence of images I created and talk about the decisions I made to come up with the next version. The code to produce the images is available on <a href="https://github.com/robertpi/FractalTree">github.com/robertpi/FractalTree</a> and will be linked to, if you want to see what the code changes look like. I didn't store my earliest version of the algorithm in git, so some of the earlier have been reversed engineered from later version, but I think they're pretty close to what I had.</p>
+<p>I found the process interesting of creating the tree interesting. The algorithm is pretty simple and probably took about 10 mins to implement the original version, but since doing that I spent a few hours tuning it to give prettier results. This seems to embody the trade off faced in almost every domain of software development: basic results can be achieved quickly but producing pleasing results can take much effort to tune them.</p>
+<p>For <a href="https://github.com/robertpi/FractalTree/commit/47777660f2f5cb3abec3cc9c446b9d5cff553def#diff-ef807e06fd550fdcb86c5cfd1e1e628f4b7528f9aa6c3e76714242594c3a1a8b">the first cut</a> I simply copy and pasted the pseudo code given in the <a href="http://davis.wpi.edu/%7Ematt/courses/fractals/trees.html">tree fractal algorithm</a> article and fixed it up till it was valid F#. The algorithm is simple, calculate the start and end of a branch from its length and angle, then plot the branch, adjust the length and angles before plotting the next branch.</p>
+<p><img src="4777766.jpg" alt="First tree" /></p>
+<p>It struck me that the tree was very pixelated. That seemed strange to me, since I can't remember that the last time I saw an image that looked pixelated, unless it was a deliberately added effect. I thought this was down to hardware improvements, and maybe a lot of it is, but it seems that most drawing libraries have some kind of smoothing turned on my default. The <a href="https://docs.microsoft.com/en-us/dotnet/api/system.drawing">System.Drawing namespace</a> does not have smoothing by default, but it is simple to opt-in. Once I <a href="https://github.com/robertpi/FractalTree/commit/300300eb7c7dd27ed54a508fd27f2e7d3a6598e5#diff-ef807e06fd550fdcb86c5cfd1e1e628f4b7528f9aa6c3e76714242594c3a1a8b">added smoothing</a>, the pixilation went away.</p>
+<p><img src="300300.jpg" alt="Smoothed tree" /></p>
+<p>I thought my trees looked more like grass. I little web searching led me to <a href="https://fractalfoundation.org/resources/fractivities/fractal-trees/">this article about fractal trees</a>, where the trees have a much more pleasing astatic. I noticed they weren't based on randomness but alternating angle sizes for the branches. It was fairly easy to <a href="https://github.com/robertpi/FractalTree/commit/cd4d193abe53e7601b0f8708407bf1d5c8b491a6">modify my program to produce that effect</a>.</p>
+<p><img src="cd4d193.jpg" alt="Alternating tree" /></p>
+<p>I liked this style, but the trees in the article looked better. I liked the way the branches slimmed on the way up the tree, this too was a <a href="https://github.com/robertpi/FractalTree/commit/3ff962d5128166f60b619ed74b24b918b82fb5a1">straight forward modification</a> (just one line moved).</p>
+<p><img src="3ff962d.jpg" alt="Varying branches" /></p>
+<p>The tree still looked a bit square, I was hoping for something a little more organic looking. I decided to <a href="https://github.com/robertpi/FractalTree/commit/b0e18a981d9d3b26757979a690bbcfd096c861a6">make the branches from ellipses</a>.</p>
+<p><img src="b0e18a9.jpg" alt="Elliptical branches" /></p>
+<p>The tree was looking fairly good by this point, but I thought I could do better. I didn't like the joins where branches met, my calculations left bits sticking out which looked messy. I could have tried to tune my calculations so this didn't happen, but another approach occurred to me. The <a href="https://docs.microsoft.com/en-us/dotnet/api/system.drawing">System.Drawing namespace</a> has methods that allow you to draw individual shapes like ellipses, but it also has methods let you draw polygons by defined by a list of points that form a path to plot. I decided to try and plot a whole path for the tree and then let the method <a href="https://docs.microsoft.com/en-us/dotnet/api/system.drawing.graphics.fillclosedcurve?view=dotnet-plat-ext-5.0">FillClosedCurve</a> draw me a smooth tree.</p>
+<p>This approach is tricky, it matters which order the points are passed to the <a href="https://docs.microsoft.com/en-us/dotnet/api/system.drawing.graphics.fillclosedcurve?view=dotnet-plat-ext-5.0">FillClosedCurve</a> method, since this is the order they are drawn in. Any in error in the ordering of the points leads to a tree that curls around in strange way. This is differs from the approach of drawing individual branches, as the order individual branches are drawn in doesn't matter.</p>
+<p>To make this approach work I embarked on a major refactoring of the program. This included creating a type that modelled to tree, using the type to generate a tree and then generating the path from the tree structure. The technique works okay, but I'm not that happy with <a href="https://github.com/robertpi/FractalTree/blob/4e74bd76fa70ea163947ecb6cb6c241ff6fe4fe8/FractalTrees/Tree.fs">the program's structure</a>, there seems to be quite a lot of repetition, particular I call Math.Sin and Math.Cos in a few different places, were I'm basically doing the same thing. But the effort of coming up with a better structure doesn't really seem worth it at this point.</p>
+<p><img src="4e74bd7.jpg" alt="Tree from a path" /></p>
+<p>I like the resulting tree a lot, but it's also not exactly what I had in mind. The calculation for the position of the edge of the branches is wrong somehow, but it's wrong in a way that produces a consistent art-deco like scroll effect, so I'll settle for that.</p>
+<p>Now all that remains is to vary the parameters to create an animation, but that's for another day.</p>
+<p>I hope this little tour of my programming decisions has interested you. Feel free <a href="https://twitter.com/robertpi/">to get in touch</a> with any comments.</p>
+
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
