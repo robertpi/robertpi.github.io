@@ -1,0 +1,25 @@
+{
+    "subject":"acct:robertpi@functional.cafe",
+    "aliases":
+    [
+        "https://functional.cafe/@@robertpi",
+        "https://functional.cafe/users/robertpi"
+    ],
+    "links":
+    [
+        {
+            "rel":"http://webfinger.net/rel/profile-page",
+            "type":"text/html",
+            "href":"https://functional.cafe/@@robertpi"
+        },
+        {
+            "rel":"self",
+            "type":"application/activity+json",
+            "href":"https://functional.cafe/users/robertpi"
+        },
+        {
+            "rel":"http://ostatus.org/schema/1.0/subscribe",
+            "template":"https://functional.cafe/authorize_interaction?uri={uri}"
+        }
+    ]
+}
